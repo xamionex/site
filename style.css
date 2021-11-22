@@ -544,7 +544,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     .video.style1 video {width: 20rem;}
     .video.style1 .frame {width: 20rem;}
     .video.style1 .frame:before {padding-top: 56.25%;}
-    #countdown li {display: inline-block;font-size: 1.5em;list-style-type: none;padding: 1em;text-transform: uppercase;}
+    #countdown li {display: inline-block;font-size: 1.5em;list-style-type: none;padding: 0em;text-transform: uppercase;}
     #countdown li span {display: block;font-size: 4.5rem;}
     .emoji {display: none;padding: 1rem;}
     .emoji span {font-size: 4rem;padding: 0 .5rem;}
