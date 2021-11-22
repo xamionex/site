@@ -540,33 +540,25 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     #video04 video {width: 20rem;}
     #video04 .frame {width: 20rem;}
     #video04 .frame:before {padding-top: 56.25%;}
+    :root {--smaller: .75;}
     .video.style1 video {width: 20rem;}
     .video.style1 .frame {width: 20rem;}
     .video.style1 .frame:before {padding-top: 56.25%;}
-    .timer {line-height: 1;cursor: default;}
-    .timer ul {display: inline-flex;flex-direction: row;list-style: none;max-width: 100%;}
-    .timer ul li {position: relative;z-index: 1;}
-    .timer ul li.delimiter {flex: 0 1 auto;}
-    .timer ul li.delimiter .symbol {display: block;position: absolute;top: 0;left: 0;width: 100%;text-align: center;}
-    .timer ul li.number {flex: 1;min-width: 2rem;}
-    .timer ul li.number .item {position: relative;}
-    .timer ul li.number .item .digit {display: block;position: relative;white-space: nowrap;}
-    .timer ul li.number .item .digit .component {display: inline-block;width: 50%;}
-    .timer ul li.number .item .digit.count2 .component {width: 50%;}
-    .timer ul li.number .item .digit.count3 .component {width: 33.3333%;}
-    .timer ul li.number .item .digit.count4 .component {width: 25%;}
-    .timer ul li.number .item .digit.count5 .component {width: 20%;}
-    .timer ul li.number .item .label {display: block;white-space: nowrap;}
-    .timer ul li.number .item .label > * {display: inline-block;}
-    .timer ul li.number .item .label .full {width: 5em;}
-    .timer ul li.number .item .label .abbreviated {width: 3em;}
-    .timer ul li.number .item .label .initialed {width: 1em;}
-    .timer.style1 ul {width: 35rem;}
-    .timer.style1 ul li.delimiter {width: 3.5rem;min-width: 1rem;}
-    .timer.style1 ul li.delimiter .symbol {color: rgba(244,122,255,0.8);}
-    .timer.style1 ul li.number .item .digit {font-family: 'Londrina Shadow', cursive;font-weight: 400;color: #FF99F5;line-height: 1em;text-align: inherit;}
-    .timer.style1 ul li.number .item .label > * {margin-top: calc(0.5rem + 0.25em);}
-    .timer.style1 ul li.number .item .label {font-family: 'Solway', serif;font-size: 0.875rem;font-weight: 300;color: rgba(255,153,245,0.788);}
+    #countdown li {display: inline-block;font-size: 1.5em;list-style-type: none;padding: 1em;text-transform: uppercase;}
+    #countdown li span {display: block;font-size: 4.5rem;}
+    .emoji {display: none;padding: 1rem;}
+    .emoji span {font-size: 4rem;padding: 0 .5rem;}
+    @media all and (max-width: 768px) {
+    #countdown li {font-size: calc(1.125rem * var(--smaller));}
+    #countdown li span {font-size: calc(3.375rem * var(--smaller));}}
+    #countdown {font-weight: normal;letter-spacing: .125rem;text-transform: uppercase;}
+    #countdown li span {display: block;font-size: 2.5rem;}
+    #countdown ul li span {color: rgba(244,122,255,0.8);}
+    #countdown ul li span {font-family: 'Londrina Shadow', cursive;font-weight: 400;color: #FF99F5;line-height: 1em;text-align: inherit;}
+    #countdown ul li span > * {margin-top: calc(0.5rem + 0.25em);}
+    #countdown ul li {font-family: 'Solway', serif;font-size: 0.875rem;font-weight: 300;color: rgba(255,153,245,0.788);}
+    .emoji {display: none;padding: 1rem;}
+    .emoji span {font-size: 3rem;padding: 0 .5rem;}
     @media (max-width: 1680px) {html {font-size: 16pt;}
     }
     @media (max-width: 1280px) {html {font-size: 16pt;}
