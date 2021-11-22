@@ -339,7 +339,7 @@ scrollEvents.add({element: i,enter: enterHandler,offset: 250});});})();
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = yyyy + 1,
-        dayMonth = "09/22/",
+        dayMonth = "11/22/",
         birthday = dayMonth + yyyy;
     
     today = mm + "/" + dd + "/" + yyyy;
