@@ -364,6 +364,9 @@ scrollEvents.add({element: i,enter: enterHandler,offset: 250});});})();
             document.getElementById("text09").innerText = "It's my birthday!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
+            const script = document.createElement('script');
+            script.src = './confetti.js';
+            document.head.appendChild(script);
             clearInterval(x);
           }
           //seconds
