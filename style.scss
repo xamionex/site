@@ -245,47 +245,63 @@ a {
 
 body.is-loading #main {
   opacity: 0;
-  -webkit-transform: perspective(1000px) rotateX(-16.875deg);
   transform: perspective(1000px) rotateX(-16.875deg);
 }
 
 #main > .inner > section > * {
-  -webkit-transition: opacity 1.25s ease-in-out 0s,-webkit-filter 1.25s ease-in-out 0s;
-  transition: opacity 1.25s ease-in-out 0s,-webkit-filter 1.25s ease-in-out 0s;
   transition: opacity 1.25s ease-in-out 0s,filter 1.25s ease-in-out 0s;
-  transition: opacity 1.25s ease-in-out 0s,filter 1.25s ease-in-out 0s,-webkit-filter 1.25s ease-in-out 0s;
 }
 
 body.is-loading #main > .inner > section > * {
   opacity: 0;
-  -webkit-filter: blur(0.28125rem);
-  filter: blur(0.28125rem);
+  filter: blur(1rem);
 }
 
 #main>.inner> {
   section> {
     @for $i from 1 through 99 {
       :nth-child(#{$i}) {
-        transition-delay: $i * 50ms;
+        transition-delay: $i * 500ms;
       }
     }
   }
 
-  -webkit-transition: opacity 1s ease-in-out .5s,min-height .5s ease-in-out,max-height .5s ease-in-out,-webkit-filter 1s ease-in-out .5s;
-  transition: opacity 1s ease-in-out .5s,min-height .5s ease-in-out,max-height .5s ease-in-out,-webkit-filter 1s ease-in-out .5s;
-  transition: opacity 1s ease-in-out .5s,filter 1s ease-in-out .5s,min-height .5s ease-in-out,max-height .5s ease-in-out;
-  transition: opacity 1s ease-in-out .5s,filter 1s ease-in-out .5s,min-height .5s ease-in-out,max-height .5s ease-in-out,-webkit-filter 1s ease-in-out .5s;
-}
-
-@-webkit-keyframes loading-spinner {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+  header, footer {
+    transition: opacity 0.5s ease-in-out 0.75s,filter 1s ease-in-out 0.75s,visibility 0.5s linear 0.75s;
   }
 
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  header.hidden, footer.hidden {
+    transition: opacity 0.5s ease-in-out,visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    filter: blur(0.28125);
+  }
+
+  section {
+    transition: opacity 1s ease-in-out 0.5s,filter 1s ease-in-out 0.5s,min-height 0.5s ease-in-out,max-height 0.5s ease-in-out;
+
+    &.inactive {
+      transition: opacity 0.5s ease-in-out,filter 0.5s ease-in-out;
+      opacity: 0;
+      filter: blur(0.28125rem);
+    }
+  }
+}
+
+body.is-instant {
+  #main {
+    transition: none !important;
+
+    > .inner > {
+      *, section > * {
+        transition: none !important;
+      }
+    }
+  }
+
+  &:after {
+    display: none !important;
+    transition: none !important;
   }
 }
 
@@ -2351,15 +2367,6 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   background-size: 512px,auto;
   background-position: center,center;
   background-repeat: repeat,repeat;
-
-  > .wrapper {
-    width: 100%;
-    max-width: 58rem;
-
-    > .inner {
-      padding: 3.25rem 0;
-    }
-  }
 
   &.default > .wrapper > .inner > {
     * {
