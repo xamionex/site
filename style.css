@@ -79,7 +79,7 @@ body:before {
   -webkit-transform: scale(1);
   transform: scale(1);
   background-attachment: scroll;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))), url(assets/images/bg.gif);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))), url(http://petar.tk/http://petar.tk/assets/images/bg.gif);
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)), url(assets/images/bg.gif);
   background-size: 512px, auto, cover;
   background-position: center, 0 0, center;
@@ -271,579 +271,457 @@ a {
 
 body.is-loading #main {
   opacity: 0;
-  -webkit-transform: perspective(1000px) rotateX(-16.875deg);
-          transform: perspective(1000px) rotateX(-16.875deg);
+  transform: perspective(1000px) rotateX(-16.875deg);
 }
 
 #main > .inner > section > * {
-  -webkit-transition: opacity 1.25s ease-in-out 0s, -webkit-filter 1.25s ease-in-out 0s;
-  transition: opacity 1.25s ease-in-out 0s, -webkit-filter 1.25s ease-in-out 0s;
   transition: opacity 1.25s ease-in-out 0s, filter 1.25s ease-in-out 0s;
-  transition: opacity 1.25s ease-in-out 0s, filter 1.25s ease-in-out 0s, -webkit-filter 1.25s ease-in-out 0s;
 }
 
 body.is-loading #main > .inner > section > * {
   opacity: 0;
-  -webkit-filter: blur(1rem);
-          filter: blur(1rem);
+  filter: blur(1rem);
 }
 
 #main > .inner > section > :nth-child(1) {
-  -webkit-transition-delay: 500ms;
-          transition-delay: 500ms;
+  transition-delay: 500ms;
 }
 
 #main > .inner > section > :nth-child(2) {
-  -webkit-transition-delay: 1000ms;
-          transition-delay: 1000ms;
+  transition-delay: 1000ms;
 }
 
 #main > .inner > section > :nth-child(3) {
-  -webkit-transition-delay: 1500ms;
-          transition-delay: 1500ms;
+  transition-delay: 1500ms;
 }
 
 #main > .inner > section > :nth-child(4) {
-  -webkit-transition-delay: 2000ms;
-          transition-delay: 2000ms;
+  transition-delay: 2000ms;
 }
 
 #main > .inner > section > :nth-child(5) {
-  -webkit-transition-delay: 2500ms;
-          transition-delay: 2500ms;
+  transition-delay: 2500ms;
 }
 
 #main > .inner > section > :nth-child(6) {
-  -webkit-transition-delay: 3000ms;
-          transition-delay: 3000ms;
+  transition-delay: 3000ms;
 }
 
 #main > .inner > section > :nth-child(7) {
-  -webkit-transition-delay: 3500ms;
-          transition-delay: 3500ms;
+  transition-delay: 3500ms;
 }
 
 #main > .inner > section > :nth-child(8) {
-  -webkit-transition-delay: 4000ms;
-          transition-delay: 4000ms;
+  transition-delay: 4000ms;
 }
 
 #main > .inner > section > :nth-child(9) {
-  -webkit-transition-delay: 4500ms;
-          transition-delay: 4500ms;
+  transition-delay: 4500ms;
 }
 
 #main > .inner > section > :nth-child(10) {
-  -webkit-transition-delay: 5000ms;
-          transition-delay: 5000ms;
+  transition-delay: 5000ms;
 }
 
 #main > .inner > section > :nth-child(11) {
-  -webkit-transition-delay: 5500ms;
-          transition-delay: 5500ms;
+  transition-delay: 5500ms;
 }
 
 #main > .inner > section > :nth-child(12) {
-  -webkit-transition-delay: 6000ms;
-          transition-delay: 6000ms;
+  transition-delay: 6000ms;
 }
 
 #main > .inner > section > :nth-child(13) {
-  -webkit-transition-delay: 6500ms;
-          transition-delay: 6500ms;
+  transition-delay: 6500ms;
 }
 
 #main > .inner > section > :nth-child(14) {
-  -webkit-transition-delay: 7000ms;
-          transition-delay: 7000ms;
+  transition-delay: 7000ms;
 }
 
 #main > .inner > section > :nth-child(15) {
-  -webkit-transition-delay: 7500ms;
-          transition-delay: 7500ms;
+  transition-delay: 7500ms;
 }
 
 #main > .inner > section > :nth-child(16) {
-  -webkit-transition-delay: 8000ms;
-          transition-delay: 8000ms;
+  transition-delay: 8000ms;
 }
 
 #main > .inner > section > :nth-child(17) {
-  -webkit-transition-delay: 8500ms;
-          transition-delay: 8500ms;
+  transition-delay: 8500ms;
 }
 
 #main > .inner > section > :nth-child(18) {
-  -webkit-transition-delay: 9000ms;
-          transition-delay: 9000ms;
+  transition-delay: 9000ms;
 }
 
 #main > .inner > section > :nth-child(19) {
-  -webkit-transition-delay: 9500ms;
-          transition-delay: 9500ms;
+  transition-delay: 9500ms;
 }
 
 #main > .inner > section > :nth-child(20) {
-  -webkit-transition-delay: 10000ms;
-          transition-delay: 10000ms;
+  transition-delay: 10000ms;
 }
 
 #main > .inner > section > :nth-child(21) {
-  -webkit-transition-delay: 10500ms;
-          transition-delay: 10500ms;
+  transition-delay: 10500ms;
 }
 
 #main > .inner > section > :nth-child(22) {
-  -webkit-transition-delay: 11000ms;
-          transition-delay: 11000ms;
+  transition-delay: 11000ms;
 }
 
 #main > .inner > section > :nth-child(23) {
-  -webkit-transition-delay: 11500ms;
-          transition-delay: 11500ms;
+  transition-delay: 11500ms;
 }
 
 #main > .inner > section > :nth-child(24) {
-  -webkit-transition-delay: 12000ms;
-          transition-delay: 12000ms;
+  transition-delay: 12000ms;
 }
 
 #main > .inner > section > :nth-child(25) {
-  -webkit-transition-delay: 12500ms;
-          transition-delay: 12500ms;
+  transition-delay: 12500ms;
 }
 
 #main > .inner > section > :nth-child(26) {
-  -webkit-transition-delay: 13000ms;
-          transition-delay: 13000ms;
+  transition-delay: 13000ms;
 }
 
 #main > .inner > section > :nth-child(27) {
-  -webkit-transition-delay: 13500ms;
-          transition-delay: 13500ms;
+  transition-delay: 13500ms;
 }
 
 #main > .inner > section > :nth-child(28) {
-  -webkit-transition-delay: 14000ms;
-          transition-delay: 14000ms;
+  transition-delay: 14000ms;
 }
 
 #main > .inner > section > :nth-child(29) {
-  -webkit-transition-delay: 14500ms;
-          transition-delay: 14500ms;
+  transition-delay: 14500ms;
 }
 
 #main > .inner > section > :nth-child(30) {
-  -webkit-transition-delay: 15000ms;
-          transition-delay: 15000ms;
+  transition-delay: 15000ms;
 }
 
 #main > .inner > section > :nth-child(31) {
-  -webkit-transition-delay: 15500ms;
-          transition-delay: 15500ms;
+  transition-delay: 15500ms;
 }
 
 #main > .inner > section > :nth-child(32) {
-  -webkit-transition-delay: 16000ms;
-          transition-delay: 16000ms;
+  transition-delay: 16000ms;
 }
 
 #main > .inner > section > :nth-child(33) {
-  -webkit-transition-delay: 16500ms;
-          transition-delay: 16500ms;
+  transition-delay: 16500ms;
 }
 
 #main > .inner > section > :nth-child(34) {
-  -webkit-transition-delay: 17000ms;
-          transition-delay: 17000ms;
+  transition-delay: 17000ms;
 }
 
 #main > .inner > section > :nth-child(35) {
-  -webkit-transition-delay: 17500ms;
-          transition-delay: 17500ms;
+  transition-delay: 17500ms;
 }
 
 #main > .inner > section > :nth-child(36) {
-  -webkit-transition-delay: 18000ms;
-          transition-delay: 18000ms;
+  transition-delay: 18000ms;
 }
 
 #main > .inner > section > :nth-child(37) {
-  -webkit-transition-delay: 18500ms;
-          transition-delay: 18500ms;
+  transition-delay: 18500ms;
 }
 
 #main > .inner > section > :nth-child(38) {
-  -webkit-transition-delay: 19000ms;
-          transition-delay: 19000ms;
+  transition-delay: 19000ms;
 }
 
 #main > .inner > section > :nth-child(39) {
-  -webkit-transition-delay: 19500ms;
-          transition-delay: 19500ms;
+  transition-delay: 19500ms;
 }
 
 #main > .inner > section > :nth-child(40) {
-  -webkit-transition-delay: 20000ms;
-          transition-delay: 20000ms;
+  transition-delay: 20000ms;
 }
 
 #main > .inner > section > :nth-child(41) {
-  -webkit-transition-delay: 20500ms;
-          transition-delay: 20500ms;
+  transition-delay: 20500ms;
 }
 
 #main > .inner > section > :nth-child(42) {
-  -webkit-transition-delay: 21000ms;
-          transition-delay: 21000ms;
+  transition-delay: 21000ms;
 }
 
 #main > .inner > section > :nth-child(43) {
-  -webkit-transition-delay: 21500ms;
-          transition-delay: 21500ms;
+  transition-delay: 21500ms;
 }
 
 #main > .inner > section > :nth-child(44) {
-  -webkit-transition-delay: 22000ms;
-          transition-delay: 22000ms;
+  transition-delay: 22000ms;
 }
 
 #main > .inner > section > :nth-child(45) {
-  -webkit-transition-delay: 22500ms;
-          transition-delay: 22500ms;
+  transition-delay: 22500ms;
 }
 
 #main > .inner > section > :nth-child(46) {
-  -webkit-transition-delay: 23000ms;
-          transition-delay: 23000ms;
+  transition-delay: 23000ms;
 }
 
 #main > .inner > section > :nth-child(47) {
-  -webkit-transition-delay: 23500ms;
-          transition-delay: 23500ms;
+  transition-delay: 23500ms;
 }
 
 #main > .inner > section > :nth-child(48) {
-  -webkit-transition-delay: 24000ms;
-          transition-delay: 24000ms;
+  transition-delay: 24000ms;
 }
 
 #main > .inner > section > :nth-child(49) {
-  -webkit-transition-delay: 24500ms;
-          transition-delay: 24500ms;
+  transition-delay: 24500ms;
 }
 
 #main > .inner > section > :nth-child(50) {
-  -webkit-transition-delay: 25000ms;
-          transition-delay: 25000ms;
+  transition-delay: 25000ms;
 }
 
 #main > .inner > section > :nth-child(51) {
-  -webkit-transition-delay: 25500ms;
-          transition-delay: 25500ms;
+  transition-delay: 25500ms;
 }
 
 #main > .inner > section > :nth-child(52) {
-  -webkit-transition-delay: 26000ms;
-          transition-delay: 26000ms;
+  transition-delay: 26000ms;
 }
 
 #main > .inner > section > :nth-child(53) {
-  -webkit-transition-delay: 26500ms;
-          transition-delay: 26500ms;
+  transition-delay: 26500ms;
 }
 
 #main > .inner > section > :nth-child(54) {
-  -webkit-transition-delay: 27000ms;
-          transition-delay: 27000ms;
+  transition-delay: 27000ms;
 }
 
 #main > .inner > section > :nth-child(55) {
-  -webkit-transition-delay: 27500ms;
-          transition-delay: 27500ms;
+  transition-delay: 27500ms;
 }
 
 #main > .inner > section > :nth-child(56) {
-  -webkit-transition-delay: 28000ms;
-          transition-delay: 28000ms;
+  transition-delay: 28000ms;
 }
 
 #main > .inner > section > :nth-child(57) {
-  -webkit-transition-delay: 28500ms;
-          transition-delay: 28500ms;
+  transition-delay: 28500ms;
 }
 
 #main > .inner > section > :nth-child(58) {
-  -webkit-transition-delay: 29000ms;
-          transition-delay: 29000ms;
+  transition-delay: 29000ms;
 }
 
 #main > .inner > section > :nth-child(59) {
-  -webkit-transition-delay: 29500ms;
-          transition-delay: 29500ms;
+  transition-delay: 29500ms;
 }
 
 #main > .inner > section > :nth-child(60) {
-  -webkit-transition-delay: 30000ms;
-          transition-delay: 30000ms;
+  transition-delay: 30000ms;
 }
 
 #main > .inner > section > :nth-child(61) {
-  -webkit-transition-delay: 30500ms;
-          transition-delay: 30500ms;
+  transition-delay: 30500ms;
 }
 
 #main > .inner > section > :nth-child(62) {
-  -webkit-transition-delay: 31000ms;
-          transition-delay: 31000ms;
+  transition-delay: 31000ms;
 }
 
 #main > .inner > section > :nth-child(63) {
-  -webkit-transition-delay: 31500ms;
-          transition-delay: 31500ms;
+  transition-delay: 31500ms;
 }
 
 #main > .inner > section > :nth-child(64) {
-  -webkit-transition-delay: 32000ms;
-          transition-delay: 32000ms;
+  transition-delay: 32000ms;
 }
 
 #main > .inner > section > :nth-child(65) {
-  -webkit-transition-delay: 32500ms;
-          transition-delay: 32500ms;
+  transition-delay: 32500ms;
 }
 
 #main > .inner > section > :nth-child(66) {
-  -webkit-transition-delay: 33000ms;
-          transition-delay: 33000ms;
+  transition-delay: 33000ms;
 }
 
 #main > .inner > section > :nth-child(67) {
-  -webkit-transition-delay: 33500ms;
-          transition-delay: 33500ms;
+  transition-delay: 33500ms;
 }
 
 #main > .inner > section > :nth-child(68) {
-  -webkit-transition-delay: 34000ms;
-          transition-delay: 34000ms;
+  transition-delay: 34000ms;
 }
 
 #main > .inner > section > :nth-child(69) {
-  -webkit-transition-delay: 34500ms;
-          transition-delay: 34500ms;
+  transition-delay: 34500ms;
 }
 
 #main > .inner > section > :nth-child(70) {
-  -webkit-transition-delay: 35000ms;
-          transition-delay: 35000ms;
+  transition-delay: 35000ms;
 }
 
 #main > .inner > section > :nth-child(71) {
-  -webkit-transition-delay: 35500ms;
-          transition-delay: 35500ms;
+  transition-delay: 35500ms;
 }
 
 #main > .inner > section > :nth-child(72) {
-  -webkit-transition-delay: 36000ms;
-          transition-delay: 36000ms;
+  transition-delay: 36000ms;
 }
 
 #main > .inner > section > :nth-child(73) {
-  -webkit-transition-delay: 36500ms;
-          transition-delay: 36500ms;
+  transition-delay: 36500ms;
 }
 
 #main > .inner > section > :nth-child(74) {
-  -webkit-transition-delay: 37000ms;
-          transition-delay: 37000ms;
+  transition-delay: 37000ms;
 }
 
 #main > .inner > section > :nth-child(75) {
-  -webkit-transition-delay: 37500ms;
-          transition-delay: 37500ms;
+  transition-delay: 37500ms;
 }
 
 #main > .inner > section > :nth-child(76) {
-  -webkit-transition-delay: 38000ms;
-          transition-delay: 38000ms;
+  transition-delay: 38000ms;
 }
 
 #main > .inner > section > :nth-child(77) {
-  -webkit-transition-delay: 38500ms;
-          transition-delay: 38500ms;
+  transition-delay: 38500ms;
 }
 
 #main > .inner > section > :nth-child(78) {
-  -webkit-transition-delay: 39000ms;
-          transition-delay: 39000ms;
+  transition-delay: 39000ms;
 }
 
 #main > .inner > section > :nth-child(79) {
-  -webkit-transition-delay: 39500ms;
-          transition-delay: 39500ms;
+  transition-delay: 39500ms;
 }
 
 #main > .inner > section > :nth-child(80) {
-  -webkit-transition-delay: 40000ms;
-          transition-delay: 40000ms;
+  transition-delay: 40000ms;
 }
 
 #main > .inner > section > :nth-child(81) {
-  -webkit-transition-delay: 40500ms;
-          transition-delay: 40500ms;
+  transition-delay: 40500ms;
 }
 
 #main > .inner > section > :nth-child(82) {
-  -webkit-transition-delay: 41000ms;
-          transition-delay: 41000ms;
+  transition-delay: 41000ms;
 }
 
 #main > .inner > section > :nth-child(83) {
-  -webkit-transition-delay: 41500ms;
-          transition-delay: 41500ms;
+  transition-delay: 41500ms;
 }
 
 #main > .inner > section > :nth-child(84) {
-  -webkit-transition-delay: 42000ms;
-          transition-delay: 42000ms;
+  transition-delay: 42000ms;
 }
 
 #main > .inner > section > :nth-child(85) {
-  -webkit-transition-delay: 42500ms;
-          transition-delay: 42500ms;
+  transition-delay: 42500ms;
 }
 
 #main > .inner > section > :nth-child(86) {
-  -webkit-transition-delay: 43000ms;
-          transition-delay: 43000ms;
+  transition-delay: 43000ms;
 }
 
 #main > .inner > section > :nth-child(87) {
-  -webkit-transition-delay: 43500ms;
-          transition-delay: 43500ms;
+  transition-delay: 43500ms;
 }
 
 #main > .inner > section > :nth-child(88) {
-  -webkit-transition-delay: 44000ms;
-          transition-delay: 44000ms;
+  transition-delay: 44000ms;
 }
 
 #main > .inner > section > :nth-child(89) {
-  -webkit-transition-delay: 44500ms;
-          transition-delay: 44500ms;
+  transition-delay: 44500ms;
 }
 
 #main > .inner > section > :nth-child(90) {
-  -webkit-transition-delay: 45000ms;
-          transition-delay: 45000ms;
+  transition-delay: 45000ms;
 }
 
 #main > .inner > section > :nth-child(91) {
-  -webkit-transition-delay: 45500ms;
-          transition-delay: 45500ms;
+  transition-delay: 45500ms;
 }
 
 #main > .inner > section > :nth-child(92) {
-  -webkit-transition-delay: 46000ms;
-          transition-delay: 46000ms;
+  transition-delay: 46000ms;
 }
 
 #main > .inner > section > :nth-child(93) {
-  -webkit-transition-delay: 46500ms;
-          transition-delay: 46500ms;
+  transition-delay: 46500ms;
 }
 
 #main > .inner > section > :nth-child(94) {
-  -webkit-transition-delay: 47000ms;
-          transition-delay: 47000ms;
+  transition-delay: 47000ms;
 }
 
 #main > .inner > section > :nth-child(95) {
-  -webkit-transition-delay: 47500ms;
-          transition-delay: 47500ms;
+  transition-delay: 47500ms;
 }
 
 #main > .inner > section > :nth-child(96) {
-  -webkit-transition-delay: 48000ms;
-          transition-delay: 48000ms;
+  transition-delay: 48000ms;
 }
 
 #main > .inner > section > :nth-child(97) {
-  -webkit-transition-delay: 48500ms;
-          transition-delay: 48500ms;
+  transition-delay: 48500ms;
 }
 
 #main > .inner > section > :nth-child(98) {
-  -webkit-transition-delay: 49000ms;
-          transition-delay: 49000ms;
+  transition-delay: 49000ms;
 }
 
 #main > .inner > section > :nth-child(99) {
-  -webkit-transition-delay: 49500ms;
-          transition-delay: 49500ms;
+  transition-delay: 49500ms;
 }
 
 #main > .inner > header,
 #main > .inner > footer {
-  -webkit-transition: opacity 0.5s ease-in-out 0.75s, visibility 0.5s linear 0.75s, -webkit-filter 1s ease-in-out 0.75s;
-  transition: opacity 0.5s ease-in-out 0.75s, visibility 0.5s linear 0.75s, -webkit-filter 1s ease-in-out 0.75s;
   transition: opacity 0.5s ease-in-out 0.75s, filter 1s ease-in-out 0.75s, visibility 0.5s linear 0.75s;
-  transition: opacity 0.5s ease-in-out 0.75s, filter 1s ease-in-out 0.75s, visibility 0.5s linear 0.75s, -webkit-filter 1s ease-in-out 0.75s;
 }
 
 #main > .inner > header.hidden,
 #main > .inner > footer.hidden {
-  -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s;
   transition: opacity 0.5s ease-in-out, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
-  -webkit-filter: blur(0.28125);
-          filter: blur(0.28125);
+  filter: blur(0.28125);
 }
 
 #main > .inner > section {
-  -webkit-transition: opacity 1s ease-in-out 0.5s, min-height 0.5s ease-in-out, max-height 0.5s ease-in-out, -webkit-filter 1s ease-in-out 0.5s;
-  transition: opacity 1s ease-in-out 0.5s, min-height 0.5s ease-in-out, max-height 0.5s ease-in-out, -webkit-filter 1s ease-in-out 0.5s;
   transition: opacity 1s ease-in-out 0.5s, filter 1s ease-in-out 0.5s, min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
-  transition: opacity 1s ease-in-out 0.5s, filter 1s ease-in-out 0.5s, min-height 0.5s ease-in-out, max-height 0.5s ease-in-out, -webkit-filter 1s ease-in-out 0.5s;
 }
 
 #main > .inner > section.inactive {
-  -webkit-transition: opacity 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
   opacity: 0;
-  -webkit-filter: blur(0.28125rem);
-          filter: blur(0.28125rem);
+  filter: blur(0.28125rem);
 }
 
 body.is-instant #main {
-  -webkit-transition: none !important;
   transition: none !important;
 }
 
 body.is-instant #main > .inner > *,
 body.is-instant #main > .inner > section > * {
-  -webkit-transition: none !important;
   transition: none !important;
 }
 
 body.is-instant:after {
   display: none !important;
-  -webkit-transition: none !important;
   transition: none !important;
 }
 
-@-webkit-keyframes loading-spinner {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+#spangrad {
+  background: -webkit-linear-gradient(right, red, blue, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 650;
+  text-shadow: none;
 }
 
 @keyframes loading-spinner {
@@ -1335,10 +1213,7 @@ p.style4 a:hover {
   border-radius: 2rem;
   -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-  transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
 }
 
@@ -1451,10 +1326,7 @@ p.style4 a:hover {
   border-radius: 2rem;
   -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-  transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
 }
 
@@ -1520,10 +1392,7 @@ p.style4 a:hover {
   border-radius: 2rem;
   -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-  transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
 }
 
@@ -1744,10 +1613,7 @@ p.style4 a:hover {
   border-radius: 2rem;
   -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-  transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
 }
 
@@ -1892,10 +1758,7 @@ p.style4 a:hover {
   border-radius: 2rem;
   -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-  transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
 }
 
@@ -1960,10 +1823,7 @@ p.style4 a:hover {
   border-radius: 2rem;
   -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
-  transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-  transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
   transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease, -webkit-transform 0.375s ease;
 }
 
@@ -2456,7 +2316,7 @@ p.style4 a:hover {
 
 #container03 > .wrapper {
   width: 100%;
-  max-width: 58rem;
+  max-width: 60rem;
 }
 
 #container03 > .wrapper > .inner {
@@ -2797,7 +2657,7 @@ p.style4 a:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: linear-gradient(45deg, #541a4b 0, #364385 100%);
+  background-image: linear-gradient(45deg, #221212 0, #350303 100%);
   background-position: 0 0;
   background-repeat: repeat;
   background-size: cover;
@@ -3389,27 +3249,9 @@ p.style4 a:hover {
   padding-top: 56.25%;
 }
 
-#countdown li {
-  display: inline-block;
-  font-size: 1.5em;
-  list-style-type: none;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-#countdown li span {
-  display: block;
-  font-size: 4.5rem;
-}
-
-.emoji {
-  display: none;
-  padding: 1rem;
-}
-
-.emoji span {
-  font-size: 4rem;
-  padding: 0 0.5rem;
+.neonGlow {
+  color: #ffa1a1;
+  text-shadow: 0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012;
 }
 
 @media all and (max-width: 768px) {
@@ -3422,28 +3264,46 @@ p.style4 a:hover {
 }
 
 #countdown {
+  margin: auto;
+  height: auto;
   font-weight: 400;
   letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  border: 9px solid #4b0000;
+  border-radius: 35px;
+  background-color: #000000;
+  width: 580px;
+  height: 155px;
+}
+
+#countdown li {
+  width: 4rem;
+  display: inline-block;
+  font-size: 1.5em;
+  padding: 2px;
   text-transform: uppercase;
 }
 
 #countdown li span {
   display: block;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+}
+
+#countdown #dayz {
+  width: 5.7rem;
 }
 
 #countdown ul li {
   font-family: solway, serif;
   font-size: 0.875rem;
   font-weight: 300;
-  color: rgba(255, 153, 245, 0.788);
+  color: rgba(255, 111, 111, 0.788);
 }
 
 #countdown ul li span {
-  color: rgba(244, 122, 255, 0.8);
+  color: rgba(255, 111, 111, 0.788);
   font-family: londrina shadow, cursive;
   font-weight: 400;
-  color: #ff99f5;
   line-height: 1em;
   text-align: inherit;
 }
@@ -5106,1260 +4966,3 @@ p.style4 a:hover {
     min-height: calc(var(--viewport-height) - 0rem);
   }
 }
-
-@font-face {
-  font-family: sacramento;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sacramento/v8/buEzpo6gcdjy0EiZMBUG4CMf_exL.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: sacramento;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sacramento/v8/buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx1XHgciw.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx0XHgciw.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx1XHgciw.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx0XHgciw.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUA3x4RHw.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUA3x4RHw.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: josefin sans;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtE6F15M.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWvU6F15M.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtU6F15M.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuk6F15M.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWu06F15M.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWtk6F15M.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWt06F15M.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: italic;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 300;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 400;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: open sans;
-  font-style: normal;
-  font-weight: 600;
-  font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1crmp7sg.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1Vrmp7sg.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1drmp7sg.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1Srmp7sg.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1ermp7sg.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1frmp7sg.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1Rrmo.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GhE9GixI.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GjU9GixI.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GhU9GixI.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9Gik9GixI.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9Ghk9GixI.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9Gh09GixI.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GiU9G.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dsm1Ttm4.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9du21Ttm4.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9ds21Ttm4.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dvG1Ttm4.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dsG1Ttm4.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dsW1Ttm4.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dv21T.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5Tldsm1Ttm4.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5Tldu21Ttm4.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5Tlds21Ttm4.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5TldvG1Ttm4.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5TldsG1Ttm4.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5TldsW1Ttm4.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5Tldv21T.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEd2i1dC.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqE52i1dC.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEZ2i1dC.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEl2i1dC.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEV2i1dC.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqER2i1dC.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEp2iw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VdtvXVX.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7V5tvXVX.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VZtvXVX.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VltvXVX.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VVtvXVX.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VRtvXVX.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: alegreya sans;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VptvQ.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: solway;
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/solway/v5/AMOTz46Cs2uTAOCuLlgpnccR.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: solway;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/solway/v5/AMOQz46Cs2uTAOCmhXo8.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: solway;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/solway/v5/AMOTz46Cs2uTAOCuPl8pnccR.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2fp2a15UIB7Un-bOeISG3pHl4G8wn50Ko.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2fp2a15UIB7Un-bOeISG3pHl4G9An50Ko.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2fp2a15UIB7Un-bOeISG3pHl4G-Qn50Ko.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2fp2a15UIB7Un-bOeISG3pHl4G9wn5.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzs64u24Ko.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzs7Iu24Ko.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzs4Yu24Ko.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: italic;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzs74u2.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2Bp2a15UIB7Un-bOeISG3pHl829RH9.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2Bp2a15UIB7Un-bOeISG3pHlg29RH9.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2Bp2a15UIB7Un-bOeISG3pHlU29RH9.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2Bp2a15UIB7Un-bOeISG3pHls29Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2cp2a15UIB7Un-bOeISG3pFuAT4Crc7ZOy.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2cp2a15UIB7Un-bOeISG3pFuAT4C3c7ZOy.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2cp2a15UIB7Un-bOeISG3pFuAT4CDc7ZOy.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: anonymous pro;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2cp2a15UIB7Un-bOeISG3pFuAT4C7c7Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: londrina shadow;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/londrinashadow/v12/oPWX_kB4kOQoWNJmjxLV5JuoCUlnQVyT.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSdo18Smxg.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSdg18Smxg.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSdv18Smxg.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSdj18Smxg.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSdi18Smxg.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSds18Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklydh18Smxg.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklydo18Smxg.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklydg18Smxg.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklydv18Smxg.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklydj18Smxg.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklydi18Smxg.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: italic;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklyds18Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wmhduz8A.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wkxduz8A.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wmxduz8A.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlBduz8A.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wmBduz8A.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wmRduz8A.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 200;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdu.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmhduz8A.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwkxduz8A.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmxduz8A.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlBduz8A.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmBduz8A.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwmRduz8A.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-@font-face {
-  font-family: source sans pro;
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/*# sourceMappingURL=style.css.map */
