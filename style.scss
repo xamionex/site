@@ -82,7 +82,8 @@ body {
       -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))),
       url(http://petar.tk/http://petar.tk/assets/images/bg.gif);
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
-      linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)), url(assets/images/bg.gif);
+      linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)),
+      url(assets/images/bg.gif);
     background-size: 512px, auto, cover;
     background-position: center, 0 0, center;
     background-repeat: repeat, repeat, repeat;
@@ -199,13 +200,14 @@ a {
   -webkit-transition: opacity 5s ease 0s, -webkit-transform 5s ease 0s;
   transition: opacity 5s ease 0s, -webkit-transform 5s ease 0s;
   transition: opacity 5s ease 0s, transform 5s ease 0s;
-  transition: opacity 5s ease 0s, transform 5s ease 0s, -webkit-transform 5s ease 0s;
+  transition: opacity 5s ease 0s, transform 5s ease 0s,
+    -webkit-transform 5s ease 0s;
   -webkit-transform: perspective(1000px) rotateX(0);
   transform: perspective(1000px) rotateX(0);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 
-  >.inner {
+  > .inner {
     position: relative;
     z-index: 1;
     border-radius: inherit;
@@ -214,7 +216,7 @@ a {
     width: 58rem;
 
     > {
-      *> {
+      * > {
         * {
           margin-top: 1rem;
           margin-bottom: 1rem;
@@ -257,7 +259,7 @@ a {
         }
       }
 
-      *>.full {
+      * > .full {
         margin-left: calc(-3rem);
         width: calc(100% + 6rem + 0.4725px);
         max-width: calc(100% + 6rem + 0.4725px);
@@ -281,17 +283,17 @@ body.is-loading #main {
   transform: perspective(1000px) rotateX(-16.875deg);
 }
 
-#main>.inner>section>* {
+#main > .inner > section > * {
   transition: opacity 1.25s ease-in-out 0s, filter 1.25s ease-in-out 0s;
 }
 
-body.is-loading #main>.inner>section>* {
+body.is-loading #main > .inner > section > * {
   opacity: 0;
   filter: blur(1rem);
 }
 
-#main>.inner> {
-  section> {
+#main > .inner > {
+  section > {
     @for $i from 1 through 99 {
       :nth-child(#{$i}) {
         transition-delay: $i * 500ms;
@@ -301,7 +303,8 @@ body.is-loading #main>.inner>section>* {
 
   header,
   footer {
-    transition: opacity 0.5s ease-in-out 0.75s, filter 1s ease-in-out 0.75s, visibility 0.5s linear 0.75s;
+    transition: opacity 0.5s ease-in-out 0.75s, filter 1s ease-in-out 0.75s,
+      visibility 0.5s linear 0.75s;
   }
 
   header.hidden,
@@ -313,8 +316,8 @@ body.is-loading #main>.inner>section>* {
   }
 
   section {
-    transition: opacity 1s ease-in-out 0.5s, filter 1s ease-in-out 0.5s, min-height 0.5s ease-in-out,
-      max-height 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out 0.5s, filter 1s ease-in-out 0.5s,
+      min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 
     &.inactive {
       transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
@@ -328,10 +331,9 @@ body.is-instant {
   #main {
     transition: none !important;
 
-    >.inner> {
-
+    > .inner > {
       *,
-      section>* {
+      section > * {
         transition: none !important;
       }
     }
@@ -350,7 +352,6 @@ body.is-instant {
   font-weight: 650;
   text-shadow: none;
 }
-
 
 @keyframes loading-spinner {
   0% {
@@ -371,10 +372,10 @@ p {
   direction: var(--site-language-direction);
 }
 
-h1 br+br,
-h2 br+br,
-h3 br+br,
-p br+br {
+h1 br + br,
+h2 br + br,
+h3 br + br,
+p br + br {
   display: block;
   content: " ";
 }
@@ -391,7 +392,7 @@ p .li {
 h1.style2,
 h2.style2,
 h3.style2,
-p.style2 br+br {
+p.style2 br + br {
   margin-top: 0.6rem;
 }
 
@@ -438,7 +439,7 @@ p.style2 a:hover {
 h1.style3,
 h2.style3,
 h3.style3,
-p.style3 br+br {
+p.style3 br + br {
   margin-top: 0.9rem;
 }
 
@@ -492,7 +493,7 @@ p.style3 a:hover {
   font-weight: 300;
   text-shadow: 0.08rem 0.096rem 0.125rem #000;
 
-  br+br {
+  br + br {
     margin-top: 0.6rem;
   }
 
@@ -522,7 +523,7 @@ p.style3 a:hover {
   font-weight: 100;
   text-shadow: 0.08rem 0.096rem 0.1875rem #000;
 
-  br+br {
+  br + br {
     margin-top: 0.75rem;
   }
 
@@ -551,7 +552,7 @@ p.style3 a:hover {
   font-weight: 300;
   text-shadow: 0.08rem 0.096rem 0.125rem #000;
 
-  br+br {
+  br + br {
     margin-top: 0.6rem;
   }
 
@@ -581,7 +582,7 @@ p.style3 a:hover {
   font-weight: 100;
   text-shadow: 0.08rem 0.096rem 0.1875rem #000;
 
-  br+br {
+  br + br {
     margin-top: 0.75rem;
   }
 
@@ -605,7 +606,7 @@ p.style3 a:hover {
 h1.style1,
 h2.style1,
 h3.style1,
-p.style1 br+br {
+p.style1 br + br {
   margin-top: 0.675rem;
 }
 
@@ -656,7 +657,7 @@ p.style1 a:hover {
   line-height: 0.75;
   font-weight: 700;
 
-  br+br {
+  br + br {
     margin-top: 0.45rem;
   }
 
@@ -679,8 +680,8 @@ p.style1 a:hover {
   text-shadow: 0.121rem 0.144rem 0.125rem #000;
 }
 
-#text09 br+br,
-#text10 br+br {
+#text09 br + br,
+#text10 br + br {
   margin-top: 0.825rem;
 }
 
@@ -708,7 +709,7 @@ p.style1 a:hover {
 h1.style4,
 h2.style4,
 h3.style4,
-p.style4 br+br {
+p.style4 br + br {
   margin-top: 0.525rem;
 }
 
@@ -748,8 +749,8 @@ p.style4 a:hover {
   text-shadow: 0.221rem 0.221rem 0.25rem #000;
 }
 
-#text11 br+br,
-#text12 br+br {
+#text11 br + br,
+#text12 br + br {
   margin-top: 0.6rem;
 }
 
@@ -782,8 +783,7 @@ p.style4 a:hover {
   font-size: 3.5em;
   line-height: 1.125;
   font-weight: 400;
-  text-shadow: 0 0 0.75rem #fff,
-  0 0 1.75rem #00f;
+  text-shadow: 0 0 0.75rem #fff, 0 0 1.75rem #00f;
 }
 
 #text20 {
@@ -792,9 +792,7 @@ p.style4 a:hover {
   font-size: 1.25em;
   line-height: 1.5;
   font-weight: 200;
-  text-shadow: 0 0 0.3rem #fff,
-  0 0 0.5rem #00f,
-  0 0 1rem #00f;
+  text-shadow: 0 0 0.3rem #fff, 0 0 0.5rem #00f, 0 0 1rem #00f;
   margin-bottom: 10px;
 }
 
@@ -841,12 +839,14 @@ p.style4 a:hover {
         letter-spacing: -0.075rem;
         font-weight: 600;
         border-radius: 2rem;
-        -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-          -webkit-transform 0.375s ease;
-        transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-          -webkit-transform 0.375s ease;
-        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+          border-color 0.375s ease, -webkit-transform 0.375s ease;
+        transition: color 0.375s ease, background-color 0.375s ease,
+          border-color 0.375s ease, -webkit-transform 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease,
+          background-color 0.375s ease, border-color 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease,
+          background-color 0.375s ease, border-color 0.375s ease,
           -webkit-transform 0.375s ease;
 
         svg {
@@ -891,7 +891,11 @@ p.style4 a:hover {
   .n01 {
     background-color: #005a66;
     color: #6bffe4;
-    background-image: linear-gradient(125deg, #01001c 20%, rgba(0, 90, 102, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #01001c 20%,
+      rgba(0, 90, 102, 0.008) 100%
+    );
 
     svg {
       fill: #6bffe4;
@@ -905,7 +909,11 @@ p.style4 a:hover {
   .n02 {
     background-color: #66005c;
     color: #ff6ba0;
-    background-image: linear-gradient(125deg, #1c0014 20%, rgba(102, 0, 92, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #1c0014 20%,
+      rgba(102, 0, 92, 0.008) 100%
+    );
 
     svg {
       fill: #ff6ba0;
@@ -919,7 +927,11 @@ p.style4 a:hover {
   .n03 {
     background-color: #543d00;
     color: #ffd645;
-    background-image: linear-gradient(125deg, #2d003d 20%, rgba(84, 61, 0, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #2d003d 20%,
+      rgba(84, 61, 0, 0.008) 100%
+    );
 
     svg {
       fill: #ffd645;
@@ -960,12 +972,14 @@ p.style4 a:hover {
       font-family: open sans, sans-serif;
       font-weight: 300;
       border-radius: 2rem;
-      -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-        -webkit-transform 0.375s ease;
-      transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-        -webkit-transform 0.375s ease;
-      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease,
         -webkit-transform 0.375s ease;
 
       svg {
@@ -989,7 +1003,11 @@ p.style4 a:hover {
   .button {
     background-color: rgba(221, 119, 255, 0.333);
     color: rgba(255, 255, 255, 0.8);
-    background-image: linear-gradient(125deg, rgba(255, 0, 119, 0.533) 20%, transparent 100%);
+    background-image: linear-gradient(
+      125deg,
+      rgba(255, 0, 119, 0.533) 20%,
+      transparent 100%
+    );
     background-position: 0 0;
     background-repeat: repeat;
     background-size: cover;
@@ -1029,12 +1047,14 @@ p.style4 a:hover {
       letter-spacing: -0.075rem;
       font-weight: 600;
       border-radius: 2rem;
-      -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-        -webkit-transform 0.375s ease;
-      transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-        -webkit-transform 0.375s ease;
-      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease,
         -webkit-transform 0.375s ease;
 
       svg {
@@ -1076,7 +1096,11 @@ p.style4 a:hover {
   .n01 {
     background-color: #ffc404;
     color: #84d8d9;
-    background-image: linear-gradient(125deg, #fa015a 40%, rgba(255, 196, 4, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #fa015a 40%,
+      rgba(255, 196, 4, 0.008) 100%
+    );
 
     svg {
       fill: #84d8d9;
@@ -1089,7 +1113,11 @@ p.style4 a:hover {
 
   .n02 {
     background-color: #3f0e77;
-    background-image: linear-gradient(125deg, #d24fd3 40%, rgba(63, 14, 119, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #d24fd3 40%,
+      rgba(63, 14, 119, 0.008) 100%
+    );
 
     &:hover {
       background-color: #7f1994 !important;
@@ -1098,12 +1126,20 @@ p.style4 a:hover {
 
   .n03 {
     background-color: #757575;
-    background-image: linear-gradient(125deg, #101315 40%, rgba(117, 117, 117, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #101315 40%,
+      rgba(117, 117, 117, 0.008) 100%
+    );
   }
 
   .n04 {
     background-color: rgba(204, 254, 0, 0.502);
-    background-image: linear-gradient(125deg, #278170 40%, rgba(204, 254, 0, 0.004) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #278170 40%,
+      rgba(204, 254, 0, 0.004) 100%
+    );
 
     &:hover {
       background-color: #70ab3e !important;
@@ -1112,7 +1148,11 @@ p.style4 a:hover {
 
   .n05 {
     background-color: #d54c4c;
-    background-image: linear-gradient(125deg, #fa5c5c 40%, rgba(213, 76, 76, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #fa5c5c 40%,
+      rgba(213, 76, 76, 0.008) 100%
+    );
 
     &:hover {
       background-color: #fb8282 !important;
@@ -1121,7 +1161,11 @@ p.style4 a:hover {
 
   .n06 {
     background-color: #e7649f;
-    background-image: linear-gradient(125deg, #e25e99 40%, rgba(231, 100, 159, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #e25e99 40%,
+      rgba(231, 100, 159, 0.008) 100%
+    );
 
     &:hover {
       background-color: #f06ea9 !important;
@@ -1130,7 +1174,11 @@ p.style4 a:hover {
 
   .n07 {
     background-color: #e60023;
-    background-image: linear-gradient(125deg, #940007 40%, rgba(230, 0, 35, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #940007 40%,
+      rgba(230, 0, 35, 0.008) 100%
+    );
 
     &:hover {
       background-color: #ca2128 !important;
@@ -1139,7 +1187,11 @@ p.style4 a:hover {
 
   .n08 {
     background-color: #fc9c00;
-    background-image: linear-gradient(125deg, #f10619 40%, rgba(252, 156, 0, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #f10619 40%,
+      rgba(252, 156, 0, 0.008) 100%
+    );
 
     &:hover {
       background-color: #f94403 !important;
@@ -1149,7 +1201,11 @@ p.style4 a:hover {
   .n09 {
     background-color: #fcfcfd;
     color: #121822;
-    background-image: linear-gradient(125deg, #a1adbb 40%, rgba(252, 252, 253, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #a1adbb 40%,
+      rgba(252, 252, 253, 0.008) 100%
+    );
 
     svg {
       fill: #121822;
@@ -1162,7 +1218,11 @@ p.style4 a:hover {
 
   .n10 {
     background-color: #64c869;
-    background-image: linear-gradient(125deg, #1ed760 40%, rgba(100, 200, 105, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #1ed760 40%,
+      rgba(100, 200, 105, 0.008) 100%
+    );
 
     &:hover {
       background-color: #18d860 !important;
@@ -1171,7 +1231,11 @@ p.style4 a:hover {
 
   .n11 {
     background-color: #572b99;
-    background-image: linear-gradient(125deg, #9147ff 40%, rgba(87, 43, 153, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #9147ff 40%,
+      rgba(87, 43, 153, 0.008) 100%
+    );
 
     &:hover {
       background-color: #8849f2 !important;
@@ -1180,7 +1244,11 @@ p.style4 a:hover {
 
   .n12 {
     background-color: #35a3ff;
-    background-image: linear-gradient(125deg, #0f8cff 40%, rgba(53, 163, 255, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #0f8cff 40%,
+      rgba(53, 163, 255, 0.008) 100%
+    );
 
     &:hover {
       background-color: #266ce8 !important;
@@ -1189,7 +1257,11 @@ p.style4 a:hover {
 
   .n13 {
     background-color: #29919e;
-    background-image: linear-gradient(125deg, #e64eaa 40%, rgba(41, 145, 158, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #e64eaa 40%,
+      rgba(41, 145, 158, 0.008) 100%
+    );
 
     &:hover {
       background-color: #d23eaa !important;
@@ -1198,7 +1270,11 @@ p.style4 a:hover {
 
   .n14 {
     background-color: #6d8bc9;
-    background-image: linear-gradient(125deg, #3c3674 40%, rgba(109, 139, 201, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #3c3674 40%,
+      rgba(109, 139, 201, 0.008) 100%
+    );
 
     &:hover {
       background-color: #140335 !important;
@@ -1207,7 +1283,11 @@ p.style4 a:hover {
 
   .n15 {
     background-color: #0b560b;
-    background-image: linear-gradient(125deg, #107c10 40%, rgba(11, 86, 11, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #107c10 40%,
+      rgba(11, 86, 11, 0.008) 100%
+    );
 
     &:hover {
       background-color: #107c10 !important;
@@ -1216,7 +1296,11 @@ p.style4 a:hover {
 
   .n16 {
     background-color: #db2925;
-    background-image: linear-gradient(125deg, #931715 40%, rgba(219, 41, 37, 0.008) 100%);
+    background-image: linear-gradient(
+      125deg,
+      #931715 40%,
+      rgba(219, 41, 37, 0.008) 100%
+    );
 
     &:hover {
       background-color: #961711 !important;
@@ -1253,12 +1337,14 @@ p.style4 a:hover {
       font-family: open sans, sans-serif;
       font-weight: 300;
       border-radius: 2rem;
-      -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-        -webkit-transform 0.375s ease;
-      transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-        -webkit-transform 0.375s ease;
-      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease,
         -webkit-transform 0.375s ease;
 
       svg {
@@ -1282,7 +1368,11 @@ p.style4 a:hover {
   .button {
     background-color: rgba(221, 119, 255, 0.333);
     color: rgba(255, 255, 255, 0.8);
-    background-image: linear-gradient(125deg, rgba(255, 0, 119, 0.533) 20%, transparent 100%);
+    background-image: linear-gradient(
+      125deg,
+      rgba(255, 0, 119, 0.533) 20%,
+      transparent 100%
+    );
     background-position: 0 0;
     background-repeat: repeat;
     background-size: cover;
@@ -1299,7 +1389,11 @@ p.style4 a:hover {
 
   .n02 {
     background-color: rgba(73, 38, 84, 0.333);
-    background-image: linear-gradient(125deg, rgba(94, 0, 44, 0.78) 20%, transparent 100%);
+    background-image: linear-gradient(
+      125deg,
+      rgba(94, 0, 44, 0.78) 20%,
+      transparent 100%
+    );
 
     &:hover {
       background-color: rgba(104, 25, 120, 0.733) !important;
@@ -1332,10 +1426,11 @@ p.style4 a:hover {
       letter-spacing: 0.275rem;
       font-weight: 900;
       border-radius: 2rem;
-      -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-      text-shadow: 0 0 0.3rem #fff,
-      0 0 0.3rem #00f;
+      -webkit-transition: color 0.25s ease, background-color 0.25s ease,
+        border-color 0.25s ease;
+      transition: color 0.25s ease, background-color 0.25s ease,
+        border-color 0.25s ease;
+      text-shadow: 0 0 0.3rem #fff, 0 0 0.3rem #00f;
 
       .label {
         direction: var(--site-language-direction);
@@ -1391,12 +1486,14 @@ p.style4 a:hover {
         font-family: open sans, sans-serif;
         font-weight: 300;
         border-radius: 2rem;
-        -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-          -webkit-transform 0.375s ease;
-        transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-          -webkit-transform 0.375s ease;
-        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+          border-color 0.375s ease, -webkit-transform 0.375s ease;
+        transition: color 0.375s ease, background-color 0.375s ease,
+          border-color 0.375s ease, -webkit-transform 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease,
+          background-color 0.375s ease, border-color 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease,
+          background-color 0.375s ease, border-color 0.375s ease,
           -webkit-transform 0.375s ease;
 
         svg {
@@ -1420,7 +1517,11 @@ p.style4 a:hover {
     .button {
       background-color: rgba(221, 119, 255, 0.333);
       color: rgba(255, 255, 255, 0.8);
-      background-image: linear-gradient(125deg, rgba(255, 0, 119, 0.533) 20%, transparent 100%);
+      background-image: linear-gradient(
+        125deg,
+        rgba(255, 0, 119, 0.533) 20%,
+        transparent 100%
+      );
       background-position: 0 0;
       background-repeat: repeat;
       background-size: cover;
@@ -1459,12 +1560,14 @@ p.style4 a:hover {
         font-family: open sans, sans-serif;
         font-weight: 300;
         border-radius: 2rem;
-        -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-          -webkit-transform 0.375s ease;
-        transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
-          -webkit-transform 0.375s ease;
-        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
-        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+          border-color 0.375s ease, -webkit-transform 0.375s ease;
+        transition: color 0.375s ease, background-color 0.375s ease,
+          border-color 0.375s ease, -webkit-transform 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease,
+          background-color 0.375s ease, border-color 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease,
+          background-color 0.375s ease, border-color 0.375s ease,
           -webkit-transform 0.375s ease;
 
         svg {
@@ -1488,7 +1591,11 @@ p.style4 a:hover {
     .button {
       background-color: #543d00;
       color: #ffd645;
-      background-image: linear-gradient(125deg, #2d003d 20%, rgba(84, 61, 0, 0.008) 100%);
+      background-image: linear-gradient(
+        125deg,
+        #2d003d 20%,
+        rgba(84, 61, 0, 0.008) 100%
+      );
       background-position: 0 0;
       background-repeat: repeat;
       background-size: cover;
@@ -1626,7 +1733,7 @@ p.style4 a:hover {
         position: relative;
       }
 
-      +svg {
+      + svg {
         display: block;
         position: absolute;
         top: 0;
@@ -1660,8 +1767,10 @@ p.style4 a:hover {
 #icons03 li a {
   width: 1em;
   height: 1em;
-  -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease,
+    border-color 0.25s ease;
+  transition: color 0.25s ease, background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 #icons01 li a svg,
@@ -1682,8 +1791,8 @@ p.style4 a:hover {
   fill: #fff !important;
 }
 
-#icons01 li a+svg,
-#icons03 li a+svg {
+#icons01 li a + svg,
+#icons03 li a + svg {
   -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
   transition: fill 0.25s ease, stroke 0.25s ease;
 }
@@ -1726,13 +1835,13 @@ p.style4 a:hover {
 .container {
   position: relative;
 
-  >.wrapper {
+  > .wrapper {
     vertical-align: top;
     position: relative;
     max-width: 100%;
     border-radius: inherit;
 
-    >.inner {
+    > .inner {
       vertical-align: top;
       position: relative;
       max-width: 100%;
@@ -1742,22 +1851,22 @@ p.style4 a:hover {
 }
 
 #main .container.full {
-  &:first-child>.wrapper {
+  &:first-child > .wrapper {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   }
 
-  &:last-child>.wrapper {
+  &:last-child > .wrapper {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   }
 
-  &:first-child>.wrapper>.inner {
+  &:first-child > .wrapper > .inner {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   }
 
-  &:last-child>.wrapper>.inner {
+  &:last-child > .wrapper > .inner {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   }
@@ -1777,22 +1886,26 @@ p.style4 a:hover {
   justify-content: center;
   background-attachment: scroll;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
-    linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%),
+    linear-gradient(
+      192deg,
+      rgba(161, 92, 92, 0.753) 0,
+      rgba(207, 176, 255, 0.549) 100%
+    ),
     url(http://petar.tk/assets/images/container05.jpg);
   background-size: 512px, cover, cover;
   background-position: center, 0 0, center;
   background-repeat: repeat, repeat, repeat;
 
-  >.wrapper {
+  > .wrapper {
     width: 100%;
     max-width: 58rem;
 
-    >.inner {
+    > .inner {
       padding: 3.25rem 0;
     }
   }
 
-  &.default>.wrapper>.inner> {
+  &.default > .wrapper > .inner > {
     * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -1807,7 +1920,7 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner {
+  &.columns > .wrapper > .inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -1849,7 +1962,7 @@ p.style4 a:hover {
     }
   }
 
-  &.default>.wrapper>.inner>.full {
+  &.default > .wrapper > .inner > .full {
     margin-left: calc(0rem);
     width: calc(100% + 0rem + 0.4725px);
     max-width: none;
@@ -1867,24 +1980,24 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     div {
-      >.full {
+      > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child>.full {
+      &:first-child > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child>.full {
+      &:last-child > .full {
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      >.full {
+      > .full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -1897,7 +2010,7 @@ p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -1905,7 +2018,7 @@ p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -1927,17 +2040,17 @@ p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      >.full:first-child:last-child {
+      > .full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        >* {
+        > * {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          >* {
+          > * {
             height: 100%;
             border-radius: inherit;
           }
@@ -1946,7 +2059,7 @@ p.style4 a:hover {
     }
   }
 
-  >.wrapper>.inner> {
+  > .wrapper > .inner > {
     :nth-child(1) {
       width: 30%;
       text-align: center;
@@ -1973,22 +2086,26 @@ p.style4 a:hover {
   justify-content: center;
   background-attachment: scroll;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
-    linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%),
+    linear-gradient(
+      192deg,
+      rgba(161, 92, 92, 0.753) 0,
+      rgba(207, 176, 255, 0.549) 100%
+    ),
     url(http://petar.tk/assets/images/container03.jpg);
   background-size: 512px, cover, cover;
   background-position: center, 0 0, center;
   background-repeat: repeat, repeat, repeat;
 
-  >.wrapper {
+  > .wrapper {
     width: 100%;
     max-width: 60rem;
 
-    >.inner {
+    > .inner {
       padding: 3.25rem 0;
     }
   }
 
-  &.default>.wrapper>.inner> {
+  &.default > .wrapper > .inner > {
     * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -2003,7 +2120,7 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner {
+  &.columns > .wrapper > .inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2045,7 +2162,7 @@ p.style4 a:hover {
     }
   }
 
-  &.default>.wrapper>.inner>.full {
+  &.default > .wrapper > .inner > .full {
     margin-left: calc(0rem);
     width: calc(100% + 0rem + 0.4725px);
     max-width: none;
@@ -2063,24 +2180,24 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     div {
-      >.full {
+      > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child>.full {
+      &:first-child > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child>.full {
+      &:last-child > .full {
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      >.full {
+      > .full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2093,7 +2210,7 @@ p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2101,7 +2218,7 @@ p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2123,17 +2240,17 @@ p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      >.full:first-child:last-child {
+      > .full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        >* {
+        > * {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          >* {
+          > * {
             height: 100%;
             border-radius: inherit;
           }
@@ -2142,7 +2259,7 @@ p.style4 a:hover {
     }
   }
 
-  >.wrapper>.inner> {
+  > .wrapper > .inner > {
     :nth-child(1) {
       width: 30%;
       text-align: center;
@@ -2173,16 +2290,16 @@ p.style4 a:hover {
   background-repeat: repeat;
   background-size: contain;
 
-  >.wrapper {
+  > .wrapper {
     width: 100%;
     max-width: 58rem;
 
-    >.inner {
+    > .inner {
       padding: 0;
     }
   }
 
-  &.default>.wrapper>.inner> {
+  &.default > .wrapper > .inner > {
     * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -2197,7 +2314,7 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner {
+  &.columns > .wrapper > .inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2239,7 +2356,7 @@ p.style4 a:hover {
     }
   }
 
-  &.default>.wrapper>.inner>.full {
+  &.default > .wrapper > .inner > .full {
     margin-left: calc(0rem);
     width: calc(100% + 0rem + 0.4725px);
     max-width: none;
@@ -2257,24 +2374,24 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     div {
-      >.full {
+      > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child>.full {
+      &:first-child > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child>.full {
+      &:last-child > .full {
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      >.full {
+      > .full {
         &:first-child {
           margin-top: calc(0rem) !important;
         }
@@ -2287,7 +2404,7 @@ p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2295,7 +2412,7 @@ p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2317,17 +2434,17 @@ p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      >.full:first-child:last-child {
+      > .full:first-child:last-child {
         height: calc(100% + 0rem);
         border-radius: inherit;
 
-        >* {
+        > * {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          >* {
+          > * {
             height: 100%;
             border-radius: inherit;
           }
@@ -2354,16 +2471,16 @@ p.style4 a:hover {
   background-repeat: repeat;
   background-size: cover;
 
-  >.wrapper {
+  > .wrapper {
     width: 100%;
     max-width: 58rem;
 
-    >.inner {
+    > .inner {
       padding: 3.25rem 0;
     }
   }
 
-  &.default>.wrapper>.inner> {
+  &.default > .wrapper > .inner > {
     * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -2378,7 +2495,7 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner {
+  &.columns > .wrapper > .inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2420,7 +2537,7 @@ p.style4 a:hover {
     }
   }
 
-  &.default>.wrapper>.inner>.full {
+  &.default > .wrapper > .inner > .full {
     margin-left: calc(0rem);
     width: calc(100% + 0rem + 0.4725px);
     max-width: none;
@@ -2438,24 +2555,24 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     div {
-      >.full {
+      > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child>.full {
+      &:first-child > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child>.full {
+      &:last-child > .full {
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      >.full {
+      > .full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2468,7 +2585,7 @@ p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2476,7 +2593,7 @@ p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2498,17 +2615,17 @@ p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      >.full:first-child:last-child {
+      > .full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        >* {
+        > * {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          >* {
+          > * {
             height: 100%;
             border-radius: inherit;
           }
@@ -2537,7 +2654,7 @@ p.style4 a:hover {
   background-position: center, center;
   background-repeat: repeat, repeat;
 
-  &.default>.wrapper>.inner> {
+  &.default > .wrapper > .inner > {
     * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -2552,7 +2669,7 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner {
+  &.columns > .wrapper > .inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2594,7 +2711,7 @@ p.style4 a:hover {
     }
   }
 
-  &.default>.wrapper>.inner>.full {
+  &.default > .wrapper > .inner > .full {
     margin-left: calc(0rem);
     width: calc(100% + 0rem + 0.4725px);
     max-width: none;
@@ -2612,24 +2729,24 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     div {
-      >.full {
+      > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child>.full {
+      &:first-child > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child>.full {
+      &:last-child > .full {
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      >.full {
+      > .full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2642,7 +2759,7 @@ p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2650,7 +2767,7 @@ p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2672,17 +2789,17 @@ p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      >.full:first-child:last-child {
+      > .full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        >* {
+        > * {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          >* {
+          > * {
             height: 100%;
             border-radius: inherit;
           }
@@ -2691,7 +2808,7 @@ p.style4 a:hover {
     }
   }
 
-  >.wrapper>.inner> {
+  > .wrapper > .inner > {
     :nth-child(1) {
       width: 38%;
     }
@@ -2719,19 +2836,23 @@ p.style4 a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   background-attachment: scroll;
-  background-image: linear-gradient(45deg, rgba(201, 101, 113, 0.831) 0, rgba(93, 173, 207, 0.51) 81%),
+  background-image: linear-gradient(
+      45deg,
+      rgba(201, 101, 113, 0.831) 0,
+      rgba(93, 173, 207, 0.51) 81%
+    ),
     url(http://petar.tk/assets/images/container06.jpg);
   background-position: 0 0, top;
   background-repeat: repeat, no-repeat;
   background-size: cover, cover;
   background-color: #fff;
 
-  >.wrapper {
+  > .wrapper {
     width: 100%;
     max-width: 58rem;
   }
 
-  &.default>.wrapper>.inner> {
+  &.default > .wrapper > .inner > {
     * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -2746,7 +2867,7 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     * {
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -2777,7 +2898,7 @@ p.style4 a:hover {
     }
   }
 
-  &.default>.wrapper>.inner>.full {
+  &.default > .wrapper > .inner > .full {
     margin-left: calc(0rem);
     width: calc(100% + 0rem + 0.4725px);
     max-width: none;
@@ -2795,24 +2916,24 @@ p.style4 a:hover {
     }
   }
 
-  &.columns>.wrapper>.inner> {
+  &.columns > .wrapper > .inner > {
     div {
-      >.full {
+      > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child>.full {
+      &:first-child > .full {
         margin-left: calc(0rem);
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child>.full {
+      &:last-child > .full {
         width: calc(100% + 0rem + 0.4725px);
       }
 
-      >.full {
+      > .full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2825,7 +2946,7 @@ p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2833,7 +2954,7 @@ p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        >.full:first-child {
+        > .full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2855,17 +2976,17 @@ p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      >.full:first-child:last-child {
+      > .full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        >* {
+        > * {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          >* {
+          > * {
             height: 100%;
             border-radius: inherit;
           }
@@ -2988,15 +3109,11 @@ p.style4 a:hover {
 }
 .neonGlow {
   color: #ffa1a1;
-  text-shadow:
-      0 0 7px #ff9a9a,
-      0 0 10px #d94012,
-      0 0 21px #d94012,
-      0 0 42px #d94012,
-      0 0 82px #d94012,
-      //0 0 92px #d94012,
-      //0 0 102px #d94012,
-      //0 0 151px #d94012;
+  text-shadow: 0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012,
+    0 0 42px #d94012, 0 0 82px #d94012;
+  //0 0 92px #d94012,
+  //0 0 102px #d94012,
+  //0 0 151px #d94012;
 }
 
 @media all and (max-width: 768px) {
@@ -3050,7 +3167,7 @@ p.style4 a:hover {
       line-height: 1em;
       text-align: inherit;
 
-      >* {
+      > * {
         margin-top: calc(0.5rem + 0.25em);
       }
     }
@@ -3095,11 +3212,11 @@ p.style4 a:hover {
     font-size: 13pt;
   }
 
-  #main>.inner {
+  #main > .inner {
     padding: 0 2rem;
 
     > {
-      *>* {
+      * > * {
         margin-top: 1rem;
         margin-bottom: 1rem;
       }
@@ -3122,7 +3239,7 @@ p.style4 a:hover {
         }
       }
 
-      *>.full {
+      * > .full {
         margin-left: calc(-2rem);
         width: calc(100% + 4rem + 0.4725px);
         max-width: calc(100% + 4rem + 0.4725px);
@@ -3370,7 +3487,6 @@ p.style4 a:hover {
   }
 
   .buttons {
-
     &.style2 li a,
     &.style3 li a {
       font-size: 1.375em;
@@ -3428,10 +3544,10 @@ p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    >.wrapper {
+    > .wrapper {
       max-width: 100%;
 
-      >.inner {
+      > .inner {
         text-align: center !important;
         padding: 0;
 
@@ -3444,12 +3560,12 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>* {
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns>.wrapper>.inner {
+    &.columns > .wrapper > .inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3465,7 +3581,7 @@ p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          >* {
+          > * {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3482,7 +3598,7 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>.full {
+    &.default > .wrapper > .inner > .full {
       margin-left: calc(0rem);
       width: calc(100% + 0rem + 0.4725px);
 
@@ -3495,16 +3611,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -3517,11 +3632,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3529,7 +3644,7 @@ p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3539,7 +3654,7 @@ p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3548,7 +3663,7 @@ p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3556,7 +3671,7 @@ p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3565,10 +3680,10 @@ p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        >.full:first-child:last-child {
+        > .full:first-child:last-child {
           height: auto;
 
-          >* {
+          > * {
             position: relative;
             width: 100%;
             height: auto;
@@ -3587,8 +3702,7 @@ p.style4 a:hover {
       }
     }
 
-    >.wrapper>.inner> {
-
+    > .wrapper > .inner > {
       :nth-child(1),
       :nth-child(2) {
         width: 100% !important;
@@ -3607,10 +3721,10 @@ p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    >.wrapper {
+    > .wrapper {
       max-width: 100%;
 
-      >.inner {
+      > .inner {
         text-align: center !important;
         padding: 0;
 
@@ -3623,12 +3737,12 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>* {
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns>.wrapper>.inner {
+    &.columns > .wrapper > .inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3644,7 +3758,7 @@ p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          >* {
+          > * {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3661,7 +3775,7 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>.full {
+    &.default > .wrapper > .inner > .full {
       margin-left: calc(0rem);
       width: calc(100% + 0rem + 0.4725px);
 
@@ -3674,16 +3788,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -3696,11 +3809,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3708,7 +3821,7 @@ p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3718,7 +3831,7 @@ p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3727,7 +3840,7 @@ p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3735,7 +3848,7 @@ p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3744,10 +3857,10 @@ p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        >.full:first-child:last-child {
+        > .full:first-child:last-child {
           height: auto;
 
-          >* {
+          > * {
             position: relative;
             width: 100%;
             height: auto;
@@ -3766,8 +3879,7 @@ p.style4 a:hover {
       }
     }
 
-    >.wrapper>.inner> {
-
+    > .wrapper > .inner > {
       :nth-child(1),
       :nth-child(2) {
         width: 100% !important;
@@ -3786,10 +3898,10 @@ p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    >.wrapper {
+    > .wrapper {
       max-width: 100%;
 
-      >.inner {
+      > .inner {
         text-align: center !important;
         padding: 0;
 
@@ -3802,12 +3914,12 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>* {
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns>.wrapper>.inner {
+    &.columns > .wrapper > .inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3823,7 +3935,7 @@ p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          >* {
+          > * {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3840,7 +3952,7 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>.full {
+    &.default > .wrapper > .inner > .full {
       margin-left: calc(0rem);
       width: calc(100% + 0rem + 0.4725px);
 
@@ -3853,16 +3965,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -3875,11 +3986,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3887,7 +3998,7 @@ p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3897,7 +4008,7 @@ p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3906,7 +4017,7 @@ p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3914,7 +4025,7 @@ p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3923,10 +4034,10 @@ p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        >.full:first-child:last-child {
+        > .full:first-child:last-child {
           height: auto;
 
-          >* {
+          > * {
             position: relative;
             width: 100%;
             height: auto;
@@ -3955,10 +4066,10 @@ p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    >.wrapper {
+    > .wrapper {
       max-width: 100%;
 
-      >.inner {
+      > .inner {
         text-align: center !important;
         padding: 0;
 
@@ -3971,12 +4082,12 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>* {
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns>.wrapper>.inner {
+    &.columns > .wrapper > .inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3992,7 +4103,7 @@ p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          >* {
+          > * {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -4009,7 +4120,7 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>.full {
+    &.default > .wrapper > .inner > .full {
       margin-left: calc(0rem);
       width: calc(100% + 0rem + 0.4725px);
 
@@ -4022,16 +4133,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -4044,11 +4154,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -4056,7 +4166,7 @@ p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -4066,7 +4176,7 @@ p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -4075,7 +4185,7 @@ p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -4083,7 +4193,7 @@ p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -4092,10 +4202,10 @@ p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        >.full:first-child:last-child {
+        > .full:first-child:last-child {
           height: auto;
 
-          >* {
+          > * {
             position: relative;
             width: 100%;
             height: auto;
@@ -4116,20 +4226,20 @@ p.style4 a:hover {
   }
 
   #container04 {
-    >.wrapper {
+    > .wrapper {
       max-width: 100%;
 
-      >.inner {
+      > .inner {
         padding: 3.25rem 0;
       }
     }
 
-    &.default>.wrapper>.inner>* {
+    &.default > .wrapper > .inner > * {
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
     }
 
-    &.columns>.wrapper>.inner {
+    &.columns > .wrapper > .inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -4145,7 +4255,7 @@ p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          >* {
+          > * {
             margin-top: 0.75rem;
             margin-bottom: 0.75rem;
           }
@@ -4162,7 +4272,7 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>.full {
+    &.default > .wrapper > .inner > .full {
       margin-left: calc(0rem);
       width: calc(100% + 0rem + 0.4725px);
 
@@ -4175,16 +4285,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -4197,11 +4306,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(-3.25rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(-3.25rem) !important;
         }
 
@@ -4209,7 +4318,7 @@ p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -4219,7 +4328,7 @@ p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -4228,7 +4337,7 @@ p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -4236,7 +4345,7 @@ p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -4245,10 +4354,10 @@ p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 6.5rem);
 
-        >.full:first-child:last-child {
+        > .full:first-child:last-child {
           height: auto;
 
-          >* {
+          > * {
             position: relative;
             width: 100%;
             height: auto;
@@ -4267,8 +4376,7 @@ p.style4 a:hover {
       }
     }
 
-    >.wrapper>.inner> {
-
+    > .wrapper > .inner > {
       :nth-child(1),
       :nth-child(2),
       :nth-child(3) {
@@ -4288,7 +4396,7 @@ p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       text-align: center !important;
       padding: 0;
 
@@ -4300,21 +4408,21 @@ p.style4 a:hover {
     }
   }
 
-  #container03>.wrapper>.inner p {
+  #container03 > .wrapper > .inner p {
     text-align: inherit !important;
   }
 
   #container06 {
-    >.wrapper {
+    > .wrapper {
       max-width: 100%;
     }
 
-    &.default>.wrapper>.inner>* {
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns>.wrapper>.inner {
+    &.columns > .wrapper > .inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -4330,7 +4438,7 @@ p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          >* {
+          > * {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -4347,7 +4455,7 @@ p.style4 a:hover {
       }
     }
 
-    &.default>.wrapper>.inner>.full {
+    &.default > .wrapper > .inner > .full {
       margin-left: calc(0rem);
       width: calc(100% + 0rem + 0.4725px);
 
@@ -4360,16 +4468,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -4382,11 +4489,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -4394,7 +4501,7 @@ p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -4404,7 +4511,7 @@ p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -4413,7 +4520,7 @@ p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          >.full:last-child {
+          > .full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -4421,7 +4528,7 @@ p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          >.full:first-child {
+          > .full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -4430,10 +4537,10 @@ p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        >.full:first-child:last-child {
+        > .full:first-child:last-child {
           height: auto;
 
-          >* {
+          > * {
             position: relative;
             width: 100%;
             height: auto;
@@ -4452,8 +4559,7 @@ p.style4 a:hover {
       }
     }
 
-    >.wrapper>.inner> {
-
+    > .wrapper > .inner > {
       :nth-child(1),
       :nth-child(2) {
         width: 100% !important;
@@ -4464,7 +4570,6 @@ p.style4 a:hover {
   }
 
   #video01 {
-
     .frame,
     video {
       width: 59.625rem;
@@ -4472,7 +4577,6 @@ p.style4 a:hover {
   }
 
   #video02 {
-
     .frame,
     video {
       width: 20rem;
@@ -4480,7 +4584,6 @@ p.style4 a:hover {
   }
 
   #video03 {
-
     .frame,
     video {
       width: 20rem;
@@ -4488,7 +4591,6 @@ p.style4 a:hover {
   }
 
   #video04 {
-
     .frame,
     video {
       width: 20rem;
@@ -4496,7 +4598,6 @@ p.style4 a:hover {
   }
 
   .video.style1 {
-
     .frame,
     video {
       width: 20rem;
@@ -4519,7 +4620,7 @@ p.style4 a:hover {
 }
 
 @media (max-width: 480px) {
-  #main>.inner>*>* {
+  #main > .inner > * > * {
     margin-top: 0.875rem;
     margin-bottom: 0.875rem;
   }
@@ -4614,54 +4715,48 @@ p.style4 a:hover {
   }
 
   #container05 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
+    &.columns > .wrapper > .inner > * > *,
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container03 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
+    &.columns > .wrapper > .inner > * > *,
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container01 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
+    &.columns > .wrapper > .inner > * > *,
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container02 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
+    &.columns > .wrapper > .inner > * > *,
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container04 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
+    &.columns > .wrapper > .inner > * > *,
+    &.default > .wrapper > .inner > * {
       margin-top: 0.65625rem;
       margin-bottom: 0.65625rem;
     }
   }
 
   #container06 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
+    &.columns > .wrapper > .inner > * > *,
+    &.default > .wrapper > .inner > * {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -4669,11 +4764,11 @@ p.style4 a:hover {
 }
 
 @media (max-width: 360px) {
-  #main>.inner {
+  #main > .inner {
     padding: 0 1.5rem;
 
     > {
-      *>* {
+      * > * {
         margin-top: 0.75rem;
         margin-bottom: 0.75rem;
       }
@@ -4696,7 +4791,7 @@ p.style4 a:hover {
         }
       }
 
-      *>.full {
+      * > .full {
         margin-left: calc(-1.5rem);
         width: calc(100% + 3rem + 0.4725px);
         max-width: calc(100% + 3rem + 0.4725px);
@@ -4849,16 +4944,16 @@ p.style4 a:hover {
   }
 
   #container05 {
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       padding: 0;
     }
 
-    &.columns>.wrapper>.inner>*>* {
+    &.columns > .wrapper > .inner > * > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default>.wrapper>.inner> {
+    &.default > .wrapper > .inner > {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4878,16 +4973,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -4900,11 +4994,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4916,16 +5010,16 @@ p.style4 a:hover {
   }
 
   #container03 {
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       padding: 0;
     }
 
-    &.columns>.wrapper>.inner>*>* {
+    &.columns > .wrapper > .inner > * > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default>.wrapper>.inner> {
+    &.default > .wrapper > .inner > {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4945,16 +5039,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -4967,11 +5060,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4983,16 +5076,16 @@ p.style4 a:hover {
   }
 
   #container01 {
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       padding: 0;
     }
 
-    &.columns>.wrapper>.inner>*>* {
+    &.columns > .wrapper > .inner > * > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default>.wrapper>.inner> {
+    &.default > .wrapper > .inner > {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -5012,16 +5105,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -5034,11 +5126,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -5050,16 +5142,16 @@ p.style4 a:hover {
   }
 
   #container02 {
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       padding: 0;
     }
 
-    &.columns>.wrapper>.inner>*>* {
+    &.columns > .wrapper > .inner > * > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default>.wrapper>.inner> {
+    &.default > .wrapper > .inner > {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -5079,16 +5171,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -5101,11 +5192,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -5117,16 +5208,16 @@ p.style4 a:hover {
   }
 
   #container04 {
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       padding: 2.4375rem 0;
     }
 
-    &.columns>.wrapper>.inner>*>* {
+    &.columns > .wrapper > .inner > * > * {
       margin-top: 0.5625rem;
       margin-bottom: 0.5625rem;
     }
 
-    &.default>.wrapper>.inner> {
+    &.default > .wrapper > .inner > {
       * {
         margin-top: 0.5625rem;
         margin-bottom: 0.5625rem;
@@ -5146,16 +5237,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -5168,11 +5258,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(-2.4375rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(-2.4375rem) !important;
         }
       }
@@ -5184,16 +5274,16 @@ p.style4 a:hover {
   }
 
   #container06 {
-    >.wrapper>.inner {
+    > .wrapper > .inner {
       padding: 0;
     }
 
-    &.columns>.wrapper>.inner>*>* {
+    &.columns > .wrapper > .inner > * > * {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default>.wrapper>.inner> {
+    &.default > .wrapper > .inner > {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -5213,16 +5303,15 @@ p.style4 a:hover {
       }
     }
 
-    &.columns>.wrapper>.inner> {
+    &.columns > .wrapper > .inner > {
       div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
+        &:first-of-type > .full,
+        &:last-of-type > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
         }
 
-        >.full {
+        > .full {
           margin-left: calc(0rem);
           width: calc(100% + 0rem + 0.4725px);
 
@@ -5235,11 +5324,11 @@ p.style4 a:hover {
           }
         }
 
-        &:first-of-type>.full:first-child {
+        &:first-of-type > .full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type>.full:last-child {
+        &:last-of-type > .full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -5250,4 +5339,4 @@ p.style4 a:hover {
     }
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
