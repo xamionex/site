@@ -1,4 +1,32 @@
-a, b, body, center, code, div, embed, h1, h2, h3, h4, h5, h6, html, i, iframe, img, label, li, p, s, section, span, strong, summary, time, u, ul, video {
+a,
+b,
+body,
+center,
+code,
+div,
+embed,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+label,
+li,
+p,
+s,
+section,
+span,
+strong,
+summary,
+time,
+u,
+ul,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,7 +51,9 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -36,7 +66,7 @@ body {
   overflow-x: hidden;
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     position: fixed;
     top: 0;
@@ -48,17 +78,20 @@ body {
     -webkit-transform: scale(1);
     transform: scale(1);
     background-attachment: scroll;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))), url(http://petar.tk/http://petar.tk/assets/images/bg.gif);
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)), url(assets/images/bg.gif);
-    background-size: 512px,auto,cover;
-    background-position: center,0 0,center;
-    background-repeat: repeat,repeat,repeat;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+      -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))),
+      url(http://petar.tk/http://petar.tk/assets/images/bg.gif);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+      linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)), url(assets/images/bg.gif);
+    background-size: 512px, auto, cover;
+    background-position: center, 0 0, center;
+    background-repeat: repeat, repeat, repeat;
     background-color: #fff;
   }
 
   &:after {
     display: block;
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -68,8 +101,8 @@ body {
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 1s ease-in-out 0s,visibility 1s 0s;
-    transition: opacity 1s ease-in-out 0s,visibility 1s 0s;
+    -webkit-transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -81,10 +114,10 @@ body {
 }
 
 :root {
-  --site-language-direction:ltr;
-  --site-language-alignment:left;
-  --viewport-height:100vh;
-  --background-height:100vh;
+  --site-language-direction: ltr;
+  --site-language-alignment: left;
+  --viewport-height: 100vh;
+  --background-height: 100vh;
 }
 
 html {
@@ -101,15 +134,15 @@ strong {
 }
 
 code {
-  font-family: lucida console,courier new,monospace;
+  font-family: lucida console, courier new, monospace;
   font-weight: 400;
   text-indent: 0;
   letter-spacing: 0;
-  font-size: .9em;
-  margin: 0 .25em;
-  padding: .25em .5em;
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.5em;
   background-color: rgba(144, 144, 144, 0.25);
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 s {
@@ -119,8 +152,8 @@ s {
 a {
   color: inherit;
   text-decoration: underline;
-  -webkit-transition: color .25s ease;
-  transition: color .25s ease;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 #wrapper {
@@ -163,16 +196,16 @@ a {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   text-align: center;
-  -webkit-transition: opacity 5s ease 0s,-webkit-transform 5s ease 0s;
-  transition: opacity 5s ease 0s,-webkit-transform 5s ease 0s;
-  transition: opacity 5s ease 0s,transform 5s ease 0s;
-  transition: opacity 5s ease 0s,transform 5s ease 0s,-webkit-transform 5s ease 0s;
+  -webkit-transition: opacity 5s ease 0s, -webkit-transform 5s ease 0s;
+  transition: opacity 5s ease 0s, -webkit-transform 5s ease 0s;
+  transition: opacity 5s ease 0s, transform 5s ease 0s;
+  transition: opacity 5s ease 0s, transform 5s ease 0s, -webkit-transform 5s ease 0s;
   -webkit-transform: perspective(1000px) rotateX(0);
   transform: perspective(1000px) rotateX(0);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 
-  > .inner {
+  >.inner {
     position: relative;
     z-index: 1;
     border-radius: inherit;
@@ -181,7 +214,7 @@ a {
     width: 58rem;
 
     > {
-      * > {
+      *> {
         * {
           margin-top: 1rem;
           margin-bottom: 1rem;
@@ -198,8 +231,8 @@ a {
 
       .full {
         margin-left: calc(-3rem);
-        width: calc(100% + 6rem + .4725px);
-        max-width: calc(100% + 6rem + .4725px);
+        width: calc(100% + 6rem + 0.4725px);
+        max-width: calc(100% + 6rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -224,10 +257,10 @@ a {
         }
       }
 
-      * > .full {
+      *>.full {
         margin-left: calc(-3rem);
-        width: calc(100% + 6rem + .4725px);
-        max-width: calc(100% + 6rem + .4725px);
+        width: calc(100% + 6rem + 0.4725px);
+        max-width: calc(100% + 6rem + 0.4725px);
 
         &.screen {
           width: 100vw;
@@ -248,11 +281,11 @@ body.is-loading #main {
   transform: perspective(1000px) rotateX(-16.875deg);
 }
 
-#main > .inner > section > * {
-  transition: opacity 1.25s ease-in-out 0s,filter 1.25s ease-in-out 0s;
+#main>.inner>section>* {
+  transition: opacity 1.25s ease-in-out 0s, filter 1.25s ease-in-out 0s;
 }
 
-body.is-loading #main > .inner > section > * {
+body.is-loading #main>.inner>section>* {
   opacity: 0;
   filter: blur(1rem);
 }
@@ -266,22 +299,25 @@ body.is-loading #main > .inner > section > * {
     }
   }
 
-  header, footer {
-    transition: opacity 0.5s ease-in-out 0.75s,filter 1s ease-in-out 0.75s,visibility 0.5s linear 0.75s;
+  header,
+  footer {
+    transition: opacity 0.5s ease-in-out 0.75s, filter 1s ease-in-out 0.75s, visibility 0.5s linear 0.75s;
   }
 
-  header.hidden, footer.hidden {
-    transition: opacity 0.5s ease-in-out,visibility 0.5s;
+  header.hidden,
+  footer.hidden {
+    transition: opacity 0.5s ease-in-out, visibility 0.5s;
     opacity: 0;
     visibility: hidden;
     filter: blur(0.28125);
   }
 
   section {
-    transition: opacity 1s ease-in-out 0.5s,filter 1s ease-in-out 0.5s,min-height 0.5s ease-in-out,max-height 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out 0.5s, filter 1s ease-in-out 0.5s, min-height 0.5s ease-in-out,
+      max-height 0.5s ease-in-out;
 
     &.inactive {
-      transition: opacity 0.5s ease-in-out,filter 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
       opacity: 0;
       filter: blur(0.28125rem);
     }
@@ -292,8 +328,10 @@ body.is-instant {
   #main {
     transition: none !important;
 
-    > .inner > {
-      *, section > * {
+    >.inner> {
+
+      *,
+      section>* {
         transition: none !important;
       }
     }
@@ -317,91 +355,136 @@ body.is-instant {
   }
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   direction: var(--site-language-direction);
 }
 
-h1 br + br, h2 br + br, h3 br + br, p br + br {
+h1 br+br,
+h2 br+br,
+h3 br+br,
+p br+br {
   display: block;
-  content: ' ';
+  content: " ";
 }
 
-h1 .li, h2 .li, h3 .li, p .li {
+h1 .li,
+h2 .li,
+h3 .li,
+p .li {
   display: list-item;
-  padding-left: .5em;
-  margin: .75em 0 0 1em;
+  padding-left: 0.5em;
+  margin: 0.75em 0 0 1em;
 }
 
-h1.style2, h2.style2, h3.style2, p.style2 br + br {
-  margin-top: .6rem;
+h1.style2,
+h2.style2,
+h3.style2,
+p.style2 br+br {
+  margin-top: 0.6rem;
 }
 
-h1.style2:not(:first-child), h2.style2:not(:first-child), h3.style2:not(:first-child), p.style2:not(:first-child) {
+h1.style2:not(:first-child),
+h2.style2:not(:first-child),
+h3.style2:not(:first-child),
+p.style2:not(:first-child) {
   margin-top: 0 !important;
 }
 
-h1.style2:not(:last-child), h2.style2:not(:last-child), h3.style2:not(:last-child), p.style2:not(:last-child) {
+h1.style2:not(:last-child),
+h2.style2:not(:last-child),
+h3.style2:not(:last-child),
+p.style2:not(:last-child) {
   margin-bottom: 0 !important;
 }
 
-h1.style2, h2.style2, h3.style2, p.style2 {
+h1.style2,
+h2.style2,
+h3.style2,
+p.style2 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: sacramento,cursive;
+  font-family: sacramento, cursive;
   font-size: 3em;
   line-height: 1;
   font-weight: 400;
-  text-shadow: .221rem .221rem .25rem #000;
+  text-shadow: 0.221rem 0.221rem 0.25rem #000;
 }
 
-h1.style2 a, h2.style2 a, h3.style2 a, p.style2 a {
+h1.style2 a,
+h2.style2 a,
+h3.style2 a,
+p.style2 a {
   text-decoration: underline;
 }
 
-h1.style2 a:hover, h2.style2 a:hover, h3.style2 a:hover, p.style2 a:hover {
+h1.style2 a:hover,
+h2.style2 a:hover,
+h3.style2 a:hover,
+p.style2 a:hover {
   text-decoration: none;
 }
 
-h1.style3, h2.style3, h3.style3, p.style3 br + br {
-  margin-top: .9rem;
+h1.style3,
+h2.style3,
+h3.style3,
+p.style3 br+br {
+  margin-top: 0.9rem;
 }
 
-h1.style3:not(:first-child), h2.style3:not(:first-child), h3.style3:not(:first-child), p.style3:not(:first-child) {
+h1.style3:not(:first-child),
+h2.style3:not(:first-child),
+h3.style3:not(:first-child),
+p.style3:not(:first-child) {
   margin-top: 0.375rem !important;
 }
 
-h1.style3:not(:last-child), h2.style3:not(:last-child), h3.style3:not(:last-child), p.style3:not(:last-child) {
+h1.style3:not(:last-child),
+h2.style3:not(:last-child),
+h3.style3:not(:last-child),
+p.style3:not(:last-child) {
   margin-bottom: 0.375rem !important;
 }
 
-h1.style3, h2.style3, h3.style3, p.style3 {
+h1.style3,
+h2.style3,
+h3.style3,
+p.style3 {
   text-align: center;
   color: #fff;
-  font-family: josefin sans,sans-serif;
+  font-family: josefin sans, sans-serif;
   font-size: 1.125em;
   line-height: 1.5;
   font-weight: 400;
-  text-shadow: .146rem .118rem .0625rem #000;
+  text-shadow: 0.146rem 0.118rem 0.0625rem #000;
 }
 
-h1.style3 a, h2.style3 a, h3.style3 a, p.style3 a {
+h1.style3 a,
+h2.style3 a,
+h3.style3 a,
+p.style3 a {
   color: #6d8a73;
   text-decoration: underline;
 }
 
-h1.style3 a:hover, h2.style3 a:hover, h3.style3 a:hover, p.style3 a:hover {
+h1.style3 a:hover,
+h2.style3 a:hover,
+h3.style3 a:hover,
+p.style3 a:hover {
   color: #8cff91;
 }
 
 #text16 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: open sans,sans-serif;
-  font-size: .75em;
+  font-family: open sans, sans-serif;
+  font-size: 0.75em;
   line-height: 1;
   font-weight: 300;
-  text-shadow: .08rem .096rem .125rem #000;
+  text-shadow: 0.08rem 0.096rem 0.125rem #000;
 
-  br + br {
-    margin-top: .6rem;
+  br+br {
+    margin-top: 0.6rem;
   }
 
   &:not(:first-child) {
@@ -424,14 +507,14 @@ h1.style3 a:hover, h2.style3 a:hover, h3.style3 a:hover, p.style3 a:hover {
 
 #text07 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: alegreya sans,sans-serif;
+  font-family: alegreya sans, sans-serif;
   font-size: 1.75em;
   line-height: 1.25;
   font-weight: 100;
-  text-shadow: .08rem .096rem .1875rem #000;
+  text-shadow: 0.08rem 0.096rem 0.1875rem #000;
 
-  br + br {
-    margin-top: .75rem;
+  br+br {
+    margin-top: 0.75rem;
   }
 
   &:not(:first-child) {
@@ -453,14 +536,14 @@ h1.style3 a:hover, h2.style3 a:hover, h3.style3 a:hover, p.style3 a:hover {
 
 #text01 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: open sans,sans-serif;
-  font-size: .75em;
+  font-family: open sans, sans-serif;
+  font-size: 0.75em;
   line-height: 1;
   font-weight: 300;
-  text-shadow: .08rem .096rem .125rem #000;
+  text-shadow: 0.08rem 0.096rem 0.125rem #000;
 
-  br + br {
-    margin-top: .6rem;
+  br+br {
+    margin-top: 0.6rem;
   }
 
   &:not(:first-child) {
@@ -483,14 +566,14 @@ h1.style3 a:hover, h2.style3 a:hover, h3.style3 a:hover, p.style3 a:hover {
 
 #text17 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: alegreya sans,sans-serif;
+  font-family: alegreya sans, sans-serif;
   font-size: 1.75em;
   line-height: 1.25;
   font-weight: 100;
-  text-shadow: .08rem .096rem .1875rem #000;
+  text-shadow: 0.08rem 0.096rem 0.1875rem #000;
 
-  br + br {
-    margin-top: .75rem;
+  br+br {
+    margin-top: 0.75rem;
   }
 
   &:not(:first-child) {
@@ -510,44 +593,62 @@ h1.style3 a:hover, h2.style3 a:hover, h3.style3 a:hover, p.style3 a:hover {
   }
 }
 
-h1.style1, h2.style1, h3.style1, p.style1 br + br {
-  margin-top: .675rem;
+h1.style1,
+h2.style1,
+h3.style1,
+p.style1 br+br {
+  margin-top: 0.675rem;
 }
 
-h1.style1:not(:first-child), h2.style1:not(:first-child), h3.style1:not(:first-child), p.style1:not(:first-child) {
+h1.style1:not(:first-child),
+h2.style1:not(:first-child),
+h3.style1:not(:first-child),
+p.style1:not(:first-child) {
   margin-top: 1rem !important;
 }
 
-h1.style1:not(:last-child), h2.style1:not(:last-child), h3.style1:not(:last-child), p.style1:not(:last-child) {
+h1.style1:not(:last-child),
+h2.style1:not(:last-child),
+h3.style1:not(:last-child),
+p.style1:not(:last-child) {
   margin-bottom: 1rem !important;
 }
 
-h1.style1, h2.style1, h3.style1, p.style1 {
+h1.style1,
+h2.style1,
+h3.style1,
+p.style1 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: alegreya sans,sans-serif;
+  font-family: alegreya sans, sans-serif;
   font-size: 1.5em;
   line-height: 1.125;
   font-weight: 300;
-  text-shadow: .08rem .096rem .125rem #000;
+  text-shadow: 0.08rem 0.096rem 0.125rem #000;
 }
 
-h1.style1 a, h2.style1 a, h3.style1 a, p.style1 a {
+h1.style1 a,
+h2.style1 a,
+h3.style1 a,
+p.style1 a {
   text-decoration: none;
 }
 
-h1.style1 a:hover, h2.style1 a:hover, h3.style1 a:hover, p.style1 a:hover {
+h1.style1 a:hover,
+h2.style1 a:hover,
+h3.style1 a:hover,
+p.style1 a:hover {
   text-decoration: underline;
 }
 
 #text05 {
   color: red;
-  font-family: solway,serif;
+  font-family: solway, serif;
   font-size: 2em;
-  line-height: .75;
+  line-height: 0.75;
   font-weight: 700;
 
-  br + br {
-    margin-top: .45rem;
+  br+br {
+    margin-top: 0.45rem;
   }
 
   a {
@@ -559,105 +660,129 @@ h1.style1 a:hover, h2.style1 a:hover, h3.style1 a:hover, p.style1 a:hover {
   }
 }
 
-#text09, #text10 {
+#text09,
+#text10 {
   color: rgba(255, 153, 245, 0.788);
-  font-family: josefin sans,sans-serif;
+  font-family: josefin sans, sans-serif;
   font-size: 1.5em;
   line-height: 1.375;
   font-weight: 400;
-  text-shadow: .121rem .144rem .125rem #000;
+  text-shadow: 0.121rem 0.144rem 0.125rem #000;
 }
 
-#text09 br + br, #text10 br + br {
-  margin-top: .825rem;
+#text09 br+br,
+#text10 br+br {
+  margin-top: 0.825rem;
 }
 
-#text09:not(:first-child), #text10:not(:first-child) {
+#text09:not(:first-child),
+#text10:not(:first-child) {
   margin-top: 0.375rem !important;
 }
 
-#text09:not(:last-child), #text10:not(:last-child) {
+#text09:not(:last-child),
+#text10:not(:last-child) {
   margin-bottom: 0.375rem !important;
 }
 
-#text09 a, #text10 a {
+#text09 a,
+#text10 a {
   color: #6d8a73;
   text-decoration: underline;
 }
 
-#text09 a:hover, #text10 a:hover {
+#text09 a:hover,
+#text10 a:hover {
   color: #8cff91;
 }
 
-h1.style4, h2.style4, h3.style4, p.style4 br + br {
-  margin-top: .525rem;
+h1.style4,
+h2.style4,
+h3.style4,
+p.style4 br+br {
+  margin-top: 0.525rem;
 }
 
-h1.style4, h2.style4, h3.style4, p.style4 {
+h1.style4,
+h2.style4,
+h3.style4,
+p.style4 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: anonymous pro,monospace;
-  font-size: .875em;
-  line-height: .875;
+  font-family: anonymous pro, monospace;
+  font-size: 0.875em;
+  line-height: 0.875;
   font-weight: 400;
-  text-shadow: .08rem .096rem .125rem #000;
+  text-shadow: 0.08rem 0.096rem 0.125rem #000;
 }
 
-h1.style4 a, h2.style4 a, h3.style4 a, p.style4 a {
+h1.style4 a,
+h2.style4 a,
+h3.style4 a,
+p.style4 a {
   text-decoration: none;
 }
 
-h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
+h1.style4 a:hover,
+h2.style4 a:hover,
+h3.style4 a:hover,
+p.style4 a:hover {
   text-decoration: underline;
 }
 
-#text11, #text12 {
+#text11,
+#text12 {
   color: rgba(255, 255, 255, 0.867);
-  font-family: sacramento,cursive;
+  font-family: sacramento, cursive;
   font-size: 2.25em;
   line-height: 1;
   font-weight: 400;
-  text-shadow: .221rem .221rem .25rem #000;
+  text-shadow: 0.221rem 0.221rem 0.25rem #000;
 }
 
-#text11 br + br, #text12 br + br {
-  margin-top: .6rem;
+#text11 br+br,
+#text12 br+br {
+  margin-top: 0.6rem;
 }
 
-#text11:not(:first-child), #text12:not(:first-child) {
+#text11:not(:first-child),
+#text12:not(:first-child) {
   margin-top: 0 !important;
 }
 
-#text11:not(:last-child), #text12:not(:last-child) {
+#text11:not(:last-child),
+#text12:not(:last-child) {
   margin-bottom: 0 !important;
 }
 
-#text11 a, #text12 a {
+#text11 a,
+#text12 a {
   text-decoration: underline;
 }
 
-#text11 a:hover, #text12 a:hover {
+#text11 a:hover,
+#text12 a:hover {
   text-decoration: none;
 }
 
 #text19 {
   text-transform: uppercase;
   color: #fff;
-  font-family: source sans pro,sans-serif;
-  letter-spacing: .45rem;
-  width: calc(100% + .45rem);
+  font-family: source sans pro, sans-serif;
+  letter-spacing: 0.45rem;
+  width: calc(100% + 0.45rem);
   font-size: 3.5em;
   line-height: 1.125;
   font-weight: 200;
-  text-shadow: 0 0 .75rem #00f;
+  text-shadow: 0 0 0.75rem #00f;
 }
 
 #text20 {
   color: #fff;
-  font-family: source sans pro,sans-serif;
+  font-family: source sans pro, sans-serif;
   font-size: 1.25em;
   line-height: 1.5;
   font-weight: 200;
-  text-shadow: 0 0 .5rem #00f;
+  text-shadow: 0 0 0.5rem #00f;
 }
 
 .buttons {
@@ -680,14 +805,14 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   &.style1 {
-    width: calc(100% + .625rem);
-    margin-left: -.3125rem;
+    width: calc(100% + 0.625rem);
+    margin-left: -0.3125rem;
 
     li {
       display: inline-block;
       vertical-align: middle;
-      max-width: calc(100% - .625rem);
-      margin: .3125rem;
+      max-width: calc(100% - 0.625rem);
+      margin: 0.3125rem;
 
       a {
         display: -webkit-box;
@@ -699,25 +824,28 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         vertical-align: middle;
         padding: 0 1.25rem;
         font-size: 1.375em;
-        font-family: open sans,sans-serif;
-        letter-spacing: -.075rem;
+        font-family: open sans, sans-serif;
+        letter-spacing: -0.075rem;
         font-weight: 600;
         border-radius: 2rem;
-        -webkit-transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-        transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-        transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease;
-        transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
+        -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
+        transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
 
         svg {
           display: block;
-          width: .875em;
+          width: 0.875em;
           min-width: 16px;
           height: 100%;
           fill: rgba(255, 255, 255, 0.8);
-          margin-right: calc(.5em + 0rem);
-          margin-left: -.125em;
-          -webkit-transition: fill .375s ease;
-          transition: fill .375s ease;
+          margin-right: calc(0.5em + 0rem);
+          margin-left: -0.125em;
+          -webkit-transition: fill 0.375s ease;
+          transition: fill 0.375s ease;
         }
 
         .label {
@@ -816,13 +944,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       vertical-align: middle;
       padding: 0 1rem;
       font-size: 1.375em;
-      font-family: open sans,sans-serif;
+      font-family: open sans, sans-serif;
       font-weight: 300;
       border-radius: 2rem;
-      -webkit-transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-      transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-      transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease;
-      transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
 
       svg {
         display: block;
@@ -830,10 +961,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         min-width: 16px;
         height: 100%;
         fill: rgba(255, 255, 255, 0.8);
-        margin-right: calc(.5em + 0rem);
-        margin-left: -.125em;
-        -webkit-transition: fill .375s ease;
-        transition: fill .375s ease;
+        margin-right: calc(0.5em + 0rem);
+        margin-left: -0.125em;
+        -webkit-transition: fill 0.375s ease;
+        transition: fill 0.375s ease;
       }
 
       .label {
@@ -862,14 +993,14 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 }
 
 #buttons04 {
-  width: calc(100% + .5rem);
-  margin-left: -.25rem;
+  width: calc(100% + 0.5rem);
+  margin-left: -0.25rem;
 
   li {
     display: inline-block;
     vertical-align: middle;
-    max-width: calc(100% - .5rem);
-    margin: .25rem;
+    max-width: calc(100% - 0.5rem);
+    margin: 0.25rem;
 
     a {
       display: -webkit-box;
@@ -881,25 +1012,28 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       vertical-align: middle;
       padding: 0 1.25rem;
       font-size: 1.375em;
-      font-family: open sans,sans-serif;
-      letter-spacing: -.075rem;
+      font-family: open sans, sans-serif;
+      letter-spacing: -0.075rem;
       font-weight: 600;
       border-radius: 2rem;
-      -webkit-transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-      transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-      transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease;
-      transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
 
       svg {
         display: block;
-        width: .875em;
+        width: 0.875em;
         min-width: 16px;
         height: 100%;
         fill: #fff;
-        margin-right: calc(.5em + 0rem);
-        margin-left: -.125em;
-        -webkit-transition: fill .375s ease;
-        transition: fill .375s ease;
+        margin-right: calc(0.5em + 0rem);
+        margin-left: -0.125em;
+        -webkit-transition: fill 0.375s ease;
+        transition: fill 0.375s ease;
       }
 
       .label {
@@ -1103,13 +1237,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       vertical-align: middle;
       padding: 0 1rem;
       font-size: 1.375em;
-      font-family: open sans,sans-serif;
+      font-family: open sans, sans-serif;
       font-weight: 300;
       border-radius: 2rem;
-      -webkit-transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-      transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-      transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease;
-      transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
 
       svg {
         display: block;
@@ -1117,10 +1254,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         min-width: 16px;
         height: 100%;
         fill: rgba(255, 255, 255, 0.8);
-        margin-right: calc(.5em + 0rem);
-        margin-left: -.125em;
-        -webkit-transition: fill .375s ease;
-        transition: fill .375s ease;
+        margin-right: calc(0.5em + 0rem);
+        margin-left: -0.125em;
+        -webkit-transition: fill 0.375s ease;
+        transition: fill 0.375s ease;
       }
 
       .label {
@@ -1159,13 +1296,13 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
 #buttons08 {
   width: calc(100% + 1.125rem);
-  margin-left: -.5625rem;
+  margin-left: -0.5625rem;
 
   li {
     display: inline-block;
     vertical-align: middle;
     max-width: calc(100% - 1.125rem);
-    margin: .5625rem;
+    margin: 0.5625rem;
 
     a {
       display: -webkit-box;
@@ -1178,13 +1315,13 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       padding: 0 1.75rem;
       text-transform: uppercase;
       font-size: 2.5em;
-      font-family: source sans pro,sans-serif;
-      letter-spacing: .275rem;
-      padding-left: calc(.275rem + 1.75rem);
+      font-family: source sans pro, sans-serif;
+      letter-spacing: 0.275rem;
+      padding-left: calc(0.275rem + 1.75rem);
       font-weight: 900;
       border-radius: 2rem;
-      -webkit-transition: color .25s ease,background-color .25s ease,border-color .25s ease;
-      transition: color .25s ease,background-color .25s ease,border-color .25s ease;
+      -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+      transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 
       svg {
         display: block;
@@ -1192,10 +1329,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         min-width: 18px;
         height: 100%;
         fill: #fff;
-        margin-right: calc(.5em + .275rem);
-        margin-left: -.125em;
-        -webkit-transition: fill .25s ease;
-        transition: fill .25s ease;
+        margin-right: calc(0.5em + 0.275rem);
+        margin-left: -0.125em;
+        -webkit-transition: fill 0.25s ease;
+        transition: fill 0.25s ease;
       }
 
       .label {
@@ -1249,13 +1386,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         vertical-align: middle;
         padding: 0 1rem;
         font-size: 1.375em;
-        font-family: open sans,sans-serif;
+        font-family: open sans, sans-serif;
         font-weight: 300;
         border-radius: 2rem;
-        -webkit-transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-        transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-        transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease;
-        transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
+        -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
+        transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
 
         svg {
           display: block;
@@ -1263,10 +1403,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           min-width: 16px;
           height: 100%;
           fill: rgba(255, 255, 255, 0.8);
-          margin-right: calc(.5em + 0rem);
-          margin-left: -.125em;
-          -webkit-transition: fill .375s ease;
-          transition: fill .375s ease;
+          margin-right: calc(0.5em + 0rem);
+          margin-left: -0.125em;
+          -webkit-transition: fill 0.375s ease;
+          transition: fill 0.375s ease;
         }
 
         .label {
@@ -1314,13 +1454,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         vertical-align: middle;
         padding: 0 1rem;
         font-size: 1.375em;
-        font-family: open sans,sans-serif;
+        font-family: open sans, sans-serif;
         font-weight: 300;
         border-radius: 2rem;
-        -webkit-transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-        transition: color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
-        transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease;
-        transition: transform .375s ease,color .375s ease,background-color .375s ease,border-color .375s ease,-webkit-transform .375s ease;
+        -webkit-transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
+        transition: color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease;
+        transition: transform 0.375s ease, color 0.375s ease, background-color 0.375s ease, border-color 0.375s ease,
+          -webkit-transform 0.375s ease;
 
         svg {
           display: block;
@@ -1328,10 +1471,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           min-width: 16px;
           height: 100%;
           fill: #ffd645;
-          margin-right: calc(.5em + 0rem);
-          margin-left: -.125em;
-          -webkit-transition: fill .375s ease;
-          transition: fill .375s ease;
+          margin-right: calc(0.5em + 0rem);
+          margin-left: -0.125em;
+          -webkit-transition: fill 0.375s ease;
+          transition: fill 0.375s ease;
         }
 
         .label {
@@ -1419,15 +1562,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 }
 
-#image01:not(:first-child), #image02:not(:first-child) {
+#image01:not(:first-child),
+#image02:not(:first-child) {
   margin-top: 0.75rem !important;
 }
 
-#image01:not(:last-child), #image02:not(:last-child) {
+#image01:not(:last-child),
+#image02:not(:last-child) {
   margin-bottom: 0.75rem !important;
 }
 
-#image01 .frame, #image02 .frame {
+#image01 .frame,
+#image02 .frame {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
@@ -1435,7 +1581,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   transition: none;
 }
 
-#image01 img, #image02 img {
+#image01 img,
+#image02 img {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -1444,7 +1591,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   height: 100% !important;
 }
 
-#image01 .frame img, #image02 .frame img {
+#image01 .frame img,
+#image02 .frame img {
   -webkit-transition: none;
   transition: none;
 }
@@ -1476,7 +1624,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         position: relative;
       }
 
-      + svg {
+      +svg {
         display: block;
         position: absolute;
         top: 0;
@@ -1494,81 +1642,95 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 }
 
-#icons01, #icons03 {
+#icons01,
+#icons03 {
   font-size: 2em;
   width: calc(100% + 0rem);
   margin-left: 0;
 }
 
-#icons01 li, #icons03 li {
+#icons01 li,
+#icons03 li {
   margin: 0;
 }
 
-#icons01 li a, #icons03 li a {
+#icons01 li a,
+#icons03 li a {
   width: 1em;
   height: 1em;
-  -webkit-transition: color .25s ease,background-color .25s ease,border-color .25s ease;
-  transition: color .25s ease,background-color .25s ease,border-color .25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-#icons01 li a svg, #icons03 li a svg {
+#icons01 li a svg,
+#icons03 li a svg {
   width: 100%;
   height: 100%;
-  -webkit-transition: fill .25s ease;
-  transition: fill .25s ease;
+  -webkit-transition: fill 0.25s ease;
+  transition: fill 0.25s ease;
 }
 
-#icons01 a svg, #icons03 a svg {
+#icons01 a svg,
+#icons03 a svg {
   fill: rgba(143, 255, 242, 0.761);
 }
 
-#icons01 a:hover svg, #icons03 a:hover svg {
+#icons01 a:hover svg,
+#icons03 a:hover svg {
   fill: #fff !important;
 }
 
-#icons01 li a + svg, #icons03 li a + svg {
-  -webkit-transition: fill .25s ease,stroke .25s ease;
-  transition: fill .25s ease,stroke .25s ease;
+#icons01 li a+svg,
+#icons03 li a+svg {
+  -webkit-transition: fill 0.25s ease, stroke 0.25s ease;
+  transition: fill 0.25s ease, stroke 0.25s ease;
 }
 
-#icons01 .n01 svg, #icons03 .n01 svg {
+#icons01 .n01 svg,
+#icons03 .n01 svg {
   fill: #7b8bde;
 }
 
-#icons01 .n02 svg, #icons03 .n02 svg {
+#icons01 .n02 svg,
+#icons03 .n02 svg {
   fill: #ce3266;
 }
 
-#icons01 .n02:hover svg, #icons03 .n02:hover svg {
+#icons01 .n02:hover svg,
+#icons03 .n02:hover svg {
   fill: #f1c361 !important;
 }
 
-#icons01 .n03 svg, #icons03 .n03 svg {
+#icons01 .n03 svg,
+#icons03 .n03 svg {
   fill: #000;
 }
 
-#icons01 .n03:hover svg, #icons03 .n03:hover svg {
+#icons01 .n03:hover svg,
+#icons03 .n03:hover svg {
   fill: #0039ba !important;
 }
 
-#icons01 .n04 svg, #icons03 .n04 svg {
+#icons01 .n04 svg,
+#icons03 .n04 svg {
   fill: #b30003;
 }
 
-#icons01 .n04:hover svg, #icons03 .n04:hover svg {
+#icons01 .n04:hover svg,
+#icons03 .n04:hover svg {
   fill: #ff7a7d !important;
 }
 
 .container {
   position: relative;
 
-  > .wrapper {
+  >.wrapper {
     vertical-align: top;
     position: relative;
     max-width: 100%;
     border-radius: inherit;
 
-    > .inner {
+    >.inner {
       vertical-align: top;
       position: relative;
       max-width: 100%;
@@ -1578,22 +1740,22 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 }
 
 #main .container.full {
-  &:first-child > .wrapper {
+  &:first-child>.wrapper {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   }
 
-  &:last-child > .wrapper {
+  &:last-child>.wrapper {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   }
 
-  &:first-child > .wrapper > .inner {
+  &:first-child>.wrapper>.inner {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
   }
 
-  &:last-child > .wrapper > .inner {
+  &:last-child>.wrapper>.inner {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
   }
@@ -1612,24 +1774,26 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   background-attachment: scroll;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%), url(http://petar.tk/assets/images/container05.jpg);
-  background-size: 512px,cover,cover;
-  background-position: center,0 0,center;
-  background-repeat: repeat,repeat,repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%),
+    url(http://petar.tk/assets/images/container05.jpg);
+  background-size: 512px, cover, cover;
+  background-position: center, 0 0, center;
+  background-repeat: repeat, repeat, repeat;
 
-  > .wrapper {
+  >.wrapper {
     width: 100%;
     max-width: 58rem;
 
-    > .inner {
+    >.inner {
       padding: 3.25rem 0;
     }
   }
 
-  &.default > .wrapper > .inner > {
+  &.default>.wrapper>.inner> {
     * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
     :first-child {
@@ -1641,7 +1805,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner {
+  &.columns>.wrapper>.inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -1663,8 +1827,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
         > {
           * {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           :first-child {
@@ -1683,9 +1847,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.default > .wrapper > .inner > .full {
+  &.default>.wrapper>.inner>.full {
     margin-left: calc(0rem);
-    width: calc(100% + 0rem + .4725px);
+    width: calc(100% + 0rem + 0.4725px);
     max-width: none;
 
     &:first-child {
@@ -1701,24 +1865,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     div {
-      > .full {
+      >.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child > .full {
+      &:first-child>.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child > .full {
-        width: calc(100% + 0rem + .4725px);
+      &:last-child>.full {
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      > .full {
+      >.full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -1731,7 +1895,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -1739,7 +1903,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -1761,17 +1925,17 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      > .full:first-child:last-child {
+      >.full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        > * {
+        >* {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          > * {
+          >* {
             height: 100%;
             border-radius: inherit;
           }
@@ -1780,7 +1944,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  > .wrapper > .inner > {
+  >.wrapper>.inner> {
     :nth-child(1) {
       width: 30%;
       text-align: center;
@@ -1806,24 +1970,26 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   background-attachment: scroll;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"), linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%), url(http://petar.tk/assets/images/container03.jpg);
-  background-size: 512px,cover,cover;
-  background-position: center,0 0,center;
-  background-repeat: repeat,repeat,repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%),
+    url(http://petar.tk/assets/images/container03.jpg);
+  background-size: 512px, cover, cover;
+  background-position: center, 0 0, center;
+  background-repeat: repeat, repeat, repeat;
 
-  > .wrapper {
+  >.wrapper {
     width: 100%;
     max-width: 58rem;
 
-    > .inner {
+    >.inner {
       padding: 3.25rem 0;
     }
   }
 
-  &.default > .wrapper > .inner > {
+  &.default>.wrapper>.inner> {
     * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
     :first-child {
@@ -1835,7 +2001,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner {
+  &.columns>.wrapper>.inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -1857,8 +2023,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
         > {
           * {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           :first-child {
@@ -1877,9 +2043,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.default > .wrapper > .inner > .full {
+  &.default>.wrapper>.inner>.full {
     margin-left: calc(0rem);
-    width: calc(100% + 0rem + .4725px);
+    width: calc(100% + 0rem + 0.4725px);
     max-width: none;
 
     &:first-child {
@@ -1895,24 +2061,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     div {
-      > .full {
+      >.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child > .full {
+      &:first-child>.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child > .full {
-        width: calc(100% + 0rem + .4725px);
+      &:last-child>.full {
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      > .full {
+      >.full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -1925,7 +2091,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -1933,7 +2099,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -1955,17 +2121,17 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      > .full:first-child:last-child {
+      >.full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        > * {
+        >* {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          > * {
+          >* {
             height: 100%;
             border-radius: inherit;
           }
@@ -1974,7 +2140,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  > .wrapper > .inner > {
+  >.wrapper>.inner> {
     :nth-child(1) {
       width: 30%;
       text-align: center;
@@ -2005,19 +2171,19 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   background-repeat: repeat;
   background-size: contain;
 
-  > .wrapper {
+  >.wrapper {
     width: 100%;
     max-width: 58rem;
 
-    > .inner {
+    >.inner {
       padding: 0;
     }
   }
 
-  &.default > .wrapper > .inner > {
+  &.default>.wrapper>.inner> {
     * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
     :first-child {
@@ -2029,7 +2195,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner {
+  &.columns>.wrapper>.inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2051,8 +2217,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
         > {
           * {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           :first-child {
@@ -2071,9 +2237,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.default > .wrapper > .inner > .full {
+  &.default>.wrapper>.inner>.full {
     margin-left: calc(0rem);
-    width: calc(100% + 0rem + .4725px);
+    width: calc(100% + 0rem + 0.4725px);
     max-width: none;
 
     &:first-child {
@@ -2089,24 +2255,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     div {
-      > .full {
+      >.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child > .full {
+      &:first-child>.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child > .full {
-        width: calc(100% + 0rem + .4725px);
+      &:last-child>.full {
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      > .full {
+      >.full {
         &:first-child {
           margin-top: calc(0rem) !important;
         }
@@ -2119,7 +2285,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2127,7 +2293,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2149,17 +2315,17 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      > .full:first-child:last-child {
+      >.full:first-child:last-child {
         height: calc(100% + 0rem);
         border-radius: inherit;
 
-        > * {
+        >* {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          > * {
+          >* {
             height: 100%;
             border-radius: inherit;
           }
@@ -2186,19 +2352,19 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   background-repeat: repeat;
   background-size: cover;
 
-  > .wrapper {
+  >.wrapper {
     width: 100%;
     max-width: 58rem;
 
-    > .inner {
+    >.inner {
       padding: 3.25rem 0;
     }
   }
 
-  &.default > .wrapper > .inner > {
+  &.default>.wrapper>.inner> {
     * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
     :first-child {
@@ -2210,7 +2376,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner {
+  &.columns>.wrapper>.inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2232,8 +2398,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
         > {
           * {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           :first-child {
@@ -2252,9 +2418,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.default > .wrapper > .inner > .full {
+  &.default>.wrapper>.inner>.full {
     margin-left: calc(0rem);
-    width: calc(100% + 0rem + .4725px);
+    width: calc(100% + 0rem + 0.4725px);
     max-width: none;
 
     &:first-child {
@@ -2270,24 +2436,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     div {
-      > .full {
+      >.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child > .full {
+      &:first-child>.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child > .full {
-        width: calc(100% + 0rem + .4725px);
+      &:last-child>.full {
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      > .full {
+      >.full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2300,7 +2466,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2308,7 +2474,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2330,17 +2496,17 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      > .full:first-child:last-child {
+      >.full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        > * {
+        >* {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          > * {
+          >* {
             height: 100%;
             border-radius: inherit;
           }
@@ -2363,15 +2529,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   background-attachment: fixed;
-  background-image: url(data:image/svg+xml;charset=utf8;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuODc1IiByZXN1bHQ9Im5vaXNlIiAvPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjU4NTkzNzUgMCIgLz48L2ZpbHRlcj48cmVjdCBmaWx0ZXI9InVybCgjbm9pc2UpIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idHJhbnNwYXJlbnQiIG9wYWNpdHk9IjEiIC8+PC9zdmc+), url(http://petar.tk/assets/images/container04.jpg);
-  background-size: 512px,auto;
-  background-position: center,center;
-  background-repeat: repeat,repeat;
+  background-image: url(data:image/svg+xml;charset=utf8;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuODc1IiByZXN1bHQ9Im5vaXNlIiAvPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjU4NTkzNzUgMCIgLz48L2ZpbHRlcj48cmVjdCBmaWx0ZXI9InVybCgjbm9pc2UpIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idHJhbnNwYXJlbnQiIG9wYWNpdHk9IjEiIC8+PC9zdmc+),
+    url(http://petar.tk/assets/images/container04.jpg);
+  background-size: 512px, auto;
+  background-position: center, center;
+  background-repeat: repeat, repeat;
 
-  &.default > .wrapper > .inner > {
+  &.default>.wrapper>.inner> {
     * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
     :first-child {
@@ -2383,7 +2550,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner {
+  &.columns>.wrapper>.inner {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     display: -webkit-box;
@@ -2405,8 +2572,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
         > {
           * {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
           }
 
           :first-child {
@@ -2425,9 +2592,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.default > .wrapper > .inner > .full {
+  &.default>.wrapper>.inner>.full {
     margin-left: calc(0rem);
-    width: calc(100% + 0rem + .4725px);
+    width: calc(100% + 0rem + 0.4725px);
     max-width: none;
 
     &:first-child {
@@ -2443,24 +2610,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     div {
-      > .full {
+      >.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child > .full {
+      &:first-child>.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child > .full {
-        width: calc(100% + 0rem + .4725px);
+      &:last-child>.full {
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      > .full {
+      >.full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2473,7 +2640,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2481,7 +2648,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2503,17 +2670,17 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      > .full:first-child:last-child {
+      >.full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        > * {
+        >* {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          > * {
+          >* {
             height: 100%;
             border-radius: inherit;
           }
@@ -2522,7 +2689,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  > .wrapper > .inner > {
+  >.wrapper>.inner> {
     :nth-child(1) {
       width: 38%;
     }
@@ -2550,21 +2717,22 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   background-attachment: scroll;
-  background-image: linear-gradient(45deg, rgba(201, 101, 113, 0.831) 0, rgba(93, 173, 207, 0.51) 81%), url(http://petar.tk/assets/images/container06.jpg);
-  background-position: 0 0,top;
-  background-repeat: repeat,no-repeat;
-  background-size: cover,cover;
+  background-image: linear-gradient(45deg, rgba(201, 101, 113, 0.831) 0, rgba(93, 173, 207, 0.51) 81%),
+    url(http://petar.tk/assets/images/container06.jpg);
+  background-position: 0 0, top;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
   background-color: #fff;
 
-  > .wrapper {
+  >.wrapper {
     width: 100%;
     max-width: 58rem;
   }
 
-  &.default > .wrapper > .inner > {
+  &.default>.wrapper>.inner> {
     * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
     :first-child {
@@ -2576,7 +2744,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     * {
       -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -2588,8 +2756,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
       > {
         * {
-          margin-top: .75rem;
-          margin-bottom: .75rem;
+          margin-top: 0.75rem;
+          margin-bottom: 0.75rem;
         }
 
         :first-child {
@@ -2607,9 +2775,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.default > .wrapper > .inner > .full {
+  &.default>.wrapper>.inner>.full {
     margin-left: calc(0rem);
-    width: calc(100% + 0rem + .4725px);
+    width: calc(100% + 0rem + 0.4725px);
     max-width: none;
 
     &:first-child {
@@ -2625,24 +2793,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  &.columns > .wrapper > .inner > {
+  &.columns>.wrapper>.inner> {
     div {
-      > .full {
+      >.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
         max-width: none;
       }
 
-      &:first-child > .full {
+      &:first-child>.full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      &:last-child > .full {
-        width: calc(100% + 0rem + .4725px);
+      &:last-child>.full {
+        width: calc(100% + 0rem + 0.4725px);
       }
 
-      > .full {
+      >.full {
         &:first-child {
           margin-top: calc(-3.25rem) !important;
         }
@@ -2655,7 +2823,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:first-child {
         border-top-left-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-left-radius: inherit;
         }
       }
@@ -2663,7 +2831,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       &:last-child {
         border-top-right-radius: inherit;
 
-        > .full:first-child {
+        >.full:first-child {
           border-top-right-radius: inherit;
         }
       }
@@ -2685,17 +2853,17 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         border-bottom-right-radius: inherit;
       }
 
-      > .full:first-child:last-child {
+      >.full:first-child:last-child {
         height: calc(100% + 6.5rem);
         border-radius: inherit;
 
-        > * {
+        >* {
           position: absolute;
           width: 100%;
           height: 100%;
           border-radius: inherit;
 
-          > * {
+          >* {
             height: 100%;
             border-radius: inherit;
           }
@@ -2722,7 +2890,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     vertical-align: top;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
     }
@@ -2784,16 +2952,23 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 }
 
-#video02 video, #video03 video, #video04 video, #video02 .frame, #video03 .frame, #video04 .frame {
+#video02 video,
+#video03 video,
+#video04 video,
+#video02 .frame,
+#video03 .frame,
+#video04 .frame {
   width: 20rem;
 }
 
-#video02 .frame:before, #video03 .frame:before, #video04 .frame:before {
+#video02 .frame:before,
+#video03 .frame:before,
+#video04 .frame:before {
   padding-top: 56.25%;
 }
 
 :root {
-  --smaller:.75;
+  --smaller: 0.75;
 }
 
 .video.style1 {
@@ -2829,7 +3004,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
   span {
     font-size: 4rem;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -2845,7 +3020,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
 #countdown {
   font-weight: 400;
-  letter-spacing: .125rem;
+  letter-spacing: 0.125rem;
   text-transform: uppercase;
 
   li span {
@@ -2854,21 +3029,21 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   ul li {
-    font-family: solway,serif;
-    font-size: .875rem;
+    font-family: solway, serif;
+    font-size: 0.875rem;
     font-weight: 300;
     color: rgba(255, 153, 245, 0.788);
 
     span {
       color: rgba(244, 122, 255, 0.8);
-      font-family: londrina shadow,cursive;
+      font-family: londrina shadow, cursive;
       font-weight: 400;
       color: #ff99f5;
       line-height: 1em;
       text-align: inherit;
 
-      > * {
-        margin-top: calc(.5rem + .25em);
+      >* {
+        margin-top: calc(0.5rem + 0.25em);
       }
     }
   }
@@ -2880,7 +3055,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
   span {
     font-size: 3rem;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -2895,7 +3070,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     font-size: 16pt;
   }
 
-  #container01, #container04 {
+  #container01,
+  #container04 {
     background-attachment: scroll;
   }
 }
@@ -2911,19 +3087,19 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     font-size: 13pt;
   }
 
-  #main > .inner {
+  #main>.inner {
     padding: 0 2rem;
 
     > {
-      * > * {
+      *>* {
         margin-top: 1rem;
         margin-bottom: 1rem;
       }
 
       .full {
         margin-left: calc(-2rem);
-        width: calc(100% + 4rem + .4725px);
-        max-width: calc(100% + 4rem + .4725px);
+        width: calc(100% + 4rem + 0.4725px);
+        max-width: calc(100% + 4rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -2938,10 +3114,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         }
       }
 
-      * > .full {
+      *>.full {
         margin-left: calc(-2rem);
-        width: calc(100% + 4rem + .4725px);
-        max-width: calc(100% + 4rem + .4725px);
+        width: calc(100% + 4rem + 0.4725px);
+        max-width: calc(100% + 4rem + 0.4725px);
 
         &.screen {
           margin-left: -50vw;
@@ -2950,30 +3126,48 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  h1.style2:not(:first-child), h2.style2:not(:first-child), h3.style2:not(:first-child), p.style2:not(:first-child) {
+  h1.style2:not(:first-child),
+  h2.style2:not(:first-child),
+  h3.style2:not(:first-child),
+  p.style2:not(:first-child) {
     margin-top: 0 !important;
   }
 
-  h1.style2:not(:last-child), h2.style2:not(:last-child), h3.style2:not(:last-child), p.style2:not(:last-child) {
+  h1.style2:not(:last-child),
+  h2.style2:not(:last-child),
+  h3.style2:not(:last-child),
+  p.style2:not(:last-child) {
     margin-bottom: 0 !important;
   }
 
-  h1.style2, h2.style2, h3.style2, p.style2 {
+  h1.style2,
+  h2.style2,
+  h3.style2,
+  p.style2 {
     letter-spacing: 0;
     width: 100%;
     font-size: 3em;
     line-height: 1;
   }
 
-  h1.style3:not(:first-child), h2.style3:not(:first-child), h3.style3:not(:first-child), p.style3:not(:first-child) {
+  h1.style3:not(:first-child),
+  h2.style3:not(:first-child),
+  h3.style3:not(:first-child),
+  p.style3:not(:first-child) {
     margin-top: 0.28125rem !important;
   }
 
-  h1.style3:not(:last-child), h2.style3:not(:last-child), h3.style3:not(:last-child), p.style3:not(:last-child) {
+  h1.style3:not(:last-child),
+  h2.style3:not(:last-child),
+  h3.style3:not(:last-child),
+  p.style3:not(:last-child) {
     margin-bottom: 0.28125rem !important;
   }
 
-  h1.style3, h2.style3, h3.style3, p.style3 {
+  h1.style3,
+  h2.style3,
+  h3.style3,
+  p.style3 {
     letter-spacing: 0;
     width: 100%;
     font-size: 1.125em;
@@ -2983,7 +3177,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   #text16 {
     letter-spacing: 0;
     width: 100%;
-    font-size: .75em;
+    font-size: 0.75em;
     line-height: 1;
 
     &:not(:first-child) {
@@ -3013,7 +3207,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   #text01 {
     letter-spacing: 0;
     width: 100%;
-    font-size: .75em;
+    font-size: 0.75em;
     line-height: 1;
 
     &:not(:first-child) {
@@ -3040,15 +3234,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  h1.style1:not(:first-child), h2.style1:not(:first-child), h3.style1:not(:first-child), p.style1:not(:first-child) {
+  h1.style1:not(:first-child),
+  h2.style1:not(:first-child),
+  h3.style1:not(:first-child),
+  p.style1:not(:first-child) {
     margin-top: 0 !important;
   }
 
-  h1.style1:not(:last-child), h2.style1:not(:last-child), h3.style1:not(:last-child), p.style1:not(:last-child) {
+  h1.style1:not(:last-child),
+  h2.style1:not(:last-child),
+  h3.style1:not(:last-child),
+  p.style1:not(:last-child) {
     margin-bottom: 0 !important;
   }
 
-  h1.style1, h2.style1, h3.style1, p.style1 {
+  h1.style1,
+  h2.style1,
+  h3.style1,
+  p.style1 {
     letter-spacing: 0;
     width: 100%;
     font-size: 1.25em;
@@ -3059,60 +3262,75 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     letter-spacing: 0;
     width: 100%;
     font-size: 2em;
-    line-height: .75;
+    line-height: 0.75;
   }
 
-  #text09, #text10 {
+  #text09,
+  #text10 {
     letter-spacing: 0;
     width: 100%;
     font-size: 1.5em;
     line-height: 1.375;
   }
 
-  #text09:not(:first-child), #text10:not(:first-child) {
+  #text09:not(:first-child),
+  #text10:not(:first-child) {
     margin-top: 0.28125rem !important;
   }
 
-  #text09:not(:last-child), #text10:not(:last-child) {
+  #text09:not(:last-child),
+  #text10:not(:last-child) {
     margin-bottom: 0.28125rem !important;
   }
 
-  h1.style4:not(:first-child), h2.style4:not(:first-child), h3.style4:not(:first-child), p.style4:not(:first-child) {
+  h1.style4:not(:first-child),
+  h2.style4:not(:first-child),
+  h3.style4:not(:first-child),
+  p.style4:not(:first-child) {
     margin-top: 0 !important;
   }
 
-  h1.style4:not(:last-child), h2.style4:not(:last-child), h3.style4:not(:last-child), p.style4:not(:last-child) {
+  h1.style4:not(:last-child),
+  h2.style4:not(:last-child),
+  h3.style4:not(:last-child),
+  p.style4:not(:last-child) {
     margin-bottom: 0 !important;
   }
 
-  h1.style4, h2.style4, h3.style4, p.style4 {
+  h1.style4,
+  h2.style4,
+  h3.style4,
+  p.style4 {
     letter-spacing: 0;
     width: 100%;
     font-size: 1em;
-    line-height: .875;
+    line-height: 0.875;
   }
 
-  #text11, #text12 {
+  #text11,
+  #text12 {
     letter-spacing: 0;
     width: 100%;
     font-size: 2.25em;
     line-height: 1;
   }
 
-  #text11:not(:first-child), #text12:not(:first-child) {
+  #text11:not(:first-child),
+  #text12:not(:first-child) {
     margin-top: 0 !important;
   }
 
-  #text11:not(:last-child), #text12:not(:last-child) {
+  #text11:not(:last-child),
+  #text12:not(:last-child) {
     margin-bottom: 0 !important;
   }
 
   .buttons.style1 li a {
     font-size: 1.375em;
-    letter-spacing: -.075rem;
+    letter-spacing: -0.075rem;
 
     svg {
-      width: .875em;
+      width: 0.875em;
     }
   }
 
@@ -3127,10 +3345,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
   #buttons04 li a {
     font-size: 1.375em;
-    letter-spacing: -.075rem;
+    letter-spacing: -0.075rem;
 
     svg {
-      width: .875em;
+      width: 0.875em;
     }
   }
 
@@ -3144,43 +3362,52 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   .buttons {
-    &.style2 li a, &.style3 li a {
+
+    &.style2 li a,
+    &.style3 li a {
       font-size: 1.375em;
       letter-spacing: 0;
     }
 
-    &.style2 li a svg, &.style3 li a svg {
+    &.style2 li a svg,
+    &.style3 li a svg {
       width: 1em;
     }
   }
 
-  #image01:not(:first-child), #image02:not(:first-child) {
+  #image01:not(:first-child),
+  #image02:not(:first-child) {
     margin-top: 0.5625rem !important;
   }
 
-  #image01:not(:last-child), #image02:not(:last-child) {
+  #image01:not(:last-child),
+  #image02:not(:last-child) {
     margin-bottom: 0.5625rem !important;
   }
 
-  #image01 .frame, #image02 .frame {
+  #image01 .frame,
+  #image02 .frame {
     width: 10rem;
     height: 12.5rem !important;
   }
 
-  #image01 img, #image02 img {
+  #image01 img,
+  #image02 img {
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
   }
 
-  #icons01, #icons03 {
+  #icons01,
+  #icons03 {
     font-size: 2em;
     width: calc(100% + 0rem);
     margin-left: 0;
   }
 
-  #icons01 li, #icons03 li {
+  #icons01 li,
+  #icons03 li {
     margin: 0;
   }
 
@@ -3193,25 +3420,28 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    > .wrapper {
+    >.wrapper {
       max-width: 100%;
 
-      > .inner {
+      >.inner {
         text-align: center !important;
         padding: 0;
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
           text-align: inherit !important;
         }
       }
     }
 
-    &.default > .wrapper > .inner > * {
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns > .wrapper > .inner {
+    &.columns>.wrapper>.inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3227,7 +3457,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          > * {
+          >* {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3244,9 +3474,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.default > .wrapper > .inner > .full {
+    &.default>.wrapper>.inner>.full {
       margin-left: calc(0rem);
-      width: calc(100% + 0rem + .4725px);
+      width: calc(100% + 0rem + 0.4725px);
 
       &:first-child {
         margin-top: 0 !important;
@@ -3257,16 +3487,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -3277,11 +3509,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3289,7 +3521,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3299,7 +3531,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3308,7 +3540,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3316,7 +3548,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3325,10 +3557,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        > .full:first-child:last-child {
+        >.full:first-child:last-child {
           height: auto;
 
-          > * {
+          >* {
             position: relative;
             width: 100%;
             height: auto;
@@ -3347,8 +3579,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    > .wrapper > .inner > {
-      :nth-child(1), :nth-child(2) {
+    >.wrapper>.inner> {
+
+      :nth-child(1),
+      :nth-child(2) {
         width: 100% !important;
         min-height: 100% !important;
         text-align: inherit !important;
@@ -3365,25 +3599,28 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    > .wrapper {
+    >.wrapper {
       max-width: 100%;
 
-      > .inner {
+      >.inner {
         text-align: center !important;
         padding: 0;
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
           text-align: inherit !important;
         }
       }
     }
 
-    &.default > .wrapper > .inner > * {
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns > .wrapper > .inner {
+    &.columns>.wrapper>.inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3399,7 +3636,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          > * {
+          >* {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3416,9 +3653,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.default > .wrapper > .inner > .full {
+    &.default>.wrapper>.inner>.full {
       margin-left: calc(0rem);
-      width: calc(100% + 0rem + .4725px);
+      width: calc(100% + 0rem + 0.4725px);
 
       &:first-child {
         margin-top: 0 !important;
@@ -3429,16 +3666,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -3449,11 +3688,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3461,7 +3700,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3471,7 +3710,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3480,7 +3719,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3488,7 +3727,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3497,10 +3736,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        > .full:first-child:last-child {
+        >.full:first-child:last-child {
           height: auto;
 
-          > * {
+          >* {
             position: relative;
             width: 100%;
             height: auto;
@@ -3519,8 +3758,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    > .wrapper > .inner > {
-      :nth-child(1), :nth-child(2) {
+    >.wrapper>.inner> {
+
+      :nth-child(1),
+      :nth-child(2) {
         width: 100% !important;
         min-height: 100% !important;
         text-align: inherit !important;
@@ -3537,25 +3778,28 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    > .wrapper {
+    >.wrapper {
       max-width: 100%;
 
-      > .inner {
+      >.inner {
         text-align: center !important;
         padding: 0;
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
           text-align: inherit !important;
         }
       }
     }
 
-    &.default > .wrapper > .inner > * {
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns > .wrapper > .inner {
+    &.columns>.wrapper>.inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3571,7 +3815,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          > * {
+          >* {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3588,9 +3832,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.default > .wrapper > .inner > .full {
+    &.default>.wrapper>.inner>.full {
       margin-left: calc(0rem);
-      width: calc(100% + 0rem + .4725px);
+      width: calc(100% + 0rem + 0.4725px);
 
       &:first-child {
         margin-top: 0 !important;
@@ -3601,16 +3845,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -3621,11 +3867,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3633,7 +3879,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3643,7 +3889,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3652,7 +3898,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3660,7 +3906,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3669,10 +3915,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        > .full:first-child:last-child {
+        >.full:first-child:last-child {
           height: auto;
 
-          > * {
+          >* {
             position: relative;
             width: 100%;
             height: auto;
@@ -3701,25 +3947,28 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    > .wrapper {
+    >.wrapper {
       max-width: 100%;
 
-      > .inner {
+      >.inner {
         text-align: center !important;
         padding: 0;
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
           text-align: inherit !important;
         }
       }
     }
 
-    &.default > .wrapper > .inner > * {
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns > .wrapper > .inner {
+    &.columns>.wrapper>.inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3735,7 +3984,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          > * {
+          >* {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -3752,9 +4001,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.default > .wrapper > .inner > .full {
+    &.default>.wrapper>.inner>.full {
       margin-left: calc(0rem);
-      width: calc(100% + 0rem + .4725px);
+      width: calc(100% + 0rem + 0.4725px);
 
       &:first-child {
         margin-top: 0 !important;
@@ -3765,16 +4014,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -3785,11 +4036,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -3797,7 +4048,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3807,7 +4058,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3816,7 +4067,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3824,7 +4075,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3833,10 +4084,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        > .full:first-child:last-child {
+        >.full:first-child:last-child {
           height: auto;
 
-          > * {
+          >* {
             position: relative;
             width: 100%;
             height: auto;
@@ -3857,20 +4108,20 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #container04 {
-    > .wrapper {
+    >.wrapper {
       max-width: 100%;
 
-      > .inner {
+      >.inner {
         padding: 3.25rem 0;
       }
     }
 
-    &.default > .wrapper > .inner > * {
-      margin-top: .75rem;
-      margin-bottom: .75rem;
+    &.default>.wrapper>.inner>* {
+      margin-top: 0.75rem;
+      margin-bottom: 0.75rem;
     }
 
-    &.columns > .wrapper > .inner {
+    &.columns>.wrapper>.inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -3886,9 +4137,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          > * {
-            margin-top: .75rem;
-            margin-bottom: .75rem;
+          >* {
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
           }
         }
 
@@ -3903,9 +4154,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.default > .wrapper > .inner > .full {
+    &.default>.wrapper>.inner>.full {
       margin-left: calc(0rem);
-      width: calc(100% + 0rem + .4725px);
+      width: calc(100% + 0rem + 0.4725px);
 
       &:first-child {
         margin-top: (-3.25rem) !important;
@@ -3916,16 +4167,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -3936,11 +4189,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(-3.25rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(-3.25rem) !important;
         }
 
@@ -3948,7 +4201,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -3958,7 +4211,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -3967,7 +4220,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -3975,7 +4228,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -3984,10 +4237,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 6.5rem);
 
-        > .full:first-child:last-child {
+        >.full:first-child:last-child {
           height: auto;
 
-          > * {
+          >* {
             position: relative;
             width: 100%;
             height: auto;
@@ -4006,8 +4259,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    > .wrapper > .inner > {
-      :nth-child(1), :nth-child(2), :nth-child(3) {
+    >.wrapper>.inner> {
+
+      :nth-child(1),
+      :nth-child(2),
+      :nth-child(3) {
         width: 100% !important;
         min-height: 100% !important;
         text-align: inherit !important;
@@ -4024,31 +4280,33 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       margin-bottom: 0 !important;
     }
 
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       text-align: center !important;
       padding: 0;
 
-      h1, h2, h3 {
+      h1,
+      h2,
+      h3 {
         text-align: inherit !important;
       }
     }
   }
 
-  #container03 > .wrapper > .inner p {
+  #container03>.wrapper>.inner p {
     text-align: inherit !important;
   }
 
   #container06 {
-    > .wrapper {
+    >.wrapper {
       max-width: 100%;
     }
 
-    &.default > .wrapper > .inner > * {
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.columns > .wrapper > .inner {
+    &.columns>.wrapper>.inner {
       -webkit-box-orient: vertical !important;
       -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
@@ -4064,7 +4322,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         * {
           padding: 0 0 !important;
 
-          > * {
+          >* {
             margin-top: 0;
             margin-bottom: 0;
           }
@@ -4081,9 +4339,9 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.default > .wrapper > .inner > .full {
+    &.default>.wrapper>.inner>.full {
       margin-left: calc(0rem);
-      width: calc(100% + 0rem + .4725px);
+      width: calc(100% + 0rem + 0.4725px);
 
       &:first-child {
         margin-top: 0 !important;
@@ -4094,16 +4352,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4114,11 +4374,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
 
@@ -4126,7 +4386,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-top-left-radius: inherit;
           border-top-right-radius: inherit;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-left-radius: inherit;
             border-top-right-radius: inherit;
           }
@@ -4136,7 +4396,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           border-bottom-left-radius: inherit;
           border-bottom-right-radius: inherit;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
           }
@@ -4145,7 +4405,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:first-of-type {
           border-bottom-left-radius: 0 !important;
 
-          > .full:last-child {
+          >.full:last-child {
             border-bottom-left-radius: 0 !important;
           }
         }
@@ -4153,7 +4413,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         &:last-of-type {
           border-top-right-radius: 0 !important;
 
-          > .full:first-child {
+          >.full:first-child {
             border-top-right-radius: 0 !important;
           }
         }
@@ -4162,10 +4422,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       .full {
         min-height: calc(var(--viewport-height) - 0rem);
 
-        > .full:first-child:last-child {
+        >.full:first-child:last-child {
           height: auto;
 
-          > * {
+          >* {
             position: relative;
             width: 100%;
             height: auto;
@@ -4184,8 +4444,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    > .wrapper > .inner > {
-      :nth-child(1), :nth-child(2) {
+    >.wrapper>.inner> {
+
+      :nth-child(1),
+      :nth-child(2) {
         width: 100% !important;
         min-height: 100% !important;
         text-align: inherit !important;
@@ -4194,38 +4456,48 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #video01 {
-    .frame, video {
+
+    .frame,
+    video {
       width: 59.625rem;
     }
   }
 
   #video02 {
-    .frame, video {
+
+    .frame,
+    video {
       width: 20rem;
     }
   }
 
   #video03 {
-    .frame, video {
+
+    .frame,
+    video {
       width: 20rem;
     }
   }
 
   #video04 {
-    .frame, video {
+
+    .frame,
+    video {
       width: 20rem;
     }
   }
 
   .video.style1 {
-    .frame, video {
+
+    .frame,
+    video {
       width: 20rem;
     }
   }
 
   #text19 {
-    letter-spacing: .39375rem;
-    width: calc(100% + .39375rem);
+    letter-spacing: 0.39375rem;
+    width: calc(100% + 0.39375rem);
     font-size: 3em;
     line-height: 1.125;
   }
@@ -4239,8 +4511,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
   #buttons08 li a {
     font-size: 2.5em;
-    letter-spacing: .275rem;
-    padding-left: calc(.275rem + 1.75rem);
+    letter-spacing: 0.275rem;
+    padding-left: calc(0.275rem + 1.75rem);
 
     svg {
       width: 1.25em;
@@ -4249,20 +4521,20 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 }
 
 @media (max-width: 480px) {
-  #main > .inner > * > * {
-    margin-top: .875rem;
-    margin-bottom: .875rem;
+  #main>.inner>*>* {
+    margin-top: 0.875rem;
+    margin-bottom: 0.875rem;
   }
 
   .buttons.style1 {
     margin-left: 0;
     width: 100%;
-    padding: .3125rem 0;
+    padding: 0.3125rem 0;
 
     li {
       max-width: 100%;
       display: block;
-      margin: .625rem 0;
+      margin: 0.625rem 0;
 
       &:first-child {
         margin-top: 0;
@@ -4285,12 +4557,12 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   #buttons04 {
     margin-left: 0;
     width: 100%;
-    padding: .25rem 0;
+    padding: 0.25rem 0;
 
     li {
       max-width: 100%;
       display: block;
-      margin: .5rem 0;
+      margin: 0.5rem 0;
 
       &:first-child {
         margin-top: 0;
@@ -4313,7 +4585,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   #buttons08 {
     margin-left: 0;
     width: 100%;
-    padding: .5625rem 0;
+    padding: 0.5625rem 0;
 
     li {
       max-width: 100%;
@@ -4366,47 +4638,60 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  #image01 .frame, #image02 .frame {
+  #image01 .frame,
+  #image02 .frame {
     height: 10rem !important;
   }
 
   #container05 {
-    &.columns > .wrapper > .inner > * > *, &.default > .wrapper > .inner > * {
+
+    &.columns>.wrapper>.inner>*>*,
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container03 {
-    &.columns > .wrapper > .inner > * > *, &.default > .wrapper > .inner > * {
+
+    &.columns>.wrapper>.inner>*>*,
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container01 {
-    &.columns > .wrapper > .inner > * > *, &.default > .wrapper > .inner > * {
+
+    &.columns>.wrapper>.inner>*>*,
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container02 {
-    &.columns > .wrapper > .inner > * > *, &.default > .wrapper > .inner > * {
+
+    &.columns>.wrapper>.inner>*>*,
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
 
   #container04 {
-    &.columns > .wrapper > .inner > * > *, &.default > .wrapper > .inner > * {
-      margin-top: .65625rem;
-      margin-bottom: .65625rem;
+
+    &.columns>.wrapper>.inner>*>*,
+    &.default>.wrapper>.inner>* {
+      margin-top: 0.65625rem;
+      margin-bottom: 0.65625rem;
     }
   }
 
   #container06 {
-    &.columns > .wrapper > .inner > * > *, &.default > .wrapper > .inner > * {
+
+    &.columns>.wrapper>.inner>*>*,
+    &.default>.wrapper>.inner>* {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -4414,19 +4699,19 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 }
 
 @media (max-width: 360px) {
-  #main > .inner {
+  #main>.inner {
     padding: 0 1.5rem;
 
     > {
-      * > * {
-        margin-top: .75rem;
-        margin-bottom: .75rem;
+      *>* {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
       }
 
       .full {
         margin-left: calc(-1.5rem);
-        width: calc(100% + 3rem + .4725px);
-        max-width: calc(100% + 3rem + .4725px);
+        width: calc(100% + 3rem + 0.4725px);
+        max-width: calc(100% + 3rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -4441,10 +4726,10 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
         }
       }
 
-      * > .full {
+      *>.full {
         margin-left: calc(-1.5rem);
-        width: calc(100% + 3rem + .4725px);
-        max-width: calc(100% + 3rem + .4725px);
+        width: calc(100% + 3rem + 0.4725px);
+        max-width: calc(100% + 3rem + 0.4725px);
 
         &.screen {
           margin-left: -50vw;
@@ -4453,16 +4738,22 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  h1.style2, h2.style2, h3.style2, p.style2 {
+  h1.style2,
+  h2.style2,
+  h3.style2,
+  p.style2 {
     font-size: 2em;
   }
 
-  h1.style3, h2.style3, h3.style3, p.style3 {
+  h1.style3,
+  h2.style3,
+  h3.style3,
+  p.style3 {
     font-size: 1.125em;
   }
 
   #text16 {
-    font-size: .75em;
+    font-size: 0.75em;
   }
 
   #text07 {
@@ -4470,37 +4761,46 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #text01 {
-    font-size: .75em;
+    font-size: 0.75em;
   }
 
   #text17 {
     font-size: 1.5em;
   }
 
-  h1.style1, h2.style1, h3.style1, p.style1 {
+  h1.style1,
+  h2.style1,
+  h3.style1,
+  p.style1 {
     font-size: 1.25em;
   }
 
-  #text05, #text09, #text10 {
+  #text05,
+  #text09,
+  #text10 {
     font-size: 1.5em;
   }
 
-  h1.style4, h2.style4, h3.style4, p.style4 {
+  h1.style4,
+  h2.style4,
+  h3.style4,
+  p.style4 {
     font-size: 1em;
   }
 
-  #text11, #text12 {
+  #text11,
+  #text12 {
     font-size: 2em;
   }
 
   .buttons.style1 {
     width: 100%;
     margin-left: 0;
-    padding: .234375rem 0;
+    padding: 0.234375rem 0;
 
     li {
       max-width: 100%;
-      margin: .46875rem 0;
+      margin: 0.46875rem 0;
     }
   }
 
@@ -4523,11 +4823,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   #buttons04 {
     width: 100%;
     margin-left: 0;
-    padding: .1875rem 0;
+    padding: 0.1875rem 0;
 
     li {
       max-width: 100%;
-      margin: .375rem 0;
+      margin: 0.375rem 0;
     }
   }
 
@@ -4542,11 +4842,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   #buttons08 {
     width: 100%;
     margin-left: 0;
-    padding: .421875rem 0;
+    padding: 0.421875rem 0;
 
     li {
       max-width: 100%;
-      margin: .84375rem 0;
+      margin: 0.84375rem 0;
     }
   }
 
@@ -4573,30 +4873,33 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
     }
   }
 
-  #image01 .frame, #image02 .frame {
+  #image01 .frame,
+  #image02 .frame {
     height: 8.75rem !important;
   }
 
-  #icons01, #icons03 {
+  #icons01,
+  #icons03 {
     width: calc(100% + 0rem);
     margin-left: 0;
   }
 
-  #icons01 li, #icons03 li {
+  #icons01 li,
+  #icons03 li {
     margin: 0;
   }
 
   #container05 {
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       padding: 0;
     }
 
-    &.columns > .wrapper > .inner > * > * {
+    &.columns>.wrapper>.inner>*>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default > .wrapper > .inner > {
+    &.default>.wrapper>.inner> {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4604,7 +4907,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
       .full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -4616,16 +4919,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4636,11 +4941,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4652,16 +4957,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #container03 {
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       padding: 0;
     }
 
-    &.columns > .wrapper > .inner > * > * {
+    &.columns>.wrapper>.inner>*>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default > .wrapper > .inner > {
+    &.default>.wrapper>.inner> {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4669,7 +4974,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
       .full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -4681,16 +4986,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4701,11 +5008,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4717,16 +5024,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #container01 {
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       padding: 0;
     }
 
-    &.columns > .wrapper > .inner > * > * {
+    &.columns>.wrapper>.inner>*>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default > .wrapper > .inner > {
+    &.default>.wrapper>.inner> {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4734,7 +5041,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
       .full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -4746,16 +5053,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4766,11 +5075,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4782,16 +5091,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #container02 {
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       padding: 0;
     }
 
-    &.columns > .wrapper > .inner > * > * {
+    &.columns>.wrapper>.inner>*>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default > .wrapper > .inner > {
+    &.default>.wrapper>.inner> {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4799,7 +5108,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
       .full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -4811,16 +5120,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4831,11 +5142,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4847,24 +5158,24 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #container04 {
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       padding: 2.4375rem 0;
     }
 
-    &.columns > .wrapper > .inner > * > * {
-      margin-top: .5625rem;
-      margin-bottom: .5625rem;
+    &.columns>.wrapper>.inner>*>* {
+      margin-top: 0.5625rem;
+      margin-bottom: 0.5625rem;
     }
 
-    &.default > .wrapper > .inner > {
+    &.default>.wrapper>.inner> {
       * {
-        margin-top: .5625rem;
-        margin-bottom: .5625rem;
+        margin-top: 0.5625rem;
+        margin-bottom: 0.5625rem;
       }
 
       .full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
 
         &:first-child {
           margin-top: (-2.4375rem) !important;
@@ -4876,16 +5187,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4896,11 +5209,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(-2.4375rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(-2.4375rem) !important;
         }
       }
@@ -4912,16 +5225,16 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   }
 
   #container06 {
-    > .wrapper > .inner {
+    >.wrapper>.inner {
       padding: 0;
     }
 
-    &.columns > .wrapper > .inner > * > * {
+    &.columns>.wrapper>.inner>*>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    &.default > .wrapper > .inner > {
+    &.default>.wrapper>.inner> {
       * {
         margin-top: 0;
         margin-bottom: 0;
@@ -4929,7 +5242,7 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
 
       .full {
         margin-left: calc(0rem);
-        width: calc(100% + 0rem + .4725px);
+        width: calc(100% + 0rem + 0.4725px);
 
         &:first-child {
           margin-top: 0 !important;
@@ -4941,16 +5254,18 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
       }
     }
 
-    &.columns > .wrapper > .inner > {
+    &.columns>.wrapper>.inner> {
       div {
-        &:first-of-type > .full, &:last-of-type > .full {
+
+        &:first-of-type>.full,
+        &:last-of-type>.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
         }
 
-        > .full {
+        >.full {
           margin-left: calc(0rem);
-          width: calc(100% + 0rem + .4725px);
+          width: calc(100% + 0rem + 0.4725px);
 
           &:first-child {
             margin-top: 0 !important;
@@ -4961,11 +5276,11 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
           }
         }
 
-        &:first-of-type > .full:first-child {
+        &:first-of-type>.full:first-child {
           margin-top: calc(0rem) !important;
         }
 
-        &:last-of-type > .full:last-child {
+        &:last-of-type>.full:last-child {
           margin-bottom: calc(0rem) !important;
         }
       }
@@ -4990,7 +5305,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/sacramento/v8/buEzpo6gcdjy0EiZMBUG4C0f_Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5014,7 +5330,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5038,7 +5355,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5062,7 +5380,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5086,7 +5405,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/josefinsans/v20/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5158,7 +5478,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-weight: 300;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5230,7 +5551,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5302,7 +5624,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-weight: 600;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/opensans/v27/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5374,7 +5697,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-weight: 300;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5446,7 +5770,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-weight: 400;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5518,7 +5843,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-weight: 600;
   font-stretch: 100%;
   src: url(https://fonts.gstatic.com/s/opensans/v27/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5574,7 +5900,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 100;
   src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUv9_-1phKLFgshYDvh6Vwt7V9V3F1Rrmo.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5630,7 +5957,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 300;
   src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUo9_-1phKLFgshYDvh6Vwt7V9VFE9GiU9G.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5686,7 +6014,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt7V9dv21T.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5742,7 +6071,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 100;
   src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUt9_-1phKLFgshYDvh6Vwt5Tldv21T.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5798,7 +6128,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 300;
   src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUu9_-1phKLFgshYDvh6Vwt5fFPqEp2iw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5854,7 +6185,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/alegreyasans/v14/5aUz9_-1phKLFgshYDvh6Vwt7VptvQ.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5862,7 +6194,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 300;
   src: url(https://fonts.gstatic.com/s/solway/v5/AMOTz46Cs2uTAOCuLlgpnccR.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5870,7 +6203,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/solway/v5/AMOQz46Cs2uTAOCmhXo8.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5878,7 +6212,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/solway/v5/AMOTz46Cs2uTAOCuPl8pnccR.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5910,7 +6245,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2fp2a15UIB7Un-bOeISG3pHl4G9wn5.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5942,7 +6278,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2ap2a15UIB7Un-bOeISG3pHl4OTCzs74u2.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -5974,7 +6311,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2Bp2a15UIB7Un-bOeISG3pHls29Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -6006,7 +6344,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/anonymouspro/v14/rP2cp2a15UIB7Un-bOeISG3pFuAT4C7c7Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -6014,7 +6353,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/londrinashadow/v12/oPWX_kB4kOQoWNJmjxLV5JuoCUlnQVyT.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -6062,7 +6402,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 200;
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZYokSds18Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -6118,7 +6459,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: italic;
   font-weight: 900;
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZklyds18Q.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -6174,7 +6516,8 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 200;
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3i94_wlxdu.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -6230,5 +6573,6 @@ h1.style4 a:hover, h2.style4 a:hover, h3.style4 a:hover, p.style4 a:hover {
   font-style: normal;
   font-weight: 900;
   src: url(https://fonts.gstatic.com/s/sourcesanspro/v18/6xKydSBYKcSV-LCoeQqfX1RYOo3iu4nwlxdu.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
