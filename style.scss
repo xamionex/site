@@ -781,8 +781,9 @@ p.style4 a:hover {
   width: calc(100% + 0.45rem);
   font-size: 3.5em;
   line-height: 1.125;
-  font-weight: 200;
-  text-shadow: 0 0 0.75rem #00f;
+  font-weight: 400;
+  text-shadow: 0 0 0.75rem #fff,
+  0 0 1.75rem #00f;
 }
 
 #text20 {
@@ -791,7 +792,10 @@ p.style4 a:hover {
   font-size: 1.25em;
   line-height: 1.5;
   font-weight: 200;
-  text-shadow: 0 0 0.5rem #00f;
+  text-shadow: 0 0 0.3rem #fff,
+  0 0 0.5rem #00f,
+  0 0 1rem #00f;
+  margin-bottom: 10px;
 }
 
 .buttons {
@@ -1317,32 +1321,21 @@ p.style4 a:hover {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 16.375rem;
-      height: 3.5rem;
-      line-height: 3.5rem;
+      width: auto;
+      height: auto;
+      line-height: 2.5rem;
       vertical-align: middle;
       padding: 0 1.75rem;
       text-transform: uppercase;
-      font-size: 2.5em;
+      font-size: 1.5em;
       font-family: source sans pro, sans-serif;
       letter-spacing: 0.275rem;
-      padding-left: calc(0.275rem + 1.75rem);
       font-weight: 900;
       border-radius: 2rem;
       -webkit-transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
       transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-
-      svg {
-        display: block;
-        width: 1.25em;
-        min-width: 18px;
-        height: 100%;
-        fill: #fff;
-        margin-right: calc(0.5em + 0.275rem);
-        margin-left: -0.125em;
-        -webkit-transition: fill 0.25s ease;
-        transition: fill 0.25s ease;
-      }
+      text-shadow: 0 0 0.3rem #fff,
+      0 0 0.3rem #00f;
 
       .label {
         direction: var(--site-language-direction);
@@ -4523,16 +4516,6 @@ p.style4 a:hover {
     font-size: 1.25em;
     line-height: 1.5;
   }
-
-  #buttons08 li a {
-    font-size: 2.5em;
-    letter-spacing: 0.275rem;
-    padding-left: calc(0.275rem + 1.75rem);
-
-    svg {
-      width: 1.25em;
-    }
-  }
 }
 
 @media (max-width: 480px) {
@@ -4578,34 +4561,6 @@ p.style4 a:hover {
       max-width: 100%;
       display: block;
       margin: 0.5rem 0;
-
-      &:first-child {
-        margin-top: 0;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      a {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        width: 100%;
-        max-width: 32rem;
-      }
-    }
-  }
-
-  #buttons08 {
-    margin-left: 0;
-    width: 100%;
-    padding: 0.5625rem 0;
-
-    li {
-      max-width: 100%;
-      display: block;
-      margin: 1.125rem 0;
 
       &:first-child {
         margin-top: 0;
@@ -4851,17 +4806,6 @@ p.style4 a:hover {
 
     li {
       margin: 0 0;
-    }
-  }
-
-  #buttons08 {
-    width: 100%;
-    margin-left: 0;
-    padding: 0.421875rem 0;
-
-    li {
-      max-width: 100%;
-      margin: 0.84375rem 0;
     }
   }
 
@@ -5306,3 +5250,4 @@ p.style4 a:hover {
     }
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
