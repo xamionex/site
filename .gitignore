@@ -1,3 +1,13 @@
 style.css.map
 style.min.css
 style.css
+package.json
+package-lock.json
+/node_modules/package.json
+/node_modules/readme.md
+/node_modules/.package-lock.json
+/node_modules/LICENSE
+/node_modules/lib
+/node_modules/opencollective-postinstall
+/node_modules/delegate
+/node_modules/.bin

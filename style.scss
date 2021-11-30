@@ -1,22 +1,160 @@
-#wrapper {
-  -webkit-overflow-scrolling: touch;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+a,
+b,
+body,
+center,
+code,
+div,
+embed,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+label,
+li,
+p,
+s,
+section,
+span,
+strong,
+summary,
+time,
+u,
+ul,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
   min-height: var(--viewport-height);
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
+  line-height: 1;
+  word-wrap: break-word;
+  overflow-x: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--background-height);
+    z-index: 0;
+    pointer-events: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-attachment: scroll;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+      -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))),
+      url(http://petar.tk/http://petar.tk/assets/images/bg.gif);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
+      linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)),
+      url(assets/images/bg.gif);
+    background-size: 512px, auto, cover;
+    background-position: center, 0 0, center;
+    background-repeat: repeat, repeat, repeat;
+    background-color: #fff;
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2a2873;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    transition: opacity 1s ease-in-out 0s, visibility 1s 0s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  &.is-loading:after {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+:root {
+  --site-language-direction: ltr;
+  --site-language-alignment: left;
+  --viewport-height: 100vh;
+  --background-height: 100vh;
+}
+
+html {
+  font-size: 22pt;
+}
+
+u {
+  text-decoration: underline;
+}
+
+strong {
+  color: inherit;
+  font-weight: bolder;
+}
+
+code {
+  font-family: lucida console, courier new, monospace;
+  font-weight: 400;
+  text-indent: 0;
+  letter-spacing: 0;
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.5em;
+  background-color: rgba(144, 144, 144, 0.25);
+  border-radius: 0.25em;
+}
+
+s {
+  text-decoration: line-through;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 #swup {
@@ -24,6 +162,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -38,6 +179,12 @@
   position: relative;
   z-index: 2;
   overflow: hidden;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-align: center;
 
   >.inner {
     position: relative;
