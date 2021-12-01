@@ -10,9 +10,9 @@ function init() {
       strings: ['Hello, I\'m <strong>Petar</strong>', 'I\'m a <strong>Serbian Programmer</strong>', 'I hope you like my site'],
       autoStart: true,
       loop: true,
-      deleteSpeed: 3,
-      cursor: '!',
+      deleteSpeed: 70,
       delay: 100,
+      pauseFor: 2000,
     });
   }
   if (document.querySelector('#age', '#ago')) {

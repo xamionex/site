@@ -195,9 +195,6 @@ a {
 .transition-fade {
   -webkit-transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
   transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
-  transition: opacity 1s ease 0s, transform 1s ease 0s;
-  transition: opacity 1s ease 0s, transform 1s ease 0s,
-    -webkit-transform 1s ease 0s;
   -webkit-transform: perspective(1000px) rotateX(0);
   transform: perspective(1000px) rotateX(0);
   -webkit-transform-origin: 50% 50%;
@@ -220,7 +217,7 @@ h1.style2,
 h2.style2,
 h3.style2,
 p.style2 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: sacramento, cursive;
   font-size: 3em;
   line-height: 1;
@@ -273,7 +270,7 @@ p.style3 a:hover {
 }
 
 #text07 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: alegreya sans, sans-serif;
   font-size: 1.75em;
   line-height: 1.25;
@@ -302,7 +299,7 @@ p.style3 a:hover {
 }
 
 #text01 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: open sans, sans-serif;
   font-size: 0.75em;
   line-height: 1;
@@ -332,7 +329,7 @@ p.style3 a:hover {
 }
 
 #text17 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: alegreya sans, sans-serif;
   font-size: 1.75em;
   line-height: 1.25;
@@ -385,7 +382,7 @@ h1.style1,
 h2.style1,
 h3.style1,
 p.style1 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: alegreya sans, sans-serif;
   font-size: 1.5em;
   line-height: 1.125;
@@ -474,7 +471,7 @@ h1.style4,
 h2.style4,
 h3.style4,
 p.style4 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: anonymous pro, monospace;
   font-size: 0.875em;
   line-height: 0.875;
@@ -498,7 +495,7 @@ p.style4 a:hover {
 
 #text11,
 #text12 {
-  color: rgba(255, 255, 255, 0.867);
+  color: rgba(255, 255, 255, 1);
   font-family: sacramento, cursive;
   font-size: 2.25em;
   line-height: 1;
