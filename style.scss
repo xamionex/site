@@ -29,10 +29,10 @@ body {
     background-attachment: scroll;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
       -webkit-gradient(linear, left bottom, left top, from(rgba(5, 5, 5, 0.549)), to(rgba(5, 5, 5, 0.549))),
-      url(http://petar.tk/http://petar.tk/assets/images/bg.gif);
+      url(assets/images/profile1.gif);
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
       linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)),
-      url(assets/images/bg.gif);
+      url(assets/images/profile1.gif);
     background-size: 512px, auto, cover;
     background-position: center, 0 0, center;
     background-repeat: repeat, repeat, repeat;
@@ -1378,18 +1378,15 @@ p.style4 a:hover {
   }
 }
 
-#image01:not(:first-child),
-#image02:not(:first-child) {
+#profile2:not(:first-child) {
   margin-top: 0.75rem !important;
 }
 
-#image01:not(:last-child),
-#image02:not(:last-child) {
+#profile2:not(:last-child) {
   margin-bottom: 0.75rem !important;
 }
 
-#image01 .frame,
-#image02 .frame {
+#profile2 .frame {
   width: 10rem;
   height: 10rem;
   border-radius: 100%;
@@ -1397,8 +1394,7 @@ p.style4 a:hover {
   transition: none;
 }
 
-#image01 img,
-#image02 img {
+#profile2 img {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -1407,8 +1403,7 @@ p.style4 a:hover {
   height: 100% !important;
 }
 
-#image01 .frame img,
-#image02 .frame img {
+#profile2 .frame img {
   -webkit-transition: none;
   transition: none;
 }
@@ -1579,7 +1574,7 @@ p.style4 a:hover {
   }
 }
 
-#container05 {
+#trees {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1596,205 +1591,7 @@ p.style4 a:hover {
     linear-gradient(192deg,
       rgba(161, 92, 92, 0.753) 0,
       rgba(207, 176, 255, 0.549) 100%),
-    url(http://petar.tk/assets/images/container05.jpg);
-  background-size: 512px, cover, cover;
-  background-position: center, 0 0, center;
-  background-repeat: repeat, repeat, repeat;
-
-  >.wrapper {
-    width: 100%;
-    max-width: 58rem;
-
-    >.inner {
-      padding: 3.25rem 0;
-    }
-  }
-
-  &.default>.wrapper>.inner> {
-    * {
-      margin-top: 0.75rem;
-      margin-bottom: 0.75rem;
-    }
-
-    :first-child {
-      margin-top: 0 !important;
-    }
-
-    :last-child {
-      margin-bottom: 0 !important;
-    }
-  }
-
-  &.columns>.wrapper>.inner {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-
-    > {
-      * {
-        -ms-flex-negative: 0;
-        flex-shrink: 0;
-        -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-        flex-grow: 0;
-        max-width: 100%;
-        padding: 0;
-
-        > {
-          * {
-            margin-top: 0.75rem;
-            margin-bottom: 0.75rem;
-          }
-
-          :first-child {
-            margin-top: 0 !important;
-          }
-
-          :last-child {
-            margin-bottom: 0 !important;
-          }
-        }
-      }
-
-      :first-child {
-        margin-left: 0;
-      }
-    }
-  }
-
-  &.default>.wrapper>.inner>.full {
-    margin-left: calc(0rem);
-    width: calc(100% + 0rem + 0.4725px);
-    max-width: none;
-
-    &:first-child {
-      margin-top: (-3.25rem) !important;
-      border-top-left-radius: inherit;
-      border-top-right-radius: inherit;
-    }
-
-    &:last-child {
-      margin-bottom: (-3.25rem) !important;
-      border-bottom-left-radius: inherit;
-      border-bottom-right-radius: inherit;
-    }
-  }
-
-  &.columns>.wrapper>.inner> {
-    div {
-      >.full {
-        margin-left: calc(0rem);
-        width: calc(100% + 0rem + 0.4725px);
-        max-width: none;
-      }
-
-      &:first-child>.full {
-        margin-left: calc(0rem);
-        width: calc(100% + 0rem + 0.4725px);
-      }
-
-      &:last-child>.full {
-        width: calc(100% + 0rem + 0.4725px);
-      }
-
-      >.full {
-        &:first-child {
-          margin-top: calc(-3.25rem) !important;
-        }
-
-        &:last-child {
-          margin-bottom: calc(-3.25rem) !important;
-        }
-      }
-
-      &:first-child {
-        border-top-left-radius: inherit;
-
-        >.full:first-child {
-          border-top-left-radius: inherit;
-        }
-      }
-
-      &:last-child {
-        border-top-right-radius: inherit;
-
-        >.full:first-child {
-          border-top-right-radius: inherit;
-        }
-      }
-    }
-
-    .full {
-      -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-      min-height: calc(var(--viewport-height) - 6.5rem);
-
-      &:first-child {
-        border-top-left-radius: inherit;
-        border-bottom-left-radius: inherit;
-      }
-
-      &:last-child {
-        border-top-right-radius: inherit;
-        border-bottom-right-radius: inherit;
-      }
-
-      >.full:first-child:last-child {
-        height: calc(100% + 6.5rem);
-        border-radius: inherit;
-
-        >* {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          border-radius: inherit;
-
-          >* {
-            height: 100%;
-            border-radius: inherit;
-          }
-        }
-      }
-    }
-  }
-
-  >.wrapper>.inner> {
-    :nth-child(1) {
-      width: 30%;
-      text-align: center;
-    }
-
-    :nth-child(2) {
-      width: 70%;
-      text-align: center;
-    }
-  }
-}
-
-#container03 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  min-height: var(--viewport-height);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-attachment: scroll;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E"),
-    linear-gradient(192deg,
-      rgba(161, 92, 92, 0.753) 0,
-      rgba(207, 176, 255, 0.549) 100%),
-    url(http://petar.tk/assets/images/container03.jpg);
+    url(assets/images/trees.jpg);
   background-size: 512px, cover, cover;
   background-position: center, 0 0, center;
   background-repeat: repeat, repeat, repeat;
@@ -1975,7 +1772,7 @@ p.style4 a:hover {
   }
 }
 
-#container01 {
+#love {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1988,7 +1785,7 @@ p.style4 a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   background-attachment: fixed;
-  background-image: url(http://petar.tk/assets/images/container01.jpg);
+  background-image: url(assets/images/love.jpg);
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
@@ -2157,7 +1954,7 @@ p.style4 a:hover {
   }
 }
 
-#container02 {
+#birthday {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2338,7 +2135,7 @@ p.style4 a:hover {
   }
 }
 
-#container04 {
+#wall {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2352,7 +2149,7 @@ p.style4 a:hover {
   justify-content: center;
   background-attachment: fixed;
   background-image: url(data:image/svg+xml;charset=utf8;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuODc1IiByZXN1bHQ9Im5vaXNlIiAvPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwLjU4NTkzNzUgMCIgLz48L2ZpbHRlcj48cmVjdCBmaWx0ZXI9InVybCgjbm9pc2UpIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idHJhbnNwYXJlbnQiIG9wYWNpdHk9IjEiIC8+PC9zdmc+),
-    url(http://petar.tk/assets/images/container04.jpg);
+    url(assets/images/wall.jpg);
   background-size: 512px, auto;
   background-position: center, center;
   background-repeat: repeat, repeat;
@@ -2526,7 +2323,7 @@ p.style4 a:hover {
   }
 }
 
-#container06 {
+#onlyfans {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2542,7 +2339,7 @@ p.style4 a:hover {
   background-image: linear-gradient(45deg,
       rgba(201, 101, 113, 0.831) 0,
       rgba(93, 173, 207, 0.51) 81%),
-    url(http://petar.tk/assets/images/container06.jpg);
+    url(assets/images/onlyfans.jpg);
   background-position: 0 0, top;
   background-repeat: repeat, no-repeat;
   background-size: cover, cover;
@@ -2898,8 +2695,8 @@ p.style4 a:hover {
     font-size: 16pt;
   }
 
-  #container01,
-  #container04 {
+  #love,
+  #wall {
     background-attachment: scroll;
   }
 }
@@ -3188,24 +2985,20 @@ p.style4 a:hover {
     }
   }
 
-  #image01:not(:first-child),
-  #image02:not(:first-child) {
+  #profile2:not(:first-child) {
     margin-top: 0.5625rem !important;
   }
 
-  #image01:not(:last-child),
-  #image02:not(:last-child) {
+  #profile2:not(:last-child) {
     margin-bottom: 0.5625rem !important;
   }
 
-  #image01 .frame,
-  #image02 .frame {
+  #profile2 .frame {
     width: 10rem;
     height: 12.5rem !important;
   }
 
-  #image01 img,
-  #image02 img {
+  #profile2 img {
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
@@ -3224,7 +3017,7 @@ p.style4 a:hover {
     margin: 0;
   }
 
-  #container05 {
+  #trees {
     &:not(:first-child) {
       margin-top: 0 !important;
     }
@@ -3403,186 +3196,7 @@ p.style4 a:hover {
     }
   }
 
-  #container03 {
-    &:not(:first-child) {
-      margin-top: 0 !important;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 0 !important;
-    }
-
-    >.wrapper {
-      max-width: 100%;
-
-      >.inner {
-        text-align: center !important;
-        padding: 0;
-
-        h1,
-        h2,
-        h3,
-        p {
-          text-align: inherit !important;
-        }
-      }
-    }
-
-    &.default>.wrapper>.inner>* {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &.columns>.wrapper>.inner {
-      -webkit-box-orient: vertical !important;
-      -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-      flex-direction: column !important;
-      -ms-flex-wrap: nowrap !important;
-      flex-wrap: nowrap !important;
-
-      > {
-        span {
-          display: none;
-        }
-
-        * {
-          padding: 0 0 !important;
-
-          >* {
-            margin-top: 0;
-            margin-bottom: 0;
-          }
-        }
-
-        :first-child {
-          margin-left: 0 !important;
-          padding-top: 0 !important;
-        }
-
-        :last-child {
-          padding-bottom: 0 !important;
-        }
-      }
-    }
-
-    &.default>.wrapper>.inner>.full {
-      margin-left: calc(0rem);
-      width: calc(100% + 0rem + 0.4725px);
-
-      &:first-child {
-        margin-top: 0 !important;
-      }
-
-      &:last-child {
-        margin-bottom: 0 !important;
-      }
-    }
-
-    &.columns>.wrapper>.inner> {
-      div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
-          margin-left: calc(0rem);
-          width: calc(100% + 0rem + 0.4725px);
-        }
-
-        >.full {
-          margin-left: calc(0rem);
-          width: calc(100% + 0rem + 0.4725px);
-
-          &:first-child {
-            margin-top: 0 !important;
-          }
-
-          &:last-child {
-            margin-bottom: 0 !important;
-          }
-        }
-
-        &:first-of-type>.full:first-child {
-          margin-top: calc(0rem) !important;
-        }
-
-        &:last-of-type>.full:last-child {
-          margin-bottom: calc(0rem) !important;
-        }
-
-        &:first-of-type {
-          border-top-left-radius: inherit;
-          border-top-right-radius: inherit;
-
-          >.full:first-child {
-            border-top-left-radius: inherit;
-            border-top-right-radius: inherit;
-          }
-        }
-
-        &:last-of-type {
-          border-bottom-left-radius: inherit;
-          border-bottom-right-radius: inherit;
-
-          >.full:last-child {
-            border-bottom-left-radius: inherit;
-            border-bottom-right-radius: inherit;
-          }
-        }
-
-        &:first-of-type {
-          border-bottom-left-radius: 0 !important;
-
-          >.full:last-child {
-            border-bottom-left-radius: 0 !important;
-          }
-        }
-
-        &:last-of-type {
-          border-top-right-radius: 0 !important;
-
-          >.full:first-child {
-            border-top-right-radius: 0 !important;
-          }
-        }
-      }
-
-      .full {
-        min-height: calc(var(--viewport-height) - 0rem);
-
-        >.full:first-child:last-child {
-          height: auto;
-
-          >* {
-            position: relative;
-            width: 100%;
-            height: auto;
-
-            > {
-              * {
-                height: auto;
-              }
-
-              iframe {
-                height: 100%;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    >.wrapper>.inner> {
-
-      :nth-child(1),
-      :nth-child(2) {
-        width: 100% !important;
-        min-height: 100% !important;
-        text-align: inherit !important;
-      }
-    }
-  }
-
-  #container01 {
+  #love {
     &:not(:first-child) {
       margin-top: 0 !important;
     }
@@ -3751,7 +3365,7 @@ p.style4 a:hover {
     }
   }
 
-  #container02 {
+  #birthday {
     &:not(:first-child) {
       margin-top: 0 !important;
     }
@@ -3920,7 +3534,7 @@ p.style4 a:hover {
     }
   }
 
-  #container04 {
+  #wall {
     >.wrapper {
       max-width: 100%;
 
@@ -4084,7 +3698,7 @@ p.style4 a:hover {
     }
   }
 
-  #container06 {
+  #onlyfans {
     &:not(:first-child) {
       margin-top: 0 !important;
     }
@@ -4105,11 +3719,7 @@ p.style4 a:hover {
     }
   }
 
-  #container03>.wrapper>.inner p {
-    text-align: inherit !important;
-  }
-
-  #container06 {
+  #onlyfans {
     >.wrapper {
       max-width: 100%;
     }
@@ -4413,12 +4023,12 @@ p.style4 a:hover {
     }
   }
 
-  #image01 .frame,
-  #image02 .frame {
+  #profile2 .frame,
+  #profile2 .frame {
     height: 10rem !important;
   }
 
-  #container05 {
+  #trees {
 
     &.columns>.wrapper>.inner>*>*,
     &.default>.wrapper>.inner>* {
@@ -4427,7 +4037,7 @@ p.style4 a:hover {
     }
   }
 
-  #container03 {
+  #love {
 
     &.columns>.wrapper>.inner>*>*,
     &.default>.wrapper>.inner>* {
@@ -4436,7 +4046,7 @@ p.style4 a:hover {
     }
   }
 
-  #container01 {
+  #birthday {
 
     &.columns>.wrapper>.inner>*>*,
     &.default>.wrapper>.inner>* {
@@ -4445,16 +4055,7 @@ p.style4 a:hover {
     }
   }
 
-  #container02 {
-
-    &.columns>.wrapper>.inner>*>*,
-    &.default>.wrapper>.inner>* {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
-  #container04 {
+  #wall {
 
     &.columns>.wrapper>.inner>*>*,
     &.default>.wrapper>.inner>* {
@@ -4463,7 +4064,7 @@ p.style4 a:hover {
     }
   }
 
-  #container06 {
+  #onlyfans {
 
     &.columns>.wrapper>.inner>*>*,
     &.default>.wrapper>.inner>* {
@@ -4633,8 +4234,8 @@ p.style4 a:hover {
     }
   }
 
-  #image01 .frame,
-  #image02 .frame {
+  #profile2 .frame,
+  #profile2 .frame {
     height: 8.75rem !important;
   }
 
@@ -4649,7 +4250,7 @@ p.style4 a:hover {
     margin: 0;
   }
 
-  #container05 {
+  #trees {
     >.wrapper>.inner {
       padding: 0;
     }
@@ -4716,7 +4317,7 @@ p.style4 a:hover {
     }
   }
 
-  #container03 {
+  #love {
     >.wrapper>.inner {
       padding: 0;
     }
@@ -4783,7 +4384,7 @@ p.style4 a:hover {
     }
   }
 
-  #container01 {
+  #birthday {
     >.wrapper>.inner {
       padding: 0;
     }
@@ -4850,74 +4451,7 @@ p.style4 a:hover {
     }
   }
 
-  #container02 {
-    >.wrapper>.inner {
-      padding: 0;
-    }
-
-    &.columns>.wrapper>.inner>*>* {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    &.default>.wrapper>.inner> {
-      * {
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-
-      .full {
-        margin-left: calc(0rem);
-        width: calc(100% + 0rem + 0.4725px);
-
-        &:first-child {
-          margin-top: 0 !important;
-        }
-
-        &:last-child {
-          margin-bottom: 0 !important;
-        }
-      }
-    }
-
-    &.columns>.wrapper>.inner> {
-      div {
-
-        &:first-of-type>.full,
-        &:last-of-type>.full {
-          margin-left: calc(0rem);
-          width: calc(100% + 0rem + 0.4725px);
-        }
-
-        >.full {
-          margin-left: calc(0rem);
-          width: calc(100% + 0rem + 0.4725px);
-
-          &:first-child {
-            margin-top: 0 !important;
-          }
-
-          &:last-child {
-            margin-bottom: 0 !important;
-          }
-        }
-
-        &:first-of-type>.full:first-child {
-          margin-top: calc(0rem) !important;
-        }
-
-        &:last-of-type>.full:last-child {
-          margin-bottom: calc(0rem) !important;
-        }
-      }
-
-      .full {
-        min-height: calc(var(--viewport-height) - 0rem);
-      }
-    }
-  }
-
-  #container04 {
+  #wall {
     >.wrapper>.inner {
       padding: 2.4375rem 0;
     }
@@ -4984,7 +4518,7 @@ p.style4 a:hover {
     }
   }
 
-  #container06 {
+  #onlyfans {
     >.wrapper>.inner {
       padding: 0;
     }
