@@ -4,5 +4,5 @@ new Typewriter('#myname', {
     loop: true,
     deleteSpeed: 3,
     cursor: '!',
-    delay: 85,
+    delay: 100,
   });
