@@ -1,10 +1,49 @@
-* {
+a,
+b,
+body,
+center,
+code,
+div,
+embed,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+label,
+li,
+p,
+s,
+section,
+span,
+strong,
+summary,
+time,
+u,
+ul,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+}
+
+ul {
+  list-style: none;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -195,6 +234,9 @@ a {
 .transition-fade {
   -webkit-transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
   transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
+  transition: opacity 1s ease 0s, transform 1s ease 0s;
+  transition: opacity 1s ease 0s, transform 1s ease 0s,
+    -webkit-transform 1s ease 0s;
   -webkit-transform: perspective(1000px) rotateX(0);
   transform: perspective(1000px) rotateX(0);
   -webkit-transform-origin: 50% 50%;
@@ -217,7 +259,7 @@ h1.style2,
 h2.style2,
 h3.style2,
 p.style2 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: sacramento, cursive;
   font-size: 3em;
   line-height: 1;
@@ -250,8 +292,6 @@ p.style3 {
   line-height: 1.5;
   font-weight: 400;
   text-shadow: 0.146rem 0.118rem 0.0625rem #000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 h1.style3 a,
@@ -270,7 +310,7 @@ p.style3 a:hover {
 }
 
 #text07 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: alegreya sans, sans-serif;
   font-size: 1.75em;
   line-height: 1.25;
@@ -299,7 +339,7 @@ p.style3 a:hover {
 }
 
 #text01 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: open sans, sans-serif;
   font-size: 0.75em;
   line-height: 1;
@@ -329,7 +369,7 @@ p.style3 a:hover {
 }
 
 #text17 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: alegreya sans, sans-serif;
   font-size: 1.75em;
   line-height: 1.25;
@@ -382,7 +422,7 @@ h1.style1,
 h2.style1,
 h3.style1,
 p.style1 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: alegreya sans, sans-serif;
   font-size: 1.5em;
   line-height: 1.125;
@@ -471,7 +511,7 @@ h1.style4,
 h2.style4,
 h3.style4,
 p.style4 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: anonymous pro, monospace;
   font-size: 0.875em;
   line-height: 0.875;
@@ -495,7 +535,7 @@ p.style4 a:hover {
 
 #text11,
 #text12 {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.867);
   font-family: sacramento, cursive;
   font-size: 2.25em;
   line-height: 1;
@@ -688,6 +728,84 @@ p.style4 a:hover {
     &:hover {
       background-color: #a17d00 !important;
     }
+  }
+}
+
+#buttons06 {
+  width: 100%;
+  padding: 0 0;
+
+  li {
+    display: block;
+    margin: 0 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: auto;
+      height: 2rem;
+      line-height: 2rem;
+      vertical-align: middle;
+      padding: 0 1rem;
+      font-size: 1.375em;
+      font-family: open sans, sans-serif;
+      font-weight: 300;
+      border-radius: 2rem;
+      -webkit-transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: color 0.375s ease, background-color 0.375s ease,
+        border-color 0.375s ease, -webkit-transform 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease;
+      transition: transform 0.375s ease, color 0.375s ease,
+        background-color 0.375s ease, border-color 0.375s ease,
+        -webkit-transform 0.375s ease;
+
+      svg {
+        display: block;
+        width: 1em;
+        min-width: 16px;
+        height: 100%;
+        fill: rgba(255, 255, 255, 0.8);
+        margin-right: calc(0.5em + 0rem);
+        margin-left: -0.125em;
+        -webkit-transition: fill 0.375s ease;
+        transition: fill 0.375s ease;
+      }
+
+      .label {
+        direction: var(--site-language-direction);
+      }
+    }
+  }
+
+  .button {
+    background-color: rgba(221, 119, 255, 0.333);
+    color: rgba(255, 255, 255, 0.8);
+    background-image: linear-gradient(125deg,
+        rgba(255, 0, 119, 0.533) 20%,
+        transparent 100%);
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: cover;
+
+    &:hover {
+      background-color: rgba(221, 51, 255, 0.733) !important;
+    }
+  }
+
+  li a:hover {
+    -webkit-transform: scale(1.1125);
+    transform: scale(1.1125);
   }
 }
 
@@ -2482,11 +2600,11 @@ p.style4 a:hover {
 
 #video01 {
   video {
-    width: 50rem;
+    width: 59.625rem;
   }
 
   .frame {
-    width: 50rem;
+    width: 59.625rem;
 
     &:before {
       padding-top: 56.25%;
@@ -2555,8 +2673,8 @@ p.style4 a:hover {
   border: 9px solid #4b0000;
   border-radius: 35px;
   background-color: #000000;
-  width: 630px;
-  height: 155px;
+  width: auto;
+  height: auto;
 
   li {
     width: 4.5rem;
@@ -2862,6 +2980,15 @@ p.style4 a:hover {
 
     svg {
       width: 0.875em;
+    }
+  }
+
+  #buttons06 li a {
+    font-size: 1.375em;
+    letter-spacing: 0;
+
+    svg {
+      width: 1em;
     }
   }
 
@@ -3794,7 +3921,7 @@ p.style4 a:hover {
 
     .frame,
     video {
-      width: 50rem;
+      width: 59.625rem;
     }
   }
 
@@ -4094,6 +4221,14 @@ p.style4 a:hover {
 
   #text20 {
     font-size: 1.25em;
+  }
+
+  #buttons06 {
+    padding: 0 0;
+
+    li {
+      margin: 0 0;
+    }
   }
 
   #buttons04 {
