@@ -51,6 +51,7 @@ function init() {
             document.getElementById("text09").innerText = "It's my birthday!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
+            document.getElementById("text10").style.display = "none";
             const script = document.createElement('script');
             script.src = '/confetti.js';
             document.head.appendChild(script);
