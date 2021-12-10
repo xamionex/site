@@ -29,7 +29,7 @@ function init() {
         yyyy = today.getFullYear(),
         age = yyyy - 2005
       nextYear = yyyy + 1,
-        dayMonth = "12/10/",
+        dayMonth = "11/22/",
         birthday = dayMonth + yyyy;
       today = mm + "/" + dd + "/" + yyyy;
       if (today > birthday) {
