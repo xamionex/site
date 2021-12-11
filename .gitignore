@@ -1,2 +1,5 @@
-style.css.map
-style.min.css
+style.scss
+tailwind.config.js
+src
+.vscode
+.fiveserverrc.json
