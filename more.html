@@ -4,7 +4,6 @@
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site - About</title>
    <meta charset="utf-8" />
@@ -20,22 +19,6 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Londrina+Shadow&family=Londrina+Sketch&family=Londrina+Solid:wght@100;300;400;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sacramento&family=Solway:wght@300;400;500;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet">
-   <style>
-      .transition-fade {
-         -webkit-transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
-         transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
-         transition: opacity 1s ease 0s, transform 1s ease 0s;
-         transition: opacity 1s ease 0s, transform 1s ease 0s, -webkit-transform 1s ease 0s;
-         -webkit-transform: perspective(1000px) rotateX(0);
-         transform: perspective(1000px) rotateX(0);
-         -webkit-transform-origin: 50% 50%;
-         transform-origin: 50% 50%;
-      }
-
-      html.is-animating .transition-fade {
-         opacity: 0;
-      }
-   </style>
 </head>
 
 <body>
@@ -49,24 +32,52 @@
                         style="background-image: url(assets/images/profile2.gif); background-size: 100% 100%; background-position: left top; background-repeat: no-repeat;">
                      </a>
                   </div>
-                  <h2 id="text03" class="style2">Petar</h2>
+                  <h2>Petar</h2>
+                  <div class="mb-4">
+                     <a href="/index.html">
+                        <button type="button"
+                        class='max-w-sm border-2 border-transparent bg-blue-500 ml-3 py-2 px-4 transition-all hover:border-blue-500 hover:bg-transparent hover:text-blue-500 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
+                           <div class="flex sm:flex-cols-12 gap-2">
+                              <div class="col-span-1">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <use xlink:href="/icons.svg#backbutton">
+                                    </use>
+                                 </svg>
+                              </div>
+                              <div class="col-span-2 pt-2">
+                                 <span>Go Back</span>
+                              </div>
+                           </div>
+                        </button>
+                     </a>
+                     <a href="/unused.html">
+                        <button type="button"
+                        class='max-w-sm border-2 border-transparent bg-blue-500 ml-3 py-2 px-4 transition-all hover:border-blue-500 hover:bg-transparent hover:text-blue-500 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
+                           <div class="flex sm:flex-cols-12 gap-2">
+                              <div class="col-span-1">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <use xlink:href="/icons.svg#socials">
+                                    </use>
+                                 </svg>
+                              </div>
+                              <div class="col-span-2 pt-2">
+                                 <span>All Socials</span>
+                              </div>
+                           </div>
+                        </button>
+                     </a>
+                  </div>
+                  
                   <ul id="buttons07" class="buttons">
                      <li>
                         <a href="/index.html" class="button n01">
                            <svg>
-                              <use xlink:href="/icons.svg#backbutton">
+                              <use xlink:href="/icons.svg#">
                               </use>
                            </svg>
-                           <span class="label">Go Back</span>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="/unused.html" class="button n02">
-                           <svg>
-                              <use xlink:href="/icons.svg#socials">
-                              </use>
-                           </svg>
-                           <span class="label">All Socials</span>
+                           <span class="label"></span>
                         </a>
                      </li>
                   </ul>

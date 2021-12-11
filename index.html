@@ -4,7 +4,6 @@
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site</title>
    <meta charset="utf-8" />
@@ -22,104 +21,77 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Londrina+Shadow&family=Londrina+Sketch&family=Londrina+Solid:wght@100;300;400;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sacramento&family=Solway:wght@300;400;500;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet">
-   <style>
-      .transition-fade {
-         -webkit-transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
-         transition: opacity 1s ease 0s, -webkit-transform 1s ease 0s;
-         transition: opacity 1s ease 0s, transform 1s ease 0s;
-         transition: opacity 1s ease 0s, transform 1s ease 0s, -webkit-transform 1s ease 0s;
-         -webkit-transform: perspective(1000px) rotateX(0);
-         transform: perspective(1000px) rotateX(0);
-         -webkit-transform-origin: 50% 50%;
-         transform-origin: 50% 50%;
-      }
-
-      html.is-animating .transition-fade {
-         opacity: 0;
-      }
-
-      .neonGlow {
-         color: #ffa1a1;
-         text-shadow: 0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012,
-            0 0 42px #d94012, 0 0 82px #d94012,
-            \\0 0 92px #d94012,
-            \\0 0 102px #d94012,
-            \\0 0 151px #d94012;
-      }
-   </style>
 </head>
 
 <body
    style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%201%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(to top, rgba(5, 5, 5, 0.549), rgba(5, 5, 5, 0.549)), url(assets/images/profile1.gif); background-size: 512px, auto, cover; background-position: center, 0 0, center; background-repeat: repeat, repeat, repeat; background-color: #fff;">
-   <main id="swup" class="transition-fade flex h-screen">
-      <div class="m-auto text-center">
-         <div class="bg-white shadow-xl rounded-lg py-3">
-            <h2 id="myname"></h2>
-            <p>
-               <span>I'm a <span id="age" class="neonGlow"></span> year old social / anxious introvert (<a
-                     href="https://www.16personalities.com/profiles/d8bbb1f9bd118"
-                     class="underline text-green-400">INFP-T</a>) from <span
-                     class="bg-gradient-to-r from-red-600 to-white via-blue-600 bg-clip-text text-transparent">Serbia</span>.
-                  <br>I like <span class="text-green-500">animals</span>, <span class="text-zinc-400">the
-                     unexplainable & scary</span>, <span class="text-yellow-500">electronics</span>, <span
-                     class="text-pink-400">music</span>,
-                  <span class="text-green-300">coding</span>
-               </span>
-               <br /> <span>and any other interesting topic.</span>
-            </p>
-            <div class="mb-4">
-               <a href="/more.html">
-                  <button type="button"
-                     class='max-w-sm hover:border-2 bg-gradient-to-r from-blue-900 to-blue-700 via-blue-800 ml-3 py-2 px-4 transition-all hover:border-blue-500 hover:from-white hover:to-white hover:via-white hover:text-blue-500 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
-                     <div class="flex sm:flex-cols-12 gap-2">
-                        <div class="col-span-1">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor">
-                              <use xlink:href="/icons.svg#paintbrush">
-                              </use>
-                           </svg>
-                        </div>
-                        <div class="col-span-2 pt-2">
-                           <span>About Me</span>
-                        </div>
+   <main class="flex h-screen text-shadow-drop">
+      <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-5">
+         <h2 id="myname" class="font-[sacramento] text-[88px] leading-[88px]"></h2>
+         <p class="font-josefinsans">
+            <span>I'm a <span id="age" class="text-shadow-neon-2xl"></span> year old social / anxious introvert (<a
+                  href="https://www.16personalities.com/profiles/d8bbb1f9bd118"
+                  class="underline text-green-400">INFP-T</a>) from <span
+                  class="bg-gradient-to-r from-red-600 to-white via-blue-600 bg-clip-text text-transparent">Serbia</span>.
+               <br>I like <span class="text-green-500">animals</span>, <span class="text-zinc-400">the
+                  unexplainable & scary</span>, <span class="text-yellow-500">electronics</span>, <span
+                  class="text-pink-400">music</span>,
+               <span class="text-green-300">coding</span>
+            </span>
+            <br /> <span>and any other interesting topic.</span>
+         </p>
+         <div class="mb-4">
+            <a href="/more.html">
+               <button type="button"
+                  class='max-w-sm border-2 border-transparent bg-teal-300 ml-3 py-2 px-4 transition-all hover:border-teal-300 hover:bg-transparent hover:text-teal-300 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
+                  <div class="flex sm:flex-cols-12 gap-2">
+                     <div class="col-span-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                           stroke="currentColor">
+                           <use xlink:href="/icons.svg#info">
+                           </use>
+                        </svg>
                      </div>
-                  </button>
-               </a>
-               <a href="/more.html">
-                  <button type="button"
-                     class='max-w-sm border-2 border-transparent bg-blue-500 ml-3 py-2 px-4 transition-all hover:border-blue-500 hover:bg-transparent hover:text-blue-500 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
-                     <div class="flex sm:flex-cols-12 gap-2">
-                        <div class="col-span-1">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor">
-                              <use xlink:href="/icons.svg#paintbrush">
-                              </use>
-                           </svg>
-                        </div>
-                        <div class="col-span-2 pt-2">
-                           <span>Birthday</span>
-                        </div>
+                     <div class="col-span-2 pt-2">
+                        <span>About Me</span>
                      </div>
-                  </button>
-               </a>
-               <a href="/more.html">
-                  <button type="button"
-                     class='max-w-sm border-2 border-transparent bg-blue-500 ml-3 py-2 px-4 transition-all hover:border-blue-500 hover:bg-transparent hover:text-blue-500 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
-                     <div class="flex sm:flex-cols-12 gap-2">
-                        <div class="col-span-1">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor">
-                              <use xlink:href="/icons.svg#paintbrush">
-                              </use>
-                           </svg>
-                        </div>
-                        <div class="col-span-2 pt-2">
-                           <span>Gallery</span>
-                        </div>
+                  </div>
+               </button>
+            </a>
+            <a href="/birthday.html">
+               <button type="button"
+                  class='max-w-sm border-2 border-transparent bg-pink-400 ml-3 py-2 px-4 transition-all hover:border-pink-400 hover:bg-transparent hover:text-pink-400 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
+                  <div class="flex sm:flex-cols-12 gap-2">
+                     <div class="col-span-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                           stroke="currentColor">
+                           <use xlink:href="/icons.svg#star">
+                           </use>
+                        </svg>
                      </div>
-                  </button>
-               </a>
-            </div>
+                     <div class="col-span-2 pt-2">
+                        <span>Birthday</span>
+                     </div>
+                  </div>
+               </button>
+            </a>
+            <a href="/gallery.html">
+               <button type="button"
+                  class='max-w-sm border-2 border-transparent bg-orange-300 ml-3 py-2 px-4 transition-all hover:border-orange-300 hover:bg-transparent hover:text-orange-300 text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-3'>
+                  <div class="flex sm:flex-cols-12 gap-2">
+                     <div class="col-span-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                           stroke="currentColor">
+                           <use xlink:href="/icons.svg#paintbrush">
+                           </use>
+                        </svg>
+                     </div>
+                     <div class="col-span-2 pt-2">
+                        <span>Gallery</span>
+                     </div>
+                  </div>
+               </button>
+            </a>
          </div>
          <p hidden id="days"></p>
          <p hidden id="hours"></p>
