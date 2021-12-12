@@ -2,9 +2,13 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
+    container: {
+      padding: '2rem',
+    },
     extend: {
       fontFamily: {
-        josefinsans: ['Josefin Sans']
+        josefinsans: ['Josefin Sans'],
+        alegreyasans: ['Alegreya Sans']
       }
     },
     textIndent: { // defaults to {}
@@ -173,6 +177,8 @@ module.exports = {
     textRendering: ['responsive'],
   },
   plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
     require('tailwindcss-typography')({
       // all these options default to the values specified here
       ellipsis: true,         // whether to generate ellipsis utilities
