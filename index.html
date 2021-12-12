@@ -4,6 +4,9 @@
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="./dist/SwupHeadPlugin.min.js"></script>
+   <script src="./dist/SwupBodyClassPlugin.min.js"></script>
+   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site</title>
    <meta charset="utf-8" />
@@ -23,14 +26,15 @@
       rel="stylesheet">
 </head>
 
-<body class="bg-[url(assets/images/profile1.gif)] bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[25%] duration-700 relative transform opacity-0 transition-all ease-out" data-replace='{ "skew-x-6": "skew-x-0", "opacity-0": "opacity-100", "opacity-0": "opacity-100" }'>
-<div class="flex h-screen">
+<body class="main bg-[url(assets/images/profile1.gif)]">
+   <main id="swup" class="flex swup-transition-fade h-screen">
       <div class="m-auto text-center text-shadow-drop text-white text-[36px] leading-[50px] space-y-5">
          <h2 id="myname" class="font-[sacramento] text-8xl"></h2>
          <p class="font-josefinsans">
-            <span>I'm a <span id="age" class="text-shadow-neon-2xl text-red-300"></span> year old social / anxious introvert (<a
-                  href="https://www.16personalities.com/profiles/d8bbb1f9bd118"
-                  class="underline text-green-400 hover:text-green-700 transition-all duration-300">INFP-T</a>) from <span
+            <span>I'm a <span id="age" class="text-shadow-neon-2xl text-red-300"></span> year old social / anxious
+               introvert (<a href="https://www.16personalities.com/profiles/d8bbb1f9bd118"
+                  class="underline text-green-400 hover:text-green-700 transition-all duration-300">INFP-T</a>) from
+               <span
                   class="bg-gradient-to-r from-red-600 to-white via-blue-600 bg-clip-text text-transparent text-shadow">Serbia</span>.
                <br>I like <span class="text-green-500">animals</span>, <span class="text-zinc-400">the
                   unexplainable & scary</span>, <span class="text-yellow-500">electronics</span>, <span
@@ -40,14 +44,14 @@
             <br /> <span>and any other interesting topic.</span>
          </p>
          <div>
-            <a href="./about.html">
+            <a href="/about.html">
                <button type="button"
-               class='text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-fill[#9300ab] hover:bg-[#001bab] hover:text-cyan-400 hover:scale-125 py-2 px-4 duration-500 transition-all text-2xl uppercase font-bold shadow-md rounded-full mx-2 p-3'>
+                  class='text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-fill[#9300ab] hover:bg-[#001bab] hover:text-cyan-400 mbtn'>
                   <div class="flex gap-2">
                      <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                           <use xlink:href="./icons.svg#info">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                           viewBox="0 0 24 24" stroke="currentColor">
+                           <use xlink:href="/icons.svg#info">
                            </use>
                         </svg>
                      </div>
@@ -57,14 +61,14 @@
                   </div>
                </button>
             </a>
-            <a href="./birthday.html">
+            <a href="/birthday.html">
                <button type="button"
-                  class='text-[#ff6ba0] shadow-[#66005c] bg-[#66005c] bg-birthday hover:shadow-[#9300ab] hover:bg-[#9300ab] hover:text-pink-400 hover:scale-125 py-2 px-4 duration-500 transition-all text-2xl uppercase font-bold shadow-md rounded-full mx-2 p-3'>
+                  class='text-[#ff6ba0] shadow-[#66005c] bg-[#66005c] bg-birthday hover:shadow-[#9300ab] hover:bg-[#9300ab] hover:text-pink-400 mbtn'>
                   <div class="flex gap-2">
                      <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                           stroke="currentColor">
-                           <use xlink:href="./icons.svg#star">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                           viewBox="0 0 24 24" stroke="currentColor">
+                           <use xlink:href="/icons.svg#star">
                            </use>
                         </svg>
                      </div>
@@ -74,14 +78,14 @@
                   </div>
                </button>
             </a>
-            <a href="./gallery.html">
+            <a href="/gallery.html">
                <button type="button"
-                  class='text-[#ffd645] shadow-[#543d00] bg-[#543d00] bg-gallery hover:shadow-f[#9300ab] hover:bg-[#a17d00] hover:text-yellow-400 hover:scale-125 py-2 px-4 duration-500 transition-all text-2xl uppercase font-bold shadow-md rounded-full mx-2 p-3'>
+                  class='text-[#ffd645] shadow-[#543d00] bg-[#543d00] bg-gallery hover:shadow-f[#9300ab] hover:bg-[#a17d00] hover:text-yellow-400 mbtn'>
                   <div class="flex gap-2">
                      <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                           stroke="currentColor">
-                           <use xlink:href="./icons.svg#paintbrush">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                           viewBox="0 0 24 24" stroke="currentColor">
+                           <use xlink:href="/icons.svg#paintbrush">
                            </use>
                         </svg>
                      </div>
@@ -98,19 +102,7 @@
          <p hidden id="seconds"></p>
          <p hidden id="ago"></p>
       </div>
-   </div>
+   </main>
 </body>
 
-               <script>
-                  document.addEventListener("DOMContentLoaded", function(){
-                var replacers = document.querySelectorAll('[data-replace]');
-                for(var i=0; i<replacers.length; i++){
-                    let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
-                    Object.keys(replaceClasses).forEach(function(key) {
-                        replacers[i].classList.remove(key);
-                        replacers[i].classList.add(replaceClasses[key]);
-                    });
-                }
-               });
-               </script>
 </html>

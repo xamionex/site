@@ -1,9 +1,15 @@
-//const swup = new Swup(); // only this line when included with script tag
+const swup = new Swup({
+  animationSelector: '[class*="swup-transition-"]',
+  plugins: [new SwupHeadPlugin({
+    persistAssets: true
+  })],
+  plugins: [new SwupBodyClassPlugin()]
+}); // only this line when included with script tag
 
-// run once 
+// run once
 init();
 // this event runs for every page view after initial load
-//swup.on('contentReplaced', init);
+swup.on('contentReplaced', init);
 function init() {
   if (document.querySelector('#myname')) {
     new Typewriter('#myname', {
@@ -51,8 +57,9 @@ function init() {
             document.getElementById("text09").innerText = "It's my birthday!";
             document.getElementById("countdown").style.display = "none";
             document.getElementById("content").style.display = "block";
+            document.getElementById("text10").style.display = "none";
             const script = document.createElement('script');
-            script.src = './confetti.js';
+            script.src = '/confetti.js';
             document.head.appendChild(script);
             clearInterval(x);
           }
@@ -61,16 +68,8 @@ function init() {
     }());
   }
 }
-document.addEventListener("DOMContentLoaded", function(){
-  setTimeout(function(){
-      var replacers = document.querySelectorAll('[data-replace]');
-      for(var i=0; i<replacers.length; i++){
-          console.log('hit here2');
-          let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
-          Object.keys(replaceClasses).forEach(function(key) {
-              replacers[i].classList.remove(key);
-              replacers[i].classList.add(replaceClasses[key]);
-          });
-      }
-  }, 1);
-});
+
+//window.onload = onPageLoad;
+//function onPageLoad() {
+//    document.querySelector('.main').classList.add('fade-enter');
+//}

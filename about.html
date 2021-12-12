@@ -4,6 +4,7 @@
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site - About</title>
    <meta charset="utf-8" />
@@ -13,7 +14,7 @@
    <meta property="og:title" content="Petar's Site - About" />
    <meta property="og:type" content="website" />
    <meta property="og:description" content="More about Petar" />
-   <meta property="og:url" content="./about.html" />
+   <meta property="og:url" content="/about.html" />
    <meta property="twitter:card" content="summary_large_image" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -21,24 +22,23 @@
       rel="stylesheet">
 </head>
 
-<body class="animate-fade"
-   style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cfilter%20id%3D%22noise%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.5%200%22%20%2F%3E%3C%2Ffilter%3E%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E'), linear-gradient(192deg, rgba(161, 92, 92, 0.753) 0, rgba(207, 176, 255, 0.549) 100%), url(assets/images/trees.jpg); background-size: 512px, auto, cover; background-position: center, 0 0, center; background-repeat: repeat, repeat, repeat; background-color: #fff; background-attachment: fixed">
-   <div class="container mx-auto">
+<body class="main bg-[url(assets/images/trees.jpg)]">
+   <div id="swup" class="container swup-transition-fade mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 h-screen text-center text-white text-shadow-drop">
         <div class="max-h-full my-auto">
          <div class="image overflow-hidden">
-            <img class="mx-auto rounded-full mb-4" src="assets/images/profile2.gif" alt="" href="./secret.html">
+            <img class="mx-auto rounded-full mb-4" src="assets/images/profile2.gif" alt="" href="/secret.html">
          </div>
          <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
          <div>
-            <a href="./index.html">
+            <a href="/index.html">
                <button type="button"
-                  class='flex mx-auto mb-4 border-2 border-transparent bg-[#ce2e8a] py-2 px-4 transition-all hover:border-[#ce2e8a] hover:bg-transparent hover:text-[#ce2e8a] text-white text-2xl uppercase font-bold shadow-md rounded-full p-3'>
+               class='shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
                   <div class="flex gap-2">
                      <div class="col-span-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
                            stroke="currentColor">
-                           <use xlink:href="./icons.svg#backbutton">
+                           <use xlink:href="/icons.svg#backbutton">
                            </use>
                         </svg>
                      </div>
@@ -48,14 +48,14 @@
                   </div>
                </button>
             </a>
-            <a href="./unused.html">
+            <a href="/unused.html">
                <button type="button"
-                  class='flex mx-auto mb-4 border-2 border-transparent bg-[#5e0f39] py-2 px-4 transition-all hover:border-[#5e0f39] hover:bg-transparent hover:text-[#5e0f39] text-white text-2xl uppercase font-bold shadow-md rounded-full p-3'>
+               class='shadow-[rgba(73,38,84,0.333)] bg-[rgba(73,38,84,0.333)] text-white  bg-unused hover:shadow-[rgba(104,25,120,0.733)] hover:bg-[rgba(104,25,120,0.733)] hover:text-inherit btn'>
                   <div class="flex gap-2">
                      <div class="col-span-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
                            stroke="currentColor">
-                           <use xlink:href="./icons.svg#socials">
+                           <use xlink:href="/icons.svg#socials">
                            </use>
                         </svg>
                      </div>
@@ -69,36 +69,36 @@
          <div class="container max-w-screen-full">
                <a href="https://discord.gg/xb6PYWBewm">
                   <button
-                     class="bg-[#7b8bde] border-2 border-transparent hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full">
+                     class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="./icons.svg#discord">
+                        <use xlink:href="/icons.svg#discord">
                         </use>
                      </svg>
                   </button>
                </a>
                <a href="https://www.instagram.com/_amione_/">
                   <button
-                     class="bg-[#ce3266] border-2 border-transparent hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full">
+                     class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="./icons.svg#instagram">
+                        <use xlink:href="/icons.svg#instagram">
                         </use>
                      </svg>
                   </button>
                </a>
                <a href="https://steamcommunity.com/id/amionexgamer/">
                   <button
-                     class="bg-[black] border-2 border-transparent hover:border-[black] hover:bg-transparent hover:text-[black] transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full">
+                     class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="./icons.svg#steam">
+                        <use xlink:href="/icons.svg#steam">
                         </use>
                      </svg>
                   </button>
                </a>
                <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ">
                   <button
-                     class="bg-[#b30003] border-2 border-transparent hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full">
+                     class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="./icons.svg#youtube">
+                        <use xlink:href="/icons.svg#youtube">
                         </use>
                      </svg>
                   </button>
@@ -121,7 +121,7 @@
                   could
                   learn something! Endless possibilities, you may never know if you don't try.<br><br>
                   If you wanna chat with me or anything, feel free to message
-                  me anywhere but I personally like discord. I <a href="./love.html">love</a>
+                  me anywhere but I personally like discord. I <a href="/love.html">love</a>
                   y'all, and stay safe!</span>
             </p>
          </div>

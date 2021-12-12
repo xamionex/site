@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   TODO Gallery Page
+TODO Gallery Page
+
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site - Gallery</title>
    <meta charset="utf-8" />
@@ -13,7 +15,7 @@
    <meta property="og:title" content="Petar's Site - Gallery" />
    <meta property="og:type" content="website" />
    <meta property="og:description" content="Petar's gallery" />
-   <meta property="og:url" content="./gallery.html" />
+   <meta property="og:url" content="/gallery.html" />
    <meta property="twitter:card" content="summary_large_image" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -21,133 +23,127 @@
       rel="stylesheet">
 </head>
 
-<body class="animate-fade">
-   <div id="wrapper">
-      <main id="swup" class="transition-fade">
-
-         <div id="wall" class="container columns full screen">
-            <div class="wrapper">
-               <div class="inner">
-                  <div>
-                     <p id="text12">Favorite Song<br>Videos</p>
-                     <div id="video02" class="video">
-                        <div class="frame">
-                           <iframe samePage="Lax" width="587" height="330"
-                              src="https://www.youtube.com/embed/ZbZSe6N_BXs" title="YouTube video player"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
-                     </div>
-                     <div id="video03" class="video">
-                        <div class="frame">
-                           <iframe samePage="Lax" width="587" height="330"
-                              src="https://www.youtube.com/embed/u9WgtlgGAgs" title="YouTube video player"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
+<body class="bg-[url(assets/images/wall.jpg)] backdrop-blur-sm backdrop-brightness-[50%] relative bg-repeat bg-auto">
+   <main id="swup" class="swup-transition-fade">
+      <div id="wall" class="container columns full screen">
+         <div class="wrapper">
+            <div class="inner">
+               <div>
+                  <p id="text12">Favorite Song<br>Videos</p>
+                  <div id="video02" class="video">
+                     <div class="frame">
+                        <iframe samePage="Lax" width="587" height="330" src="https://www.youtube.com/embed/ZbZSe6N_BXs"
+                           title="YouTube video player" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
                      </div>
                   </div>
-                  <div>
-                     <p id="text13" class="style4">
-                        <span>
-                           <u>
-                              <strong>
-                                 <code>Gallery</code>
-                              </strong>
-                           </u>
-                        </span>
-                        <br /> <span>This is a list of the top things I liked from being on the internet
-                           and I'll explain why shortly. This is all a little fun page I made so
-                           people know what I listen to, If you don't like what I listen to then
-                           keep it to yourself.</span>
-                        <br /> <span>Might add more later ;P</span>
-                        <br /> <span>
-                           <u>Videos are looped!</u>
-                        </span>
-                     </p>
-                     <p id="text13" class="style4">
-                        <span>
-                           <u>
-                              <strong>
-                                 <code>Songs</code>
-                              </strong>
-                           </u>
-                        </span>
-                        <br /> <span>
-                           <strong>1st is Happy</strong>
-                        </span>
-                        <br /> <span>It's top 1. in my list because I always listened to it and it
-                           always brings back happy memories.</span>
-                        <br /> <span>
-                           <strong>2nd is My Favorite Game</strong>
-                        </span>
-                        <br /> <span>I like the feeling of the song and the video, It's nice overall
-                           for me.</span>
-                     </p>
-                     <p id="text13" class="style4">
-                        <span>
-                           <u>
-                              <strong>
-                                 <code>Animations</code>
-                              </strong>
-                           </u>
-                        </span>
-                        <br /> <span>
-                           <strong>1st is Two Time</strong>
-                        </span>
-                        <br /> <span>I like the feelings I go thru whenever I watch it and it makes me
-                           remember to stay strong and never stop.</span>
-                        <br /> <span>
-                           <strong>2nd is I'd Rather Sleep</strong>
-                        </span>
-                        <br /> <span>It reminds me of what it felt like being a kid and then your life
-                           coming into play</span>
-                     </p>
-                     <p hidden id="days"></p>
-                     <p hidden id="hours"></p>
-                     <p hidden id="minutes"></p>
-                     <p hidden id="seconds"></p>
-                     <p hidden id="ago"></p>
-                     <p hidden id="age"></p>
-                     <ul id="buttons01" class="style3 buttons">
-                        <li>
-                           <a href="./index.html" class="button n01">
-                              <svg>
-                                 <use xlink:href="./icons.svg#backbutton">
-                                 </use>
-                              </svg>
-                              <span class="label">Back</span>
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div>
-                     <p id="text11">Favorite Song<br>Animations</p>
-                     <div id="video04" class="video">
-                        <div class="frame">
-                           <iframe samePage="Lax" width="587" height="330"
-                              src="https://www.youtube.com/embed/k17tBWLbMfI" title="YouTube video player"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
+                  <div id="video03" class="video">
+                     <div class="frame">
+                        <iframe samePage="Lax" width="587" height="330" src="https://www.youtube.com/embed/u9WgtlgGAgs"
+                           title="YouTube video player" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
                      </div>
-                     <div id="video05" class="style1 video">
-                        <div class="frame">
-                           <iframe samePage="Lax" width="587" height="330"
-                              src="https://www.youtube.com/embed/kEkNCtpGsBo" title="YouTube video player"
-                              frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
+                  </div>
+               </div>
+               <div>
+                  <p id="text13" class="style4">
+                     <span>
+                        <u>
+                           <strong>
+                              <code>Gallery</code>
+                           </strong>
+                        </u>
+                     </span>
+                     <br /> <span>This is a list of the top things I liked from being on the internet
+                        and I'll explain why shortly. This is all a little fun page I made so
+                        people know what I listen to, If you don't like what I listen to then
+                        keep it to yourself.</span>
+                     <br /> <span>Might add more later ;P</span>
+                     <br /> <span>
+                        <u>Videos are looped!</u>
+                     </span>
+                  </p>
+                  <p id="text13" class="style4">
+                     <span>
+                        <u>
+                           <strong>
+                              <code>Songs</code>
+                           </strong>
+                        </u>
+                     </span>
+                     <br /> <span>
+                        <strong>1st is Happy</strong>
+                     </span>
+                     <br /> <span>It's top 1. in my list because I always listened to it and it
+                        always brings back happy memories.</span>
+                     <br /> <span>
+                        <strong>2nd is My Favorite Game</strong>
+                     </span>
+                     <br /> <span>I like the feeling of the song and the video, It's nice overall
+                        for me.</span>
+                  </p>
+                  <p id="text13" class="style4">
+                     <span>
+                        <u>
+                           <strong>
+                              <code>Animations</code>
+                           </strong>
+                        </u>
+                     </span>
+                     <br /> <span>
+                        <strong>1st is Two Time</strong>
+                     </span>
+                     <br /> <span>I like the feelings I go thru whenever I watch it and it makes me
+                        remember to stay strong and never stop.</span>
+                     <br /> <span>
+                        <strong>2nd is I'd Rather Sleep</strong>
+                     </span>
+                     <br /> <span>It reminds me of what it felt like being a kid and then your life
+                        coming into play</span>
+                  </p>
+                  <p hidden id="days"></p>
+                  <p hidden id="hours"></p>
+                  <p hidden id="minutes"></p>
+                  <p hidden id="seconds"></p>
+                  <p hidden id="ago"></p>
+                  <p hidden id="age"></p>
+                  <ul id="buttons01" class="style3 buttons">
+                     <li>
+                        <a href="/index.html" class="button n01">
+                           <svg>
+                              <use xlink:href="/icons.svg#backbutton">
+                              </use>
+                           </svg>
+                           <span class="label">Back</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div>
+                  <p id="text11">Favorite Song<br>Animations</p>
+                  <div id="video04" class="video">
+                     <div class="frame">
+                        <iframe samePage="Lax" width="587" height="330" src="https://www.youtube.com/embed/k17tBWLbMfI"
+                           title="YouTube video player" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
+                     </div>
+                  </div>
+                  <div id="video05" class="style1 video">
+                     <div class="frame">
+                        <iframe samePage="Lax" width="587" height="330" src="https://www.youtube.com/embed/kEkNCtpGsBo"
+                           title="YouTube video player" frameborder="0"
+                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                           allowfullscreen></iframe>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </main>
+      </div>
+   </main>
    </div>
 </body>
 

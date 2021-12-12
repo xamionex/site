@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+    @apply flex mx-auto mb-4 scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl font-bold shadow-lg rounded-full p-3
+}
+
+.mbtn {
+    @apply scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl uppercase font-bold shadow-md rounded-full mx-2 p-3
+}
+
+.icob {
+    @apply border-2 border-transparent transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full
+}
+
+.main {
+    @apply bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative
+}
+
+.swup-transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  html.is-animating .swup-transition-fade {
+    opacity: 0;
+  }

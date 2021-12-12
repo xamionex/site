@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   TODO Bday Page
+TODO Bday Page
+
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site - Birthday</title>
    <meta charset="utf-8" />
@@ -13,7 +15,7 @@
    <meta property="og:title" content="Petar's Site - Birthday" />
    <meta property="og:type" content="website" />
    <meta property="og:description" content="Petar's Birthday Page" />
-   <meta property="og:url" content="./birthday.html" />
+   <meta property="og:url" content="/birthday.html" />
    <meta property="twitter:card" content="summary_large_image" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -21,47 +23,39 @@
       rel="stylesheet">
 </head>
 
-<body class="animate-fade">
-   <div id="wrapper">
-      <main id="swup" class="transition-fade">
-         <div class="inner">
-            <div id="birthday" class="container default full screen">
-               <div class="wrapper">
-                  <div class="inner">
-                     <p id="text09" style="color: #8f0000">My birthday is in:</p>
-                     <div id="countdown" class="text-shadow-neon-2xl">
-                        <ul>
-                           <li id="dayz"><span id="days">365</span>Days</li>
-                           <li id="hrz"><span id="hours">24</span>Hours</li>
-                           <li id="minz"><span id="minutes">60</span>Mins</li>
-                           <li id="secz"><span id="seconds">60</span>Secs</li>
-                        </ul>
-                     </div>
-                     <div id="content" class="emoji">
-                        <span>🥳</span>
-                        <span>🎉</span>
-                        <span>🎂</span>
-                     </div>
-                     <p id="text10" style="color: #8f0000">My birthday was <span id="ago" class="neonGlow"></span>
-                        days ago</p>
-                     <ul id="buttons05" class="style2 buttons">
-                        <li>
-                           <a href="./index.html" class="button n01">
-                              <svg>
-                                 <use xlink:href="./icons.svg#backbutton">
-                                 </use>
-                              </svg>
-                              <span class="label">Back</span>
-                           </a>
-                        </li>
-                     </ul>
-                     <p hidden id="age"></p>
-                  </div>
-               </div>
-            </div>
+<body class="main bg-red-900">
+   <main id="swup" class="swup-transition-fade">
+      <div id="birthday" class="container default full screen">
+         <p class="text-red-900">My birthday is in:</p>
+         <div id="countdown" class="text-shadow-neon-2xl">
+            <ul>
+               <li id="dayz"><span id="days">365</span>Days</li>
+               <li id="hrz"><span id="hours">24</span>Hours</li>
+               <li id="minz"><span id="minutes">60</span>Mins</li>
+               <li id="secz"><span id="seconds">60</span>Secs</li>
+            </ul>
          </div>
-      </main>
-   </div>
+         <div id="content" class="emoji">
+            <span>🥳</span>
+            <span>🎉</span>
+            <span>🎂</span>
+         </div>
+         <p class="text-red-900">My birthday was <span id="ago" class="text-shadow-neon-xl"></span>
+            days ago</p>
+         <ul id="buttons05" class="style2 buttons">
+            <li>
+               <a href="/index.html" class="button n01">
+                  <svg>
+                     <use xlink:href="/icons.svg#backbutton">
+                     </use>
+                  </svg>
+                  <span class="label">Back</span>
+               </a>
+            </li>
+         </ul>
+         <p hidden id="age"></p>
+      </div>
+   </main>
 </body>
 
 </html>
