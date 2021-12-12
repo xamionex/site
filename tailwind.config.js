@@ -6,6 +6,19 @@ module.exports = {
       padding: '2rem',
     },
     extend: {
+      colors: {
+        'bgback': 'rgba(221,119,255,.333)',
+        'textback': 'rgba(255,255,255,.8)',
+        'info': 'linear-gradient(125deg, #01001c 20%, rgba(0, 90, 102, 0.008) 100%)',
+        'birthday': 'linear-gradient(125deg, #1c0014 20%, rgba(102, 0, 92, 0.008) 100%)',
+        'gallery': 'linear-gradient(125deg, #2d003d 20%, rgba(84, 61, 0, 0.008) 100%)',
+      },
+      backgroundImage: {
+        'info': 'linear-gradient(125deg, #01001c 20%, rgba(0, 90, 102, 0.008) 100%)',
+        'birthday': 'linear-gradient(125deg, #1c0014 20%, rgba(102, 0, 92, 0.008) 100%)',
+        'gallery': 'linear-gradient(125deg, #2d003d 20%, rgba(84, 61, 0, 0.008) 100%)',
+        'back': 'linear-gradient(125deg,rgba(255,0,119,0.533) 20%,transparent 100%)',
+      },
       fontFamily: {
         josefinsans: ['Josefin Sans'],
         alegreyasans: ['Alegreya Sans']
@@ -178,8 +191,10 @@ module.exports = {
     textRendering: ['responsive'],
   },
   plugins: [
+    require('postcss-import'),
     require('tailwindcss'),
     require('autoprefixer'),
+    require('@tailwindcss/aspect-ratio'),
     require('tailwindcss-typography')({
       // all these options default to the values specified here
       ellipsis: true,         // whether to generate ellipsis utilities
