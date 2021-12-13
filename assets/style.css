@@ -14,10 +14,6 @@
     @apply border-2 border-transparent transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full
 }
 
-.main {
-    @apply bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative
-}
-
 .swup-transition-fade {
     transition: .7s;
     -webkit-transition: opacity 1s ease-in-out;

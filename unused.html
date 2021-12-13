@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
+TODO Fix reload for phone
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -24,7 +24,7 @@
       rel="stylesheet">
 </head>
 
-<body class="main bg-[url(assets/images/trees.jpg)]">
+<body class="main bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(assets/images/trees.jpg)]">
    <div id="swup" class="container swup-transition-fade mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 h-screen text-center text-white text-shadow-drop">
          <div class="max-h-full my-auto">
@@ -249,15 +249,15 @@
                   </button>
                </a>
             </div>
+            <p hidden id="days"></p>
+            <p hidden id="hours"></p>
+            <p hidden id="minutes"></p>
+            <p hidden id="seconds"></p>
+            <p hidden id="ago"></p>
+            <p hidden id="age"></p>
          </div>
       </div>
    </div>
-   <p hidden id="days"></p>
-   <p hidden id="hours"></p>
-   <p hidden id="minutes"></p>
-   <p hidden id="seconds"></p>
-   <p hidden id="ago"></p>
-   <p hidden id="age"></p>
 </body>
 
 </html>

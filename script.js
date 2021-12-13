@@ -69,7 +69,7 @@ function init() {
   }
 }
 
-window.onload = onPageLoad;
-function onPageLoad() {
-    document.querySelector('.main').classList.add('fade-enter');
-}
+//window.onload = onPageLoad;
+//function onPageLoad() {
+//    document.querySelector('.main').classList.add('fade-enter');
+//}
