@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-TODO Fix reload for phone
+
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -8,6 +8,7 @@ TODO Fix reload for phone
    <script src="./dist/SwupBodyClassPlugin.min.js"></script>
    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
+   <meta name="viewport" content="width=device-width,initial-scale=0.69,user-scalable=no" />
    <title>Petar's Site - About</title>
    <meta charset="utf-8" />
    <meta property="og:title" content="Petar's Site - About" />
@@ -26,109 +27,115 @@ TODO Fix reload for phone
       rel="stylesheet">
 </head>
 
-<body class="main bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(assets/images/trees.jpg)]">
+<body
+   class="main bg-no-repeat bg-cover bg-fixed bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(assets/images/trees.jpg)]">
    <div id="swup" class="container swup-transition-fade mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 h-screen text-center text-white text-shadow-drop">
-        <div class="max-h-full my-auto">
-         <div class="image-wrapper mb-4">
-            <img class="image-1" src="assets/images/profile2.gif" />
-            <img class="image-2" src="assets/images/profile2.gif" />
-            <img class="image-3" src="assets/images/profile2.gif" />
-            <img class="image-4" src="assets/images/profile2.gif" />
-          </div>
-         <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
-         <div>
-            <li class="list-none flex place-content-center">
-               <a href="/index.html" type="button"
-               class='shadow-md shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
-                  <div class="flex gap-2">
-                     <div class="col-span-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <use xlink:href="/icons.svg#backbutton">
-                           </use>
-                        </svg>
+         <div class="max-h-full my-auto">
+            <div class="image-wrapper mb-4">
+               <img class="image-1" src="assets/images/profile2.gif" />
+               <img class="image-2" src="assets/images/profile2.gif" />
+               <img class="image-3" src="assets/images/profile2.gif" />
+               <img class="image-4" src="assets/images/profile2.gif" />
+            </div>
+            <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
+            <div>
+               <li class="list-none flex place-content-center">
+                  <a href="/index.html" type="button"
+                     class='shadow-md shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
+                     <div class="flex gap-2">
+                        <div class="col-span-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                              viewBox="0 0 24 24" stroke="currentColor">
+                              <use xlink:href="/icons.svg#backbutton">
+                              </use>
+                           </svg>
+                        </div>
+                        <div class="col-span-2 pt-2">
+                           <span>Go Back</span>
+                        </div>
                      </div>
-                     <div class="col-span-2 pt-2">
-                        <span>Go Back</span>
+                  </a>
+               </li>
+               <li class="list-none flex place-content-center">
+                  <a href="/unused.html" type="button"
+                     class='shadow-md shadow-[rgba(73,38,84,0.333)] bg-[rgba(73,38,84,0.333)] text-white  bg-unused hover:shadow-[rgba(104,25,120,0.733)] hover:bg-[rgba(104,25,120,0.733)] hover:text-inherit btn'>
+                     <div class="flex gap-2">
+                        <div class="col-span-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                              viewBox="0 0 24 24" stroke="currentColor">
+                              <use xlink:href="/icons.svg#socials">
+                              </use>
+                           </svg>
+                        </div>
+                        <div class="col-span-2 pt-2">
+                           <span>All Socials</span>
+                        </div>
                      </div>
-                  </div>
+                  </a>
+               </li>
+            </div>
+            <div class="container max-w-screen-full">
+               <a href="https://discord.gg/xb6PYWBewm"
+                  class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                     <use xlink:href="/icons.svg#discord">
+                     </use>
+                  </svg>
                </a>
-            </li>
-            <li class="list-none flex place-content-center">
-               <a href="/unused.html" type="button"
-               class='shadow-md shadow-[rgba(73,38,84,0.333)] bg-[rgba(73,38,84,0.333)] text-white  bg-unused hover:shadow-[rgba(104,25,120,0.733)] hover:bg-[rgba(104,25,120,0.733)] hover:text-inherit btn'>
-                  <div class="flex gap-2">
-                     <div class="col-span-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                           stroke="currentColor">
-                           <use xlink:href="/icons.svg#socials">
-                           </use>
-                        </svg>
-                     </div>
-                     <div class="col-span-2 pt-2">
-                        <span>All Socials</span>
-                     </div>
-                  </div>
-            </a>
-         </li>
-         </div>
-         <div class="container max-w-screen-full">
-               <a href="https://discord.gg/xb6PYWBewm" class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="/icons.svg#discord">
-                        </use>
-                     </svg>
+               <a href="https://www.instagram.com/_amione_/"
+                  class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                     <use xlink:href="/icons.svg#instagram">
+                     </use>
+                  </svg>
                </a>
-               <a href="https://www.instagram.com/_amione_/" class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="/icons.svg#instagram">
-                        </use>
-                     </svg>
+               <a href="https://steamcommunity.com/id/amionexgamer/"
+                  class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                     <use xlink:href="/icons.svg#steam">
+                     </use>
+                  </svg>
                </a>
-               <a href="https://steamcommunity.com/id/amionexgamer/" class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="/icons.svg#steam">
-                        </use>
-                     </svg>
+               <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ"
+                  class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                     <use xlink:href="/icons.svg#youtube">
+                     </use>
+                  </svg>
                </a>
-               <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ" class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
-                        <use xlink:href="/icons.svg#youtube">
-                        </use>
-                     </svg>
-               </a>
-         </div>
+            </div>
             <span>My discord is Petar#0389<br>
                <a href="https://steamdb.info/calculator/76561198152182139/">My SteamDB</a>
             </span>
-        </div>
-        <div class="flex p-10">
-          <div class="my-auto max-w-full">
-            <p class="font-josefinsans font-bold text-3xl mb-4">More About Me</p>
-            <p class="font-alegreyasans text-lg font-light">
-               <span>Heya, I'm usually nice to everyone so if you want something from me,
-                  feel free to ask! Even if i'm busy i might reply to you. I also like
-                  meeting new people! ;3 <br><br>
-                  I constantly seek for new things to try out and if I'm
-                  not that good at it, I don't care!! <br><br>
-                  Everything is worth trying out and seeing what you can do, maybe you can impress yourself, or maybe you
-                  could
-                  learn something! Endless possibilities, you may never know if you don't try.<br><br>
-                  If you wanna chat with me or anything, feel free to message
-                  me anywhere but I personally like discord. I <a href="/love.html">love</a>
-                  y'all, and stay safe!</span>
-            </p>
-            <p hidden id="days"></p>
-            <p hidden id="hours"></p>
-            <p hidden id="minutes"></p>
-            <p hidden id="seconds"></p>
-            <p hidden id="ago"></p>
-            <p hidden id="age"></p>
+         </div>
+         <div class="flex">
+            <div class="my-auto max-w-full">
+               <p class="font-josefinsans font-bold text-3xl mb-4">More About Me</p>
+               <p class="font-alegreyasans text-lg font-light">
+                  <span>Heya, I'm usually nice to everyone so if you want something from me,
+                     feel free to ask! Even if i'm busy i might reply to you. I also like
+                     meeting new people! ;3 <br><br>
+                     I constantly seek for new things to try out and if I'm
+                     not that good at it, I don't care!! <br><br>
+                     Everything is worth trying out and seeing what you can do, maybe you can impress yourself, or maybe
+                     you
+                     could
+                     learn something! Endless possibilities, you may never know if you don't try.<br><br>
+                     If you wanna chat with me or anything, feel free to message
+                     me anywhere but I personally like discord. I <a href="/love.html">love</a>
+                     y'all, and stay safe!</span>
+               </p>
+               <p hidden id="days"></p>
+               <p hidden id="hours"></p>
+               <p hidden id="minutes"></p>
+               <p hidden id="seconds"></p>
+               <p hidden id="ago"></p>
+               <p hidden id="age"></p>
+            </div>
          </div>
       </div>
    </div>
-    </div>
-   </body>
+</body>
 
 </html>

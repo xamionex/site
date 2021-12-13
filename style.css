@@ -446,7 +446,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 0 #0000;
 }
 
-.backdrop-blur-sm, .backdrop-brightness-\[50\%\] {
+.backdrop-blur-sm, .backdrop-brightness-\[50\%\], .backdrop-filter {
   --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -586,6 +586,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.75rem;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-min {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -600,6 +610,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .place-content-center {
@@ -738,6 +756,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-auto {
   background-size: auto;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
 }
 
 .bg-clip-text {
@@ -1063,6 +1089,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .backdrop-brightness-\[50\%\] {
   --tw-backdrop-brightness: brightness(50%);
+  -webkit-backdrop-filter: var(--tw-backdrop-filter);
+          backdrop-filter: var(--tw-backdrop-filter);
+}
+
+.backdrop-filter {
   -webkit-backdrop-filter: var(--tw-backdrop-filter);
           backdrop-filter: var(--tw-backdrop-filter);
 }
@@ -1418,5 +1449,9 @@ html.is-animating .swup-transition-fade {
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

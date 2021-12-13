@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html lang="en">
-TODO Bday Page
 
 <head>
    <link rel="stylesheet" href="style.css">
@@ -9,6 +8,7 @@ TODO Bday Page
    <script src="./dist/SwupBodyClassPlugin.min.js"></script>
    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
+   <meta name="viewport" content="width=device-width,initial-scale=0.7,user-scalable=no" />
    <title>Petar's Site - Birthday</title>
    <meta charset="utf-8" />
    <meta property="og:title" content="Petar's Site - Birthday" />
@@ -33,10 +33,14 @@ TODO Bday Page
          <p id="announcer1" class="bdaytxt">My birthday is in:</p>
          <div id="countdown" class="bdaytxt font-normal rounded-3xl tracking-widest p-2">
             <ul>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="days">365</span>Days</li>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="hours">24</span>Hours</li>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="minutes">60</span>Mins</li>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="seconds">60</span>Secs</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span
+                     class="block text-7xl font-londrinashadow" id="days">365</span>Days</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span
+                     class="block text-7xl font-londrinashadow" id="hours">24</span>Hours</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span
+                     class="block text-7xl font-londrinashadow" id="minutes">60</span>Mins</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span
+                     class="block text-7xl font-londrinashadow" id="seconds">60</span>Secs</li>
             </ul>
          </div>
          <div id="content" class="emoji">
@@ -46,25 +50,25 @@ TODO Bday Page
          </div>
          <p id="announcer2" class="bdaytxt">My birthday was <span id="ago" class="text-shadow-blueneon"></span>
             days ago</p>
-            <div>
-               <a href="/index.html">
-                  <button type="button"
-                     class='shadow-md text-blue-200 shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-blue-400 mbtn'>
-                     <div class="flex gap-2">
-                        <div>
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
-                              viewBox="0 0 24 24" stroke="currentColor">
-                              <use xlink:href="/icons.svg#backbutton">
-                              </use>
-                           </svg>
-                        </div>
-                        <div class="pt-2">
-                           <span>Back</span>
-                        </div>
+         <div>
+            <a href="/index.html">
+               <button type="button"
+                  class='shadow-md text-blue-200 shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-blue-400 mbtn'>
+                  <div class="flex gap-2">
+                     <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                           viewBox="0 0 24 24" stroke="currentColor">
+                           <use xlink:href="/icons.svg#backbutton">
+                           </use>
+                        </svg>
                      </div>
-                  </button>
-               </a>
-            </div>
+                     <div class="pt-2">
+                        <span>Back</span>
+                     </div>
+                  </div>
+               </button>
+            </a>
+         </div>
          <p hidden id="age"></p>
       </div>
    </main>
