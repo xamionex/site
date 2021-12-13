@@ -24,6 +24,7 @@ module.exports = {
       },
       fontFamily: {
         londrinashadow: ['Londrina Shadow'],
+        solway: ['Solway'],
         josefinsans: ['Josefin Sans'],
         alegreyasans: ['Alegreya Sans']
       }

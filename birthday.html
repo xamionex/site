@@ -29,18 +29,14 @@
 
 <body class="main bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-bday">
    <main id="swup" class="flex swup-transition-fade h-screen">
-      <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-5">
+      <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-2">
          <p id="announcer1" class="bdaytxt">My birthday is in:</p>
-         <div id="countdown" class="bdaytxt font-normal rounded-3xl tracking-widest p-2">
+         <div id="countdown" class="bdaytxt rounded-3xl tracking-widest">
             <ul>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span
-                     class="block text-7xl font-londrinashadow" id="days">365</span>Days</li>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span
-                     class="block text-7xl font-londrinashadow" id="hours">24</span>Hours</li>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span
-                     class="block text-7xl font-londrinashadow" id="minutes">60</span>Mins</li>
-               <li class="inline-block text-2xl uppercase font-[solway]"><span
-                     class="block text-7xl font-londrinashadow" id="seconds">60</span>Secs</li>
+               <li class="bdayintxt"><span class="bdaynum" id="days">365</span>Days</li>
+               <li class="bdayintxt"><span class="bdaynum" id="hours">24</span>Hours</li>
+               <li class="bdayintxt"><span class="bdaynum" id="minutes">60</span>Mins</li>
+               <li class="bdayintxt"><span class="bdaynum" id="seconds">60</span>Secs</li>
             </ul>
          </div>
          <div id="content" class="emoji">
@@ -51,22 +47,20 @@
          <p id="announcer2" class="bdaytxt">My birthday was <span id="ago" class="text-shadow-blueneon"></span>
             days ago</p>
          <div>
-            <a href="/index.html">
-               <button type="button"
-                  class='shadow-md text-blue-200 shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-blue-400 mbtn'>
-                  <div class="flex gap-2">
-                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
-                           viewBox="0 0 24 24" stroke="currentColor">
-                           <use xlink:href="/icons.svg#backbutton">
-                           </use>
-                        </svg>
-                     </div>
-                     <div class="pt-2">
-                        <span>Back</span>
-                     </div>
+            <a href="/index.html" type="button"
+               class='shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 mx-10 mbtn'>
+               <div class="flex gap-2">
+                  <div>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <use xlink:href="/icons.svg#backbutton">
+                        </use>
+                     </svg>
                   </div>
-               </button>
+                  <div class="pt-2">
+                     <span>Back</span>
+                  </div>
+               </div>
             </a>
          </div>
          <p hidden id="age"></p>
