@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .btn {
-    @apply flex mx-auto mb-4 scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl font-bold shadow-lg rounded-full p-3
+    @apply flex mx-auto mb-4 scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl font-bold rounded-full p-3
 }
 
 .mbtn {
-    @apply scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl uppercase font-bold shadow-md rounded-full mx-2 p-3
+    @apply scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl uppercase font-bold rounded-full mx-2 p-3
 }
 
 .icob {
@@ -19,9 +19,68 @@
 }
 
 .swup-transition-fade {
-    transition: 0.4s;
-    opacity: 1;
+    transition: .7s;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
   }
   html.is-animating .swup-transition-fade {
     opacity: 0;
   }
+
+  .fade-enter * {
+    animation: fadein 1s;
+  }
+  @keyframes fadein {
+    from { opacity: 0}
+    to   { opacity: 1}
+  }
+
+  .image-wrapper {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    @apply mx-auto
+}
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    @apply rounded-3xl
+}
+.image-1 {
+    clip-path: polygon(0 0, 0 32%, 28% 0);
+    transform: translate(-10px, -10px);
+    transition: transform 300ms ease;
+    transform-origin: top;
+}
+.image-wrapper:hover .image-1 {
+    transform: translate(0, 0);
+}
+.image-2 {
+    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
+    transform: translate(-10px, 5px);
+    transition: transform 300ms ease;
+}
+.image-wrapper:hover .image-2 {
+    transform: translate(0, 0);
+}
+.image-3 {
+    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
+    transform: translate(9px, -10px);
+    transition: transform 300ms ease;
+}
+.image-wrapper:hover .image-3 {
+    transform: translate(0, 0);
+}
+.image-4 {
+    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
+    transform: translate(10px, 5px);
+    transition: transform 300ms ease;
+    transform-origin: top;
+}
+.image-wrapper:hover .image-4 {
+    transform: translate(0, 0);
+}

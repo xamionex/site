@@ -5,6 +5,8 @@ TODO Bday Page
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="./dist/SwupHeadPlugin.min.js"></script>
+   <script src="./dist/SwupBodyClassPlugin.min.js"></script>
    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site - Birthday</title>
@@ -24,15 +26,15 @@ TODO Bday Page
 </head>
 
 <body class="main bg-red-900">
-   <main id="swup" class="swup-transition-fade">
-      <div id="birthday" class="container default full screen">
-         <p class="text-red-900">My birthday is in:</p>
+   <main id="swup" class="swup-transition-fade container h-screen text-center m-auto">
+      <div class="max-h-full my-auto">
+         <p id="announcer1" class="text-red-900">My birthday is in:</p>
          <div id="countdown" class="text-shadow-neon-2xl">
             <ul>
-               <li id="dayz"><span id="days">365</span>Days</li>
-               <li id="hrz"><span id="hours">24</span>Hours</li>
-               <li id="minz"><span id="minutes">60</span>Mins</li>
-               <li id="secz"><span id="seconds">60</span>Secs</li>
+               <li><span id="days">365</span>Days</li>
+               <li><span id="hours">24</span>Hours</li>
+               <li><span id="minutes">60</span>Mins</li>
+               <li><span id="seconds">60</span>Secs</li>
             </ul>
          </div>
          <div id="content" class="emoji">
@@ -40,7 +42,7 @@ TODO Bday Page
             <span>🎉</span>
             <span>🎂</span>
          </div>
-         <p class="text-red-900">My birthday was <span id="ago" class="text-shadow-neon-xl"></span>
+         <p id="announcer2" class="text-red-900">My birthday was <span id="ago" class="text-shadow-neon-xl"></span>
             days ago</p>
          <ul id="buttons05" class="style2 buttons">
             <li>

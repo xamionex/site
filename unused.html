@@ -4,6 +4,8 @@
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+   <script src="./dist/SwupHeadPlugin.min.js"></script>
+   <script src="./dist/SwupBodyClassPlugin.min.js"></script>
    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
    <title>Petar's Site - Unused Accounts</title>
@@ -25,249 +27,237 @@
 <body class="main bg-[url(assets/images/trees.jpg)]">
    <div id="swup" class="container swup-transition-fade mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 h-screen text-center text-white text-shadow-drop">
-        <div class="max-h-full my-auto">
-         <div class="image overflow-hidden">
-            <img class="mx-auto rounded-full" src="assets/images/profile2.gif" alt="" href="/secret.html">
-         </div>
-         <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
-         <div>
-            <a href="/about.html">
-               <button type="button"
-               class='shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
-                  <div class="flex gap-2">
-                     <div class="col-span-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                           stroke="currentColor">
-                           <use xlink:href="/icons.svg#backbutton">
-                           </use>
-                        </svg>
+         <div class="max-h-full my-auto">
+            <div class="image-wrapper mb-4">
+               <img class="image-1" src="assets/images/profile2.gif" />
+               <img class="image-2" src="assets/images/profile2.gif" />
+               <img class="image-3" src="assets/images/profile2.gif" />
+               <img class="image-4" src="assets/images/profile2.gif" />
+            </div>
+            <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
+            <div>
+               <a href="/about.html">
+                  <button type="button"
+                     class='shadow-md shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
+                     <div class="flex gap-2">
+                        <div class="col-span-1">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                              viewBox="0 0 24 24" stroke="currentColor">
+                              <use xlink:href="/icons.svg#backbutton">
+                              </use>
+                           </svg>
+                        </div>
+                        <div class="col-span-2 pt-2">
+                           <span>Go Back</span>
+                        </div>
                      </div>
-                     <div class="col-span-2 pt-2">
-                        <span>Go Back</span>
-                     </div>
-                  </div>
-               </button>
-            </a>
-         </div>
-         <div class="container max-w-screen-full">
+                  </button>
+               </a>
+            </div>
+            <div class="container max-w-screen-full">
                <a href="https://discord.gg/xb6PYWBewm">
-                  <button
-                     class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                  <button class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none"
+                        viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#discord">
                         </use>
                      </svg>
                   </button>
                </a>
                <a href="https://www.instagram.com/_amione_/">
-                  <button
-                     class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                  <button class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none"
+                        viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#instagram">
                         </use>
                      </svg>
                   </button>
                </a>
                <a href="https://steamcommunity.com/id/amionexgamer/">
-                  <button
-                     class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none"
+                        viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#steam">
                         </use>
                      </svg>
                   </button>
                </a>
                <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ">
-                  <button
-                     class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
+                  <button class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none"
+                        viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#youtube">
                         </use>
                      </svg>
                   </button>
                </a>
+            </div>
+            <p>
+               <span>My discord is <strong>Petar#0389</strong>
+               </span>
+               <br /> <span>
+                  <a href="https://steamdb.info/calculator/76561198152182139/">My SteamDB</a>
+               </span>
+            </p>
          </div>
-         <p>
-            <span>My discord is <strong>Petar#0389</strong>
-            </span>
-            <br /> <span>
-               <a href="https://steamdb.info/calculator/76561198152182139/">My SteamDB</a>
-            </span>
-         </p>
-        </div>
-        <div class="flex p-10">
-         <div class="my-auto max-w-full">
-           <p class="font-josefinsans font-bold text-3xl mb-4">These are all of my <span class="text-gray-600">rarely used</span></p>
-                   <a href="https://community.fandom.com/wiki/User:Surfeasy" class="button n01">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#fandom">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://www.gog.com/u/xamionex" class="button n02">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#gogcom">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                <a href="https://github.com/xamionex" class="button n03">
-                   <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#github">
-                         </use>
-                      </svg>
-                   </button>
-                </a>
-                   <a href="https://gamejolt.com/@amione" class="button n04">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#gamejolt">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://itch.io/profile/amione" class="button n05">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#itchio">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://osu.ppy.sh/users/15504198" class="button n06">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#osu">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://www.pinterest.com/xamionex/" class="button n07">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#pinterest">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://www.reddit.com/u/_amione_" class="button n08">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#reddit">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://www.roblox.com/users/35603338/profile" class="button n09">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#roblox">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://open.spotify.com/user/vmofbne0zk8gax9cnb8wfs2n3" class="button n10">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#spotify">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://www.twitch.tv/xamionex" class="button n11">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#twitch">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://twitter.com/x_amione_x" class="button n12">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#twitter">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://ch.tetr.io/u/amione" class="button n13">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#tetrio">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://ubisoftconnect.com/en-US/profile/xamionex" class="button n14">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#ubiconnect">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://account.xbox.com/en-US/Profile?gamerTag=xamionex" class="button n15">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#xbox">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
-                   <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ" class="button n16">
-                      <button
-                      class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none"
-                         viewBox="0 0 40 40" stroke="currentColor">
-                         <use xlink:href="/icons.svg#youtube">
-                         </use>
-                      </svg>
-                   </button>
-                   </a>
+         <div class="flex p-10">
+            <div class="my-auto max-w-full">
+               <p class="font-josefinsans font-bold text-3xl mb-4">These are all of my <span
+                     class="text-gray-600">rarely used</span> accounts</p>
+               <a href="https://community.fandom.com/wiki/User:Surfeasy">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#fandom">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://www.gog.com/u/xamionex">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#gogcom">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://github.com/xamionex">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#github">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://gamejolt.com/@amione">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#gamejolt">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://itch.io/profile/amione">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#itchio">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://osu.ppy.sh/users/15504198">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#osu">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://www.pinterest.com/xamionex/">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#pinterest">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://www.reddit.com/u/_amione_">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#reddit">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://www.roblox.com/users/35603338/profile">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#roblox">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://open.spotify.com/user/vmofbne0zk8gax9cnb8wfs2n3" class="button n10">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#spotify">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://www.twitch.tv/xamionex" class="button n11">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#twitch">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://twitter.com/x_amione_x" class="button n12">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#twitter">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://ch.tetr.io/u/amione" class="button n13">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#tetrio">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://ubisoftconnect.com/en-US/profile/xamionex" class="button n14">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#ubiconnect">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://account.xbox.com/en-US/Profile?gamerTag=xamionex" class="button n15">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#xbox">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+               <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ" class="button n16">
+                  <button class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 fill-current" fill="none"
+                        viewBox="0 0 40 40" stroke="currentColor">
+                        <use xlink:href="/icons.svg#youtube">
+                        </use>
+                     </svg>
+                  </button>
+               </a>
+            </div>
          </div>
       </div>
-      </div>
-    </div>
-    <p hidden id="days"></p>
-    <p hidden id="hours"></p>
-    <p hidden id="minutes"></p>
-    <p hidden id="seconds"></p>
-    <p hidden id="ago"></p>
-    <p hidden id="age"></p>
-   </body>
-   
+   </div>
+   <p hidden id="days"></p>
+   <p hidden id="hours"></p>
+   <p hidden id="minutes"></p>
+   <p hidden id="seconds"></p>
+   <p hidden id="ago"></p>
+   <p hidden id="age"></p>
+</body>
+
 </html>
