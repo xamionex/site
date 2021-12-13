@@ -446,7 +446,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 0 #0000;
 }
 
-.backdrop-blur-sm, .backdrop-brightness-\[50\%\], .main {
+.backdrop-blur-sm, .backdrop-brightness-\[50\%\] {
   --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -533,12 +533,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: auto;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -585,8 +594,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
+.list-none {
+  list-style-type: none;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .gap-2 {
@@ -597,6 +614,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.overflow-clip {
+  overflow: clip;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .bg-\[rgba\(221\2c 119\2c 255\2c 0\.333\)\] {
@@ -625,11 +650,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#b30003\] {
   --tw-bg-opacity: 1;
   background-color: rgb(179 0 3 / var(--tw-bg-opacity));
-}
-
-.bg-red-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#005a66\] {
@@ -671,6 +691,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(125deg,rgba(94,0,44,0.78) 20%,transparent 100%);
 }
 
+.bg-bday {
+  background-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,2,61,1) 80%, rgba(0,212,255,1) 100%);;
+}
+
+.bg-info {
+  background-image: linear-gradient(125deg,#01001c 20%,rgba(0,90,102,0.008) 100%);
+}
+
 .bg-\[url\(assets\/images\/wall\.jpg\)\] {
   background-image: url(assets/images/wall.jpg);
 }
@@ -681,10 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-info {
-  background-image: linear-gradient(125deg,#01001c 20%,rgba(0,90,102,0.008) 100%);
 }
 
 .bg-birthday {
@@ -708,6 +732,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #fff;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-auto {
   background-size: auto;
 }
@@ -717,8 +745,16 @@ Ensure the default browser behavior of the `hidden` attribute.
           background-clip: text;
 }
 
+.bg-center {
+  background-position: center;
+}
+
 .bg-repeat {
   background-repeat: repeat;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .fill-current {
@@ -727,6 +763,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .pt-2 {
@@ -749,6 +789,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Alegreya Sans;
 }
 
+.font-\[solway\] {
+  font-family: solway;
+}
+
+.font-londrinashadow {
+  font-family: Londrina Shadow;
+}
+
 .text-\[88px\] {
   font-size: 88px;
 }
@@ -767,6 +815,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 36px;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -778,6 +836,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-light {
   font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .italic {
@@ -841,14 +907,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 50px;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-900 {
+.text-\[\#6bffe4\] {
   --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity));
+  color: rgb(107 255 228 / var(--tw-text-opacity));
 }
 
 .text-red-300 {
@@ -890,11 +960,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(134 239 172 / var(--tw-text-opacity));
 }
 
-.text-\[\#6bffe4\] {
-  --tw-text-opacity: 1;
-  color: rgb(107 255 228 / var(--tw-text-opacity));
-}
-
 .text-\[\#ff6ba0\] {
   --tw-text-opacity: 1;
   color: rgb(255 107 160 / var(--tw-text-opacity));
@@ -908,6 +973,51 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-\[\#6b6eff\] {
+  --tw-text-opacity: 1;
+  color: rgb(107 110 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#6bb0ff\] {
+  --tw-text-opacity: 1;
+  color: rgb(107 176 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#6bd5ff\] {
+  --tw-text-opacity: 1;
+  color: rgb(107 213 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#2420ff\] {
+  --tw-text-opacity: 1;
+  color: rgb(36 32 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#6e6bff\] {
+  --tw-text-opacity: 1;
+  color: rgb(110 107 255 / var(--tw-text-opacity));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.text-blue-200 {
+  --tw-text-opacity: 1;
+  color: rgb(191 219 254 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -975,12 +1085,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-shadow: 0.23rem 0.2rem 0.15rem black;
 }
 
-.text-shadow-neon-xl {
-  text-shadow: 0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012;
-}
-
 .text-shadow-neon-2xl {
   text-shadow: 0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012, 0 0 151px #d94012;
+}
+
+.text-shadow-blueneon {
+  text-shadow: 0 0 7px cyan, 0 0 10px blue, 0 0 21px blue;
 }
 
 .ellipsis {
@@ -992,10 +1102,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .btn {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 1rem;
   display: flex;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
   transform: var(--tw-transform);
@@ -1020,10 +1131,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .mbtn {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
   transform: var(--tw-transform);
   border-radius: 9999px;
   padding: 0.75rem;
@@ -1034,15 +1145,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-  text-transform: uppercase;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
 
 .mbtn:hover {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
   transform: var(--tw-transform);
 }
 
@@ -1068,19 +1178,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.main {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  --tw-backdrop-blur: blur(4px);
-  --tw-backdrop-brightness: brightness(50%);
-  -webkit-backdrop-filter: var(--tw-backdrop-filter);
-          backdrop-filter: var(--tw-backdrop-filter);
+.bdaytxt {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #3b82f6;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(59 130 246 / 0));
+  --tw-gradient-to: #1e3a8a;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 
 .swup-transition-fade {
-  transition: opacity 1s ease-in-out;
+  transition: .7s;
+  opacity: 1;
 }
 
 html.is-animating .swup-transition-fade {
@@ -1174,6 +1284,16 @@ html.is-animating .swup-transition-fade {
   transform: translate(0, 0);
 }
 
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 3rem;
+  padding: 0 0.5rem;
+}
+
 .hover\:border-\[\#7b8bde\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(123 139 222 / var(--tw-border-opacity));
@@ -1245,14 +1365,14 @@ html.is-animating .swup-transition-fade {
   color: rgb(179 0 3 / var(--tw-text-opacity));
 }
 
-.hover\:text-green-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
-}
-
 .hover\:text-cyan-400:hover {
   --tw-text-opacity: 1;
   color: rgb(34 211 238 / var(--tw-text-opacity));
+}
+
+.hover\:text-green-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
 .hover\:text-pink-400:hover {
@@ -1263,6 +1383,11 @@ html.is-animating .swup-transition-fade {
 .hover\:text-yellow-400:hover {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-\[rgba\(221\2c 51\2c 255\2c 0\.733\)\]:hover {

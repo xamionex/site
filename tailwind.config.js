@@ -16,11 +16,14 @@ module.exports = {
       backgroundImage: {
         'info': 'linear-gradient(125deg,#01001c 20%,rgba(0,90,102,0.008) 100%)',
         'birthday': 'linear-gradient(125deg,#1c0014 20%,rgba(102,0,92,0.008) 100%)',
+        'bday': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,2,61,1) 80%, rgba(0,212,255,1) 100%);',
+        'bdaytxt': 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 40%, rgba(0,212,255,1) 60%, rgba(9,9,121,1) 80%, rgba(2,0,36,1) 100%);',
         'gallery': 'linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%)',
         'back': 'linear-gradient(125deg,rgba(255,0,119,0.533) 20%,transparent 100%)',
         'unused': 'linear-gradient(125deg,rgba(94,0,44,0.78) 20%,transparent 100%)',
       },
       fontFamily: {
+        londrinashadow: ['Londrina Shadow'],
         josefinsans: ['Josefin Sans'],
         alegreyasans: ['Alegreya Sans']
       }
@@ -40,6 +43,7 @@ module.exports = {
       'neon-lg': '0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012',
       'neon-xl': '0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012',
       'neon-2xl': '0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012, 0 0 151px #d94012',
+      'blueneon': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue',
     },
     textDecorationStyle: { // defaults to these values
       'solid': 'solid',

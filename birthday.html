@@ -11,13 +11,15 @@ TODO Bday Page
    <script defer src="script.js"></script>
    <title>Petar's Site - Birthday</title>
    <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-   <meta name="description" content="Petar's Birthday Page" />
-   <meta property="og:site_name" content="Petar's Site - Birthday" />
    <meta property="og:title" content="Petar's Site - Birthday" />
+   <meta property="og:site_name" content="Petar's Site - Birthday" />
+   <meta name="description" content="Petar's birthday countdown" />
+   <meta property="og:description" content="Petar's birthday countdown" />
    <meta property="og:type" content="website" />
-   <meta property="og:description" content="Petar's Birthday Page" />
-   <meta property="og:url" content="/birthday.html" />
+   <meta property="og:image" content="assets/images/card.jpg" />
+   <meta property="og:image:type" content="image/jpeg" />
+   <meta property="og:image:width" content="1280" />
+   <meta property="og:image:height" content="800" />
    <meta property="twitter:card" content="summary_large_image" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -25,16 +27,16 @@ TODO Bday Page
       rel="stylesheet">
 </head>
 
-<body class="main bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-red-900">
-   <main id="swup" class="swup-transition-fade container h-screen text-center m-auto">
-      <div class="max-h-full my-auto">
-         <p id="announcer1" class="text-red-900">My birthday is in:</p>
-         <div id="countdown" class="text-shadow-neon-2xl">
+<body class="main bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-bday">
+   <main id="swup" class="flex swup-transition-fade h-screen">
+      <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-5">
+         <p id="announcer1" class="bdaytxt">My birthday is in:</p>
+         <div id="countdown" class="bdaytxt font-normal rounded-3xl tracking-widest p-2">
             <ul>
-               <li><span id="days">365</span>Days</li>
-               <li><span id="hours">24</span>Hours</li>
-               <li><span id="minutes">60</span>Mins</li>
-               <li><span id="seconds">60</span>Secs</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="days">365</span>Days</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="hours">24</span>Hours</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="minutes">60</span>Mins</li>
+               <li class="inline-block text-2xl uppercase font-[solway]"><span class="block text-7xl font-londrinashadow" id="seconds">60</span>Secs</li>
             </ul>
          </div>
          <div id="content" class="emoji">
@@ -42,19 +44,27 @@ TODO Bday Page
             <span>🎉</span>
             <span>🎂</span>
          </div>
-         <p id="announcer2" class="text-red-900">My birthday was <span id="ago" class="text-shadow-neon-xl"></span>
+         <p id="announcer2" class="bdaytxt">My birthday was <span id="ago" class="text-shadow-blueneon"></span>
             days ago</p>
-         <ul id="buttons05" class="style2 buttons">
-            <li>
-               <a href="/index.html" class="button n01">
-                  <svg>
-                     <use xlink:href="/icons.svg#backbutton">
-                     </use>
-                  </svg>
-                  <span class="label">Back</span>
+            <div>
+               <a href="/index.html">
+                  <button type="button"
+                     class='shadow-md text-blue-200 shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-blue-400 mbtn'>
+                     <div class="flex gap-2">
+                        <div>
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                              viewBox="0 0 24 24" stroke="currentColor">
+                              <use xlink:href="/icons.svg#backbutton">
+                              </use>
+                           </svg>
+                        </div>
+                        <div class="pt-2">
+                           <span>Back</span>
+                        </div>
+                     </div>
+                  </button>
                </a>
-            </li>
-         </ul>
+            </div>
          <p hidden id="age"></p>
       </div>
    </main>

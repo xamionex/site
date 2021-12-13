@@ -3,23 +3,24 @@
 @tailwind utilities;
 
 .btn {
-    @apply flex mx-auto mb-4 scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl font-bold rounded-full p-3
+    @apply flex max-w-max mb-4 scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl font-bold rounded-full p-3
 }
 
 .mbtn {
-    @apply scale-105 hover:scale-125 py-2 px-4 duration-300 transition-all text-2xl uppercase font-bold rounded-full mx-2 p-3
+    @apply scale-125 hover:scale-150 py-2 px-4 duration-300 transition-all text-2xl font-bold rounded-full mx-10 p-3
 }
 
 .icob {
     @apply border-2 border-transparent transition-all p-2 font-semibold inline-flex items-center space-x-2 rounded-full
 }
 
+.bdaytxt {
+    @apply text-transparent bg-gradient-to-br from-blue-500 to-blue-900 bg-clip-text
+}
+
 .swup-transition-fade {
     transition: .7s;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    opacity: 1;
   }
   html.is-animating .swup-transition-fade {
     opacity: 0;
@@ -79,4 +80,14 @@
 }
 .image-wrapper:hover .image-4 {
     transform: translate(0, 0);
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 3rem;
+  padding: 0 0.5rem;
 }

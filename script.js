@@ -1,8 +1,6 @@
 const swup = new Swup({
   animationSelector: '[class*="swup-transition-"]',
-  plugins: [new SwupHeadPlugin({
-    persistAssets: true
-  })],
+  plugins: [new SwupHeadPlugin()],
   plugins: [new SwupBodyClassPlugin()]
 }); // only this line when included with script tag
 
@@ -68,8 +66,3 @@ function init() {
     }());
   }
 }
-
-//window.onload = onPageLoad;
-//function onPageLoad() {
-//    document.querySelector('.main').classList.add('fade-enter');
-//}

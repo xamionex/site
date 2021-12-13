@@ -10,13 +10,15 @@ TODO Fix reload for phone
    <script defer src="script.js"></script>
    <title>Petar's Site - About</title>
    <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-   <meta name="description" content="More about Petar" />
-   <meta property="og:site_name" content="Petar's Site - About" />
    <meta property="og:title" content="Petar's Site - About" />
+   <meta property="og:site_name" content="Petar's Site - About" />
+   <meta name="description" content="Petar's about page" />
+   <meta property="og:description" content="Petar's about page" />
    <meta property="og:type" content="website" />
-   <meta property="og:description" content="More about Petar" />
-   <meta property="og:url" content="/about.html" />
+   <meta property="og:image" content="assets/images/card.jpg" />
+   <meta property="og:image:type" content="image/jpeg" />
+   <meta property="og:image:width" content="1280" />
+   <meta property="og:image:height" content="800" />
    <meta property="twitter:card" content="summary_large_image" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
@@ -36,14 +38,14 @@ TODO Fix reload for phone
           </div>
          <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
          <div>
-            <a href="/index.html">
-               <button type="button"
+            <li class="list-none flex place-content-center">
+               <a href="/index.html" type="button"
                class='shadow-md shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
                   <div class="flex gap-2">
                      <div class="col-span-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                           stroke="currentColor">
-                           <use xlink:href="/icons.svg#backbutton">
+                        stroke="currentColor">
+                        <use xlink:href="/icons.svg#backbutton">
                            </use>
                         </svg>
                      </div>
@@ -51,10 +53,10 @@ TODO Fix reload for phone
                         <span>Go Back</span>
                      </div>
                   </div>
-               </button>
-            </a>
-            <a href="/unused.html">
-               <button type="button"
+               </a>
+            </li>
+            <li class="list-none flex place-content-center">
+               <a href="/unused.html" type="button"
                class='shadow-md shadow-[rgba(73,38,84,0.333)] bg-[rgba(73,38,84,0.333)] text-white  bg-unused hover:shadow-[rgba(104,25,120,0.733)] hover:bg-[rgba(104,25,120,0.733)] hover:text-inherit btn'>
                   <div class="flex gap-2">
                      <div class="col-span-1">
@@ -68,45 +70,33 @@ TODO Fix reload for phone
                         <span>All Socials</span>
                      </div>
                   </div>
-               </button>
             </a>
+         </li>
          </div>
          <div class="container max-w-screen-full">
-               <a href="https://discord.gg/xb6PYWBewm">
-                  <button
-                     class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
+               <a href="https://discord.gg/xb6PYWBewm" class="bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#discord">
                         </use>
                      </svg>
-                  </button>
                </a>
-               <a href="https://www.instagram.com/_amione_/">
-                  <button
-                     class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
+               <a href="https://www.instagram.com/_amione_/" class="bg-[#ce3266] hover:border-[#ce3266] hover:bg-transparent hover:text-[#ce3266] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#instagram">
                         </use>
                      </svg>
-                  </button>
                </a>
-               <a href="https://steamcommunity.com/id/amionexgamer/">
-                  <button
-                     class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
+               <a href="https://steamcommunity.com/id/amionexgamer/" class="bg-[black] hover:border-[black] hover:bg-transparent hover:text-[black] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#steam">
                         </use>
                      </svg>
-                  </button>
                </a>
-               <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ">
-                  <button
-                     class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
+               <a href="https://www.youtube.com/channel/UCpXlTF-07uYxbCrYjdK8mEQ" class="bg-[#b30003] hover:border-[#b30003] hover:bg-transparent hover:text-[#b30003] icob">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-current" fill="none" viewBox="0 0 40 40">
                         <use xlink:href="/icons.svg#youtube">
                         </use>
                      </svg>
-                  </button>
                </a>
          </div>
             <span>My discord is Petar#0389<br>
