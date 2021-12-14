@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
-TODO Collumns & Finalize
+
 <head>
    <link rel="stylesheet" href="style.css">
    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -8,7 +8,7 @@ TODO Collumns & Finalize
    <script src="./dist/SwupBodyClassPlugin.min.js"></script>
    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
    <script defer src="script.js"></script>
-   <meta name="viewport" content="width=device-width,initial-scale=0.69,user-scalable=no" />
+   <meta name="viewport" content="width=device-width,initial-scale=0.6,user-scalable=no" />
    <title>Petar's Site - Gallery</title>
    <meta charset="utf-8" />
    <meta property="og:title" content="Petar's Site - Gallery" />
@@ -28,113 +28,51 @@ TODO Collumns & Finalize
 </head>
 
 <body
-   class="main bg-[url(assets/images/wall.jpg)] backdrop-blur-sm backdrop-brightness-[50%] relative bg-repeat bg-auto">
-   <main id="swup" class="flex swup-transition-fade h-screen">
-      <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-5">
-         <div>
-            <div>
-            </div>
-            <div>
-               <ul id="buttons01" class="style3 buttons">
-                  <li>
-                     <a href="/index.html" class="button n01">
-                        <svg>
+   class="main bg-no-repeat bg-cover bg-fixed bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(assets/images/trees.jpg)] h-screen">
+   <div id="swup" class="container swup-transition-fade mx-auto pt-4">
+      <div class="grid grid-cols-3 text-center text-shadow-drop ring-4 ring-inset rounded-full py-6 bg-info shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 transition-all duration-1000">
+         <div class="max-h-full my-auto">
+            <p class="font-bold text-lg lg:text-2xl">Favorite Song Videos</p>
+         </div>
+         <div class="max-h-full my-auto">
+            <li class="list-none flex place-content-center scale-75 lg:scale-100">
+               <a href="/index.html" type="button"
+                  class='text-[#6bffe4] hover:text-cyan-400 mbtn'>
+                  <div class="flex gap-2">
+                     <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
+                           viewBox="0 0 24 24" stroke="currentColor">
                            <use xlink:href="/icons.svg#backbutton">
                            </use>
                         </svg>
-                        <span class="label">Back</span>
-                     </a>
-                  </li>
-               </ul>
-            </div>
+                     </div>
+                     <div class="pt-2">
+                        <span>Back</span>
+                     </div>
+                  </div>
+               </a>
+            </li>
+         </div>
+         <div class="max-h-full my-auto">
+            <p class="font-bold text-lg lg:text-2xl">Favorite Song Animations</p>
          </div>
       </div>
-   </main>
-</body>
-
-<body
-   class="main bg-no-repeat bg-cover bg-fixed bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(assets/images/trees.jpg)]">
-   <div id="swup" class="container swup-transition-fade mx-auto">
-      <div class="grid grid-cols-3 md:grid-cols-3 h-screen text-center text-white text-shadow-drop">
-         <div class="max-h-full my-auto">
-            <p id="text12">Favorite Song<br>Videos</p>
-            <div id="video02" class="video">
-               <div class="frame">
-                  <iframe samePage="Lax" width="587" height="330" src="https://www.youtube.com/embed/ZbZSe6N_BXs"
-                     title="YouTube video player" frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                     allowfullscreen></iframe>
-               </div>
-            </div>
-            <div id="video03" class="video">
-               <div class="frame">
-                  <iframe samePage="Lax" width="587" height="330" src="https://www.youtube.com/embed/u9WgtlgGAgs"
-                     title="YouTube video player" frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                     allowfullscreen></iframe>
-               </div>
-            </div>
+      <div class="grid grid-cols-2 text-center text-white text-shadow-drop pt-8">
+         <div class="max-h-full pr-4">
+            <div class="videostyle mb-4 aspect-w-6 aspect-h-3"><iframe src="https://www.youtube.com/embed/ZbZSe6N_BXs" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe></div>
+            <div class="videostyle aspect-w-6 aspect-h-3"><iframe src="https://www.youtube.com/embed/u9WgtlgGAgs" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe></div>
          </div>
-         <div class="flex">
-            <div class="my-auto max-w-full">
-               <p>
-                  <span>
-                     <u>
-                        <span>
-                           <code>Gallery</code>
-                        </span>
-                     </u>
-                  </span>
-                  <br /> <span>This is a list of the top things I liked from being on the internet
-                     and I'll explain why shortly. This is all a little fun page I made so
-                     people know what I listen to, If you don't like what I listen to then
-                     keep it to yourself.</span>
-                  <br /> <span>Might add more later ;P</span>
-                  <br /> <span>
-                     <u>Videos are looped!</u>
-                  </span>
-               </p>
-               <p>
-                  <span>
-                     <u>
-                        <span class="font-bold">
-                           Songs
-                        </span>
-                     </u>
-                  </span>
-                  <span class="font-bold">1st is Happy</span>
-                  <br /> <span>It's top 1. in my list because I always listened to it and it
-                     always brings back happy memories.</span>
-                  <span class="font-bold">2nd is My Favorite Game</span">
-                     <br /> <span>I like the feeling of the song and the video, It's nice overall
-                        for me.</span>
-               </p>
-               <p>
-                  <span>
-                     <u>
-                        <span class="font-bold">
-                           Animations
-                        </span>
-                     </u>
-                  </span>
-                  <br /> <span>
-                     <span class="font-bold">1st is Two Time</span>
-                  </span>
-                  <br /> <span>I like the feelings I go thru whenever I watch it and it makes me
-                     remember to stay strong and never stop.</span>
-                  <br /> <span>
-                     <span class="font-bold">2nd is I'd Rather Sleep</span>
-                  </span>
-                  <br /> <span>It reminds me of what it felt like being a kid and then your life
-                     coming into play</span>
-               </p>
-               <p hidden id="days"></p>
-               <p hidden id="hours"></p>
-               <p hidden id="minutes"></p>
-               <p hidden id="seconds"></p>
-               <p hidden id="ago"></p>
-               <p hidden id="age"></p>
-            </div>
+         <div class="max-h-full pl-4">
+            <div class="videostyle mb-4 aspect-w-6 aspect-h-3"><iframe src="https://www.youtube.com/embed/k17tBWLbMfI"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe></div>
+            <div class="videostyle aspect-w-6 aspect-h-3"><iframe src="https://www.youtube.com/embed/kEkNCtpGsBo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe></div>
          </div>
       </div>
    </div>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.videostyle {
+    @apply shadow-[#005a66] ring-4 rounded-[50px] overflow-hidden
+}
+
 .minibtn1 {
     @apply bg-[#7b8bde] hover:border-[#7b8bde] hover:bg-transparent hover:text-[#7b8bde]
 }
