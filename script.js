@@ -1,7 +1,10 @@
 const swup = new Swup({
   animationSelector: '[class*="swup-transition-"]',
-  plugins: [new SwupHeadPlugin()],
-  plugins: [new SwupBodyClassPlugin()]
+  plugins: [new SwupOverlayTheme({
+    color: '#2D2E82',
+    duration: 600,
+    direction: 'to-right',
+  }), new SwupHeadPlugin(), new SwupBodyClassPlugin()]
 }); // only this line when included with script tag
 
 // run once

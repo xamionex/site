@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
 .videostyle {
     @apply shadow-[#005a66] ring-4 rounded-[50px] overflow-hidden
 }
