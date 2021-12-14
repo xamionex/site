@@ -1222,7 +1222,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .minibtn1:hover {
   --tw-border-opacity: 1;
   border-color: rgb(123 139 222 / var(--tw-border-opacity));
-  background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(123 139 222 / var(--tw-text-opacity));
 }
@@ -1235,7 +1234,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .minibtn2:hover {
   --tw-border-opacity: 1;
   border-color: rgb(206 50 102 / var(--tw-border-opacity));
-  background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(206 50 102 / var(--tw-text-opacity));
 }
@@ -1248,7 +1246,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .minibtn3:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-  background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -1261,7 +1258,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .minibtn4:hover {
   --tw-border-opacity: 1;
   border-color: rgb(179 0 3 / var(--tw-border-opacity));
-  background-color: transparent;
   --tw-text-opacity: 1;
   color: rgb(179 0 3 / var(--tw-text-opacity));
 }
@@ -1515,6 +1511,11 @@ html.is-animating .swup-transition-fade {
   background-color: rgba(104,25,120,0.733);
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-\[\#001bab\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 27 171 / var(--tw-bg-opacity));
@@ -1532,11 +1533,6 @@ html.is-animating .swup-transition-fade {
 
 .hover\:bg-transparent:hover {
   background-color: transparent;
-}
-
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-inherit:hover {
