@@ -20,7 +20,7 @@
 }
 
 .btnopts {
-    @apply transition-all duration-500 ring-2 ring-transparent hover:ring-current rounded-full
+    @apply transition-all duration-300 ring-2 ring-transparent hover:ring-current rounded-full
 }
 
 .btn {
@@ -44,7 +44,7 @@
 }
 
 .bdayintxt {
-    @apply inline-block w-[8rem] text-2xl uppercase font-solway
+    @apply inline-block text-2xl uppercase font-solway
 }
 
 .swup-transition-fade {

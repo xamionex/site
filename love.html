@@ -27,36 +27,35 @@
       rel="stylesheet">
 </head>
 
-<body id="swup"
-   class="bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative swup-transition-fade">
-   <div id="wrapper">
-      <main id="swup" class="swup-transition-fade">
-         <div class="inner">
-            <div id="love" class="container default full screen">
-               <div class="wrapper">
-                  <div class="inner">
-                     <div id="video01" class="video">
-                        <div class="frame">
-                           <iframe width="957" height="1701" src="https://www.youtube.com/embed/vddRIoCAwhw"
-                              title="YouTube video player" frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                        </div>
-                     </div>
-                     <p id="text05">
-                        <a href="/index.html">Go Away</a>
-                     </p>
-                     <p hidden id="days"></p>
-                     <p hidden id="hours"></p>
-                     <p hidden id="minutes"></p>
-                     <p hidden id="seconds"></p>
-                     <p hidden id="ago"></p>
-                     <p hidden id="age"></p>
-                  </div>
+<body
+   class="main bg-no-repeat bg-cover bg-fixed bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(assets/images/love.jpg)] h-screen">
+   <div id="swup" class="container swup-transition-fade mx-auto pt-10">
+      <div class="videostyle aspect-w-6 ring-red-900 aspect-h-3"><iframe src="https://www.youtube.com/embed/vddRIoCAwhw"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></div>
+      <li class="list-none flex place-content-center scale-75 lg:scale-100 pt-8">
+         <a href="/about.html" type="button"
+            class='shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 mx-10 invert mbtn'>
+            <div class="flex gap-2">
+               <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                     <use xlink:href="/icons.svg#backbutton">
+                     </use>
+                  </svg>
+               </div>
+               <div class="pt-2">
+                  <span>Back</span>
                </div>
             </div>
-         </div>
-      </main>
+         </a>
+      </li>
+      <p hidden id="days"></p>
+      <p hidden id="hours"></p>
+      <p hidden id="minutes"></p>
+      <p hidden id="seconds"></p>
+      <p hidden id="ago"></p>
+      <p hidden id="age"></p>
    </div>
 </body>
 
