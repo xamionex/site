@@ -1423,7 +1423,7 @@ body {
 }
 
 .swup-transition-fade {
-  transition: .7s;
+  transition: 0.00001s;
   opacity: 1;
 }
 
