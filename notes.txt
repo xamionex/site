@@ -1,6 +1,0 @@
-window.onload = onPageLoad;
-function onPageLoad() {
-    document.querySelector('.main').classList.add('fade-enter');
-}
-
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
