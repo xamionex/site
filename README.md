@@ -1,5 +1,5 @@
 # My site
-## This is my profile page
+## This is my personal site
 ### It was built using
 - [TailwindCSS](https://tailwindcss.com/) 
 - [Swup](https://swup.js.org/)
