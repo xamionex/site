@@ -1,8 +1,7 @@
-# My site
 ## This is my personal site
-### It was built using
+### It was built using:
 - [TailwindCSS](https://tailwindcss.com/) 
-- [Swup](https://swup.js.org/)
 - [Cloudflare Pages](https://pages.cloudflare.com/)
+- [Swup](https://swup.js.org/)
 
-You can visit it [here](https://petar.tk/)
+**You can visit it [here](https://petar.tk/)**
