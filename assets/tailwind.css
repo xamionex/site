@@ -25,20 +25,20 @@ body {
     @apply bg-[#b30003] hover:border-[#b30003] hover:text-[#b30003]
 }
 
-.btnopts {
+.btnring {
     @apply transition-all duration-300 ring-2 ring-transparent hover:ring-current rounded-full
 }
 
 .btn {
-    @apply flex max-w-max mb-4 scale-105 hover:scale-125 py-2 px-4 duration-300 text-2xl font-bold p-3 btnopts
+    @apply px-4 py-2 hover:scale-125 text-2xl font-bold btnring
 }
 
 .mbtn {
-    @apply scale-125 hover:scale-150 py-2 px-4 duration-300 text-2xl font-bold mx-10 p-3 btnopts
+    @apply px-8 py-4 hover:scale-125 text-3xl font-bold btnring
 }
 
 .icob {
-    @apply p-2 font-semibold inline-flex items-center space-x-2 hover:bg-transparent btnopts
+    @apply p-2 font-semibold inline-flex items-center space-x-2 hover:bg-transparent btnring
 }
 
 .bdaytxt {
@@ -70,10 +70,7 @@ body {
   }
 
   .image-wrapper {
-    width: 280px;
-    height: 280px;
     position: relative;
-    @apply mx-auto
 }
 .image-wrapper img {
     position: absolute;
