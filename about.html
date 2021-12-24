@@ -34,10 +34,10 @@
 <body
    class="main bg-no-repeat bg-cover bg-fixed bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-[url(./images/trees.jpg)]">
    <div id="swup" class="container swup-transition-fade mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 h-screen text-center text-white text-shadow-drop">
+      <div class="grid grid-cols-2 md:grid-cols-3 h-screen text-center text-white text-shadow-drop">
          <div class="max-h-full my-auto">
-            <a href="/secret.html" type="button">
-               <div class="image-wrapper mb-4">
+            <a href="/secret.html" type="button" class="max-h-full max-w-full">
+               <div class="image-wrapper mb-1 w-52 h-52">
                   <img class="image-1" src="/assets/images/profile2.gif" />
                   <img class="image-2" src="/assets/images/profile2.gif" />
                   <img class="image-3" src="/assets/images/profile2.gif" />
@@ -45,36 +45,36 @@
                </div>
             </a>
             <h2 class="font-[sacramento] text-[88px] leading-[88px]">Petar</h2>
-            <div>
-               <li class="list-none flex place-content-center">
+            <div class="space-y-2 mb-4">
+               <li class="list-none m-auto">
                   <a href="/index.html" type="button"
                      class='shadow-md shadow-[rgba(221,119,255,0.333)] bg-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)] hover:text-inherit btn'>
                      <div class="flex gap-2">
-                        <div class="col-span-1">
+                        <div>
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
                               viewBox="0 0 24 24" stroke="currentColor">
                               <use xlink:href="/assets/icons.svg#backbutton">
                               </use>
                            </svg>
                         </div>
-                        <div class="col-span-2 pt-2">
+                        <div class="m-auto">
                            <span>Go Back</span>
                         </div>
                      </div>
                   </a>
                </li>
-               <li class="list-none flex place-content-center">
+               <li class="list-none m-auto">
                   <a href="/unused.html" type="button"
-                     class='shadow-md shadow-[rgba(73,38,84,0.333)] bg-[rgba(73,38,84,0.333)] text-white  bg-unused hover:shadow-[rgba(104,25,120,0.733)] hover:bg-[rgba(104,25,120,0.733)] hover:text-inherit btn'>
+                     class='shadow-md shadow-[rgba(73,38,84,0.333)] bg-[rgba(73,38,84,0.333)] text-white bg-unused hover:shadow-[rgba(104,25,120,0.733)] hover:bg-[rgba(104,25,120,0.733)] hover:text-inherit btn'>
                      <div class="flex gap-2">
-                        <div class="col-span-1">
+                        <div>
                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
                               viewBox="0 0 24 24" stroke="currentColor">
                               <use xlink:href="/assets/icons.svg#socials">
                               </use>
                            </svg>
                         </div>
-                        <div class="col-span-2 pt-2">
+                        <div class="m-auto">
                            <span>All Socials</span>
                         </div>
                      </div>
@@ -111,8 +111,10 @@
                <span class="underline text-blue-500 hover:text-blue-300 transition-all duration-300">
                   My discord is Petar#0389
                </span><br>
-               <a class="underline text-indigo-500 hover:text-indigo-300 transition-all duration-300" href="https://steamdb.info/calculator/76561198152182139/">My SteamDB</a><br>
-               <a class="underline text-slate-500 hover:text-slate-300 transition-all duration-300" href="/specs.html">My PC Specs</a><br>
+               <a class="underline text-indigo-500 hover:text-indigo-300 transition-all duration-300"
+                  href="https://steamdb.info/calculator/76561198152182139/">My SteamDB</a><br>
+               <a class="underline text-slate-500 hover:text-slate-300 transition-all duration-300"
+                  href="/specs.html">My PC Specs</a><br>
             </p>
          </div>
          <div class="flex">
@@ -132,6 +134,8 @@
                      me anywhere but I personally like discord. I <a href="/love.html">love</a>
                      y'all, and stay safe!</span>
                </p>
+               <a href="http://www.steamsignature.com"><img class="mx-auto mt-4"
+                     src="https://www.steamsignature.com/card/0/76561198152182139.png" alt="" /></a>
                <p hidden id="days"></p>
                <p hidden id="hours"></p>
                <p hidden id="minutes"></p>
@@ -139,6 +143,11 @@
                <p hidden id="ago"></p>
                <p hidden id="age"></p>
             </div>
+         </div>
+         <div class="max-w-full m-auto lg:pl-0 md:pl-0 pl-20">
+            <iframe src="https://discord.com/widget?id=914255354416754799&theme=dark" width="350" height="500"
+               allowtransparency="true" frameborder="0"
+               sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
          </div>
       </div>
    </div>
