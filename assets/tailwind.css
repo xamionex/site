@@ -30,11 +30,11 @@ body {
 }
 
 .btn {
-    @apply px-4 py-2 hover:scale-125 text-2xl font-bold btnring
+    @apply p-2 hover:scale-125 text-2xl font-bold btnring
 }
 
 .mbtn {
-    @apply px-8 py-4 hover:scale-125 text-3xl font-bold btnring
+    @apply p-3 hover:scale-125 text-3xl font-bold btnring
 }
 
 .icob {
