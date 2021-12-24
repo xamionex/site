@@ -876,6 +876,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url(./images/onlyfans.jpg);
 }
 
+.bg-\[url\(assets\/images\/profile1\.gif\)\] {
+  background-image: url(assets/images/profile1.gif);
+}
+
 .from-red-600 {
   --tw-gradient-from: #dc2626;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(220 38 38 / 0));
