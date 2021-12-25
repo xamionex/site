@@ -450,16 +450,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
   --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
   --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);
-  --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .container {
@@ -530,10 +520,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
-.relative {
-  position: relative;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -553,16 +539,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2.5rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .block {
@@ -589,10 +575,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-52 {
-  height: 13rem;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -607,10 +589,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-h-full {
   max-height: 100%;
-}
-
-.w-52 {
-  width: 13rem;
 }
 
 .w-14 {
@@ -852,10 +830,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%);
 }
 
-.bg-\[url\(\.\/images\/love\.jpg\)\] {
-  background-image: url(./images/love.jpg);
-}
-
 .from-red-600 {
   --tw-gradient-from: #dc2626;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(220 38 38 / 0));
@@ -869,25 +843,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #fff;
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
-}
-
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .fill-current {
@@ -1186,18 +1144,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   filter: var(--tw-filter);
 }
 
-.backdrop-blur-sm {
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-filter);
-          backdrop-filter: var(--tw-backdrop-filter);
-}
-
-.backdrop-brightness-\[50\%\] {
-  --tw-backdrop-brightness: brightness(50%);
-  -webkit-backdrop-filter: var(--tw-backdrop-filter);
-          backdrop-filter: var(--tw-backdrop-filter);
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1238,23 +1184,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   position: relative;
+  width: 100vw;
   overflow: hidden;
-  width: 100%;
 }
 
 body:before {
-  content: ' ';
-  display: block;
+  filter: blur(3px) brightness(.5);
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  filter: brightness(.5);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: var(--tw-transform);
+  overflow: hidden;
   background-size: cover;
-  z-index: -1;
+  background-repeat: no-repeat
 }
 
 .videostyle {
@@ -1443,87 +1391,62 @@ html.is-animating .swup-transition-fade {
   opacity: 0;
 }
 
-.fade-enter * {
-  -webkit-animation: fadein 1s;
-          animation: fadein 1s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0
-  }
-
-  to   {
-    opacity: 1
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0
-  }
-
-  to   {
-    opacity: 1
-  }
-}
-
-.image-wrapper {
+.pfp {
   position: relative;
+  margin: auto;
+  height: 13rem;
+  width: 13rem;
 }
 
-.image-wrapper img {
+.transformease {
+  transition: transform 300ms ease;
+}
+
+.pfp:hover * {
+  transform: translate(0, 0);
+}
+
+.pfp img {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   transform-origin: left;
-  border-radius: 1.5rem
+  border-radius: 1.5rem;
+  transition: transform 300ms ease;
 }
 
 .image-1 {
   -webkit-clip-path: polygon(0 0, 0 32%, 28% 0);
           clip-path: polygon(0 0, 0 32%, 28% 0);
-  transform: translate(-10px, -10px);
-  transition: transform 300ms ease;
   transform-origin: top;
+  --tw-translate-x: -0.5rem;
+  --tw-translate-y: -0.5rem;
+  transform: var(--tw-transform)
 }
 
-.image-wrapper:hover .image-1 {
-  transform: translate(0, 0);
+.pfp:hover .image-1 {
+  --tw-translate-x: 0px;
+  --tw-translate-y: 0px;
+  transform: var(--tw-transform);
 }
 
 .image-2 {
   -webkit-clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
           clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
   transform: translate(-10px, 5px);
-  transition: transform 300ms ease;
-}
-
-.image-wrapper:hover .image-2 {
-  transform: translate(0, 0);
 }
 
 .image-3 {
   -webkit-clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
           clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
   transform: translate(9px, -10px);
-  transition: transform 300ms ease;
-}
-
-.image-wrapper:hover .image-3 {
-  transform: translate(0, 0);
 }
 
 .image-4 {
   -webkit-clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
           clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
   transform: translate(10px, 5px);
-  transition: transform 300ms ease;
-  transform-origin: top;
-}
-
-.image-wrapper:hover .image-4 {
-  transform: translate(0, 0);
+  transform-origin: top
 }
 
 .emoji {
