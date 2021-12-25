@@ -1394,6 +1394,7 @@ html.is-animating .swup-transition-fade {
 .pfp {
   position: relative;
   margin: auto;
+  margin-bottom: 0.5rem;
   height: 13rem;
   width: 13rem;
 }

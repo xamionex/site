@@ -65,7 +65,7 @@ body:before {
   }
 
 .pfp {
-    @apply m-auto w-52 h-52 relative
+    @apply m-auto w-52 h-52 relative mb-2
 }
 
 .transformease {
