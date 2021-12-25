@@ -31,7 +31,7 @@
       rel="stylesheet">
 </head>
 
-<body class="main bg-no-repeat bg-cover bg-center backdrop-blur-sm backdrop-brightness-[50%] relative bg-bday">
+<body class="main before:bg-bday">
    <main id="swup" class="flex swup-transition-fade h-screen">
       <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-2">
          <p id="announcer1" class="bdaytxt">My birthday is in:</p>
@@ -51,21 +51,10 @@
          <p id="announcer2" class="bdaytxt">My birthday was <span id="ago" class="text-shadow-blueneon"></span>
             days ago</p>
          <div>
-            <a href="/index.html" type="button"
-               class='shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 mx-10 mbtn'>
-               <div class="flex gap-2">
-                  <div>
-                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <use xlink:href="/assets/icons.svg#backbutton">
-                        </use>
-                     </svg>
-                  </div>
-                  <div class="m-auto">
-                     <span>Go Back</span>
-                  </div>
-               </div>
-            </a>
+            <a href="/index.html" type="button" class='shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 mx-10 py-2 px-4 rounded inline-flex items-center mbtn'>
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+                  <use xlink:href="/assets/icons.svg#backbutton"></use>
+               </svg> <span>Go Back</span></a>
          </div>
          <p hidden id="age"></p>
       </div>

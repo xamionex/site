@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 body {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
+    @apply w-screen overflow-hidden relative
+}
+
+body:before {
+    filter: blur(3px) brightness(.5);
+    @apply left-0 top-0 w-screen h-screen bg-no-repeat bg-cover overflow-hidden scale-110 absolute block -z-10
 }
 
 .videostyle {
@@ -61,57 +64,40 @@ body {
     opacity: 0;
   }
 
-  .fade-enter * {
-    animation: fadein 1s;
-  }
-  @keyframes fadein {
-    from { opacity: 0}
-    to   { opacity: 1}
-  }
-
-  .image-wrapper {
-    position: relative;
+.pfp {
+    @apply m-auto w-52 h-52 relative mb-2
 }
-.image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: left;
-    @apply rounded-3xl
+
+.transformease {
+    transition: transform 300ms ease;
+}
+
+.pfp:hover * {
+    transform: translate(0, 0);
+}
+
+.pfp img {
+    @apply rounded-3xl absolute top-0 left-0 origin-left transformease
 }
 .image-1 {
     clip-path: polygon(0 0, 0 32%, 28% 0);
-    transform: translate(-10px, -10px);
-    transition: transform 300ms ease;
-    transform-origin: top;
+    @apply -translate-x-2 -translate-y-2 origin-top
 }
-.image-wrapper:hover .image-1 {
-    transform: translate(0, 0);
+.pfp:hover .image-1 {
+    @apply translate-x-0 translate-y-0
 }
 .image-2 {
     clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
     transform: translate(-10px, 5px);
-    transition: transform 300ms ease;
-}
-.image-wrapper:hover .image-2 {
-    transform: translate(0, 0);
 }
 .image-3 {
     clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
     transform: translate(9px, -10px);
-    transition: transform 300ms ease;
-}
-.image-wrapper:hover .image-3 {
-    transform: translate(0, 0);
 }
 .image-4 {
     clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
     transform: translate(10px, 5px);
-    transition: transform 300ms ease;
-    transform-origin: top;
-}
-.image-wrapper:hover .image-4 {
-    transform: translate(0, 0);
+    @apply origin-top
 }
 
 .emoji {
