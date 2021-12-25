@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.0 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -423,7 +423,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.scale-75, .scale-50, .transform, .btn, .mbtn, .lg\:scale-100, .lg\:scale-75 {
+*, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -432,16 +432,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.shadow-md {
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-}
-
-.ring-4, .ring-inset, .videostyle, .btnring, .btn, .mbtn, .icob {
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
@@ -450,9 +440,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-}
-
-.invert {
   --tw-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -463,9 +450,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
   --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
   --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-blur-sm, .backdrop-brightness-\[50\%\] {
   --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
   --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
@@ -589,6 +573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -605,16 +593,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 13rem;
 }
 
-.h-12 {
-  height: 3rem;
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-7 {
   height: 1.75rem;
 }
 
-.h-14 {
-  height: 3.5rem;
+.h-12 {
+  height: 3rem;
 }
 
 .max-h-full {
@@ -625,8 +613,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 13rem;
 }
 
-.w-12 {
-  width: 3rem;
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-7 {
@@ -641,8 +629,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-14 {
-  width: 3.5rem;
+.w-12 {
+  width: 3rem;
 }
 
 .max-w-full {
@@ -681,6 +669,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -707,6 +699,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-3xl {
@@ -832,10 +828,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(15 118 15 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/images\/trees\.jpg\)\] {
-  background-image: url(./images/trees.jpg);
-}
-
 .bg-back {
   background-image: linear-gradient(125deg,rgba(255,0,119,0.533) 20%,transparent 100%);
 }
@@ -844,16 +836,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(125deg,rgba(94,0,44,0.78) 20%,transparent 100%);
 }
 
-.bg-bday {
-  background-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,2,61,1) 80%, rgba(0,212,255,1) 100%);;
-}
-
 .bg-info {
   background-image: linear-gradient(125deg,#01001c 20%,rgba(0,90,102,0.008) 100%);
-}
-
-.bg-\[url\(\.\/images\/profile1\.gif\)\] {
-  background-image: url(./images/profile1.gif);
 }
 
 .bg-gradient-to-r {
@@ -870,10 +854,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[url\(\.\/images\/love\.jpg\)\] {
   background-image: url(./images/love.jpg);
-}
-
-.bg-\[url\(\.\/images\/onlyfans\.jpg\)\] {
-  background-image: url(./images/onlyfans.jpg);
 }
 
 .from-red-600 {
@@ -912,6 +892,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .fill-current {
   fill: currentColor;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-1 {
@@ -990,7 +980,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-style: italic;
 }
 
-.ordinal, .slashed-zero, .lining-nums, .oldstyle-nums, .proportional-nums, .tabular-nums, .diagonal-fractions, .stacked-fractions {
+*, ::before, ::after {
   --tw-ordinal: var(--tw-empty,/*!*/ /*!*/);
   --tw-slashed-zero: var(--tw-empty,/*!*/ /*!*/);
   --tw-numeric-figure: var(--tw-empty,/*!*/ /*!*/);
@@ -1136,7 +1126,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .underline {
-  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .shadow-md {
@@ -1246,9 +1237,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  position: fixed;
+  position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+body:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(.5);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -1;
 }
 
 .videostyle {
@@ -1530,6 +1536,31 @@ html.is-animating .swup-transition-fade {
   padding: 0 0.5rem;
 }
 
+.before\:bg-\[url\(\.\/images\/trees\.jpg\)\]::before {
+  content: var(--tw-content);
+  background-image: url(./images/trees.jpg);
+}
+
+.before\:bg-bday::before {
+  content: var(--tw-content);
+  background-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,2,61,1) 80%, rgba(0,212,255,1) 100%);;
+}
+
+.before\:bg-\[url\(\.\/images\/profile1\.gif\)\]::before {
+  content: var(--tw-content);
+  background-image: url(./images/profile1.gif);
+}
+
+.before\:bg-\[url\(\.\/images\/love\.jpg\)\]::before {
+  content: var(--tw-content);
+  background-image: url(./images/love.jpg);
+}
+
+.before\:bg-\[url\(\.\/images\/onlyfans\.jpg\)\]::before {
+  content: var(--tw-content);
+  background-image: url(./images/onlyfans.jpg);
+}
+
 .hover\:bg-\[rgba\(221\2c 51\2c 255\2c 0\.733\)\]:hover {
   background-color: rgba(221,51,255,0.733);
 }
@@ -1560,10 +1591,6 @@ html.is-animating .swup-transition-fade {
 
 .hover\:bg-transparent:hover {
   background-color: transparent;
-}
-
-.hover\:text-inherit:hover {
-  color: inherit;
 }
 
 .hover\:text-blue-300:hover {
