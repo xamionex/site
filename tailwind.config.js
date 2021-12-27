@@ -19,6 +19,7 @@ module.exports = {
           'bday': 'radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,2,61,1) 80%, rgba(0,212,255,1) 100%);',
           'bdaytxt': 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 40%, rgba(0,212,255,1) 60%, rgba(9,9,121,1) 80%, rgba(2,0,36,1) 100%);',
           'gallery': 'linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%)',
+          'gallerytxt': 'linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,56,9,1) 29%, rgba(84,104,101,1) 51%, rgba(214,0,255,1) 100%);',
           'back': 'linear-gradient(125deg,rgba(255,0,119,0.533) 20%,transparent 100%)',
           'unused': 'linear-gradient(125deg,rgba(94,0,44,0.78) 20%,transparent 100%)',
         },

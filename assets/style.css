@@ -704,6 +704,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -749,13 +753,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: linear-gradient(125deg,#01001c 20%,rgba(0,90,102,0.008) 100%);
 }
 
-.bg-\[\#66005c\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(102 0 92 / var(--tw-bg-opacity));
-}
-
-.bg-birthday {
-  background-color: linear-gradient(125deg,#1c0014 20%,rgba(102,0,92,0.008) 100%);
+.bg-gallery {
+  background-color: linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%);
 }
 
 .bg-\[\#543d00\] {
@@ -763,8 +762,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(84 61 0 / var(--tw-bg-opacity));
 }
 
-.bg-gallery {
-  background-color: linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%);
+.bg-\[\#66005c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 0 92 / var(--tw-bg-opacity));
+}
+
+.bg-birthday {
+  background-color: linear-gradient(125deg,#1c0014 20%,rgba(102,0,92,0.008) 100%);
 }
 
 .bg-gray-400 {
@@ -859,16 +863,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: linear-gradient(125deg,#01001c 20%,rgba(0,90,102,0.008) 100%);
 }
 
+.bg-gallery {
+  background-image: linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%);
+}
+
+.bg-gallerytxt {
+  background-image: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,56,9,1) 29%, rgba(84,104,101,1) 51%, rgba(214,0,255,1) 100%);;
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-birthday {
   background-image: linear-gradient(125deg,#1c0014 20%,rgba(102,0,92,0.008) 100%);
-}
-
-.bg-gallery {
-  background-image: linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%);
 }
 
 .from-red-600 {
@@ -884,6 +892,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #fff;
 }
 
+.bg-clip-border {
+  background-clip: border-box;
+}
+
+.bg-clip-content {
+  background-clip: content-box;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -891,6 +907,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .fill-current {
   fill: currentColor;
+}
+
+.fill-transparent {
+  fill: transparent;
 }
 
 .p-2 {
@@ -911,6 +931,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -925,6 +949,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-alegreyasans {
   font-family: Alegreya Sans;
+}
+
+.font-\[Sacramento\] {
+  font-family: Sacramento;
 }
 
 .text-\[88px\] {
@@ -943,6 +971,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[36px\] {
   font-size: 36px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-8xl {
@@ -1023,6 +1056,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 50px;
 }
 
+.leading-7 {
+  line-height: 1.75rem;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -1057,6 +1094,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
+.text-transparent {
+  color: transparent;
+}
+
 .text-red-300 {
   --tw-text-opacity: 1;
   color: rgb(252 165 165 / var(--tw-text-opacity));
@@ -1065,10 +1106,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-green-400 {
   --tw-text-opacity: 1;
   color: rgb(74 222 128 / var(--tw-text-opacity));
-}
-
-.text-transparent {
-  color: transparent;
 }
 
 .text-green-500 {
@@ -1114,6 +1151,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.text-gallery {
+  color: linear-gradient(125deg,#2d003d 20%,rgba(84,61,0,0.008) 100%);
 }
 
 .underline {
@@ -1584,6 +1625,11 @@ html.is-animating .swup-transition-fade {
   background-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,2,61,1) 80%, rgba(0,212,255,1) 100%);;
 }
 
+.before\:bg-\[url\(\.\/images\/wall\.jpg\)\]::before {
+  content: var(--tw-content);
+  background-image: url(./images/wall.jpg);
+}
+
 .before\:bg-\[url\(\.\/images\/profile1\.gif\)\]::before {
   content: var(--tw-content);
   background-image: url(./images/profile1.gif);
@@ -1599,9 +1645,25 @@ html.is-animating .swup-transition-fade {
   background-image: url(./images/onlyfans.jpg);
 }
 
+.before\:bg-contain::before {
+  content: var(--tw-content);
+  background-size: contain;
+}
+
+.before\:bg-repeat::before {
+  content: var(--tw-content);
+  background-repeat: repeat;
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
+  transform: var(--tw-transform);
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: var(--tw-transform);
 }
 
