@@ -31,55 +31,46 @@
       rel="stylesheet">
 </head>
 
-<body
-   class="main before:bg-[url(./images/trees.jpg)] h-screen">
-   <div id="swup" class="container swup-transition-fade mx-auto pt-2">
-      <div
-         class="grid grid-cols-3 text-center text-shadow-drop ring-4 ring-inset rounded-full py-1 bg-info shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 transition-all duration-1000">
-         <div class="max-h-full my-auto">
-            <p class="font-bold text-lg lg:text-2xl">Favorite Song Videos</p>
-         </div>
-         <div class="max-h-full my-auto">
-            <li class="list-none flex place-content-center scale-75 lg:scale-100">
-               <a href="/index.html" type="button"
-                  class='text-[#6bffe4] hover:text-cyan-400 hover:ring-transparent inline-flex items-center mbtn'>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
-                           viewBox="0 0 24 24" stroke="currentColor">
-                           <use xlink:href="/assets/icons.svg#backbutton">
-                           </use>
-                        </svg>
-                        <span>Go Back</span>
-               </a>
-            </li>
-         </div>
-         <div class="max-h-full my-auto">
-            <p class="font-bold text-lg lg:text-2xl">Favorite Song Animations</p>
-            <p hidden id="days"></p>
-            <p hidden id="hours"></p>
-            <p hidden id="minutes"></p>
-            <p hidden id="seconds"></p>
-            <p hidden id="ago"></p>
-            <p hidden id="age"></p>
-         </div>
-      </div>
-      <div class="grid grid-cols-2 text-center text-white text-shadow-drop pt-2">
-         <div class="max-h-full pr-[2px]">
-            <div class="videostyle mb-1 aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/ZbZSe6N_BXs"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe></div>
-            <div class="videostyle aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/u9WgtlgGAgs"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe></div>
-         </div>
-         <div class="max-h-full pl-[2px]">
-            <div class="videostyle mb-1 aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/k17tBWLbMfI"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe></div>
-            <div class="videostyle aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/kEkNCtpGsBo"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe></div>
+<body class="main before:bg-[url(./images/wall.jpg)] before:bg-repeat before:bg-contain">
+   <div id="swup" class="flex swup-transition-fade h-screen">
+      <div class="m-auto container p-2 pt-3 rounded-[50px] bg-gallery bg-[#543d00]">
+         <div class="grid grid-cols-2 text-center">
+               <a href="/index.html" type="button" class="hover:scale-125 transition-all z-10 duration-500 text-[#ffd645] shadow-[#543d00] hover:shadow-[#a17d00] hover:text-yellow-400 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" fill="currentColor" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                     <use xlink:href="/assets/icons.svg#backbutton"></use>
+                  </svg></a>
+               <p hidden id="days"></p>
+               <p hidden id="hours"></p>
+               <p hidden id="minutes"></p>
+               <p hidden id="seconds"></p>
+               <p hidden id="ago"></p>
+               <p hidden id="age"></p>
+            <div class="max-h-full z-0">
+               <p
+                  class="bg-gallerytxt font-bold text-3xl leading-7 bg-clip-text text-transparent font-josefinsans">
+                  Favorite Song Videos</p>
+               <div class="videostyle rounded-br-[50px] rounded-tl-[50px] aspect-w-16 aspect-h-9"><iframe
+                     src="https://www.youtube.com/embed/ZbZSe6N_BXs" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe></div>
+               <div class="videostyle rounded-tr-[50px] rounded-bl-[50px] aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/u9WgtlgGAgs"
+                     frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe></div>
+            </div>
+            <div class="max-h-full z-0">
+               <p
+                  class="bg-gallerytxt font-bold text-3xl leading-7 bg-clip-text text-transparent font-josefinsans">
+                  Favorite Song Animations</p>
+               <div class="videostyle rounded-bl-[50px] rounded-tr-[50px] aspect-w-16 aspect-h-9"><iframe
+                     src="https://www.youtube.com/embed/k17tBWLbMfI"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe></div>
+               <div class="videostyle rounded-tl-[50px] rounded-br-[50px] aspect-w-16 aspect-h-9"><iframe src="https://www.youtube.com/embed/kEkNCtpGsBo"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                     allowfullscreen></iframe></div>
+            </div>
          </div>
       </div>
    </div>
