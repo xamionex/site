@@ -539,6 +539,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2.5rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -549,6 +554,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .block {
@@ -583,6 +592,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 1.75rem;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -607,18 +620,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-12 {
   width: 3rem;
 }
 
 .max-w-full {
   max-width: 100%;
-}
-
-.scale-75 {
-  --tw-scale-x: .75;
-  --tw-scale-y: .75;
-  transform: var(--tw-transform);
 }
 
 .scale-50 {
@@ -635,12 +646,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   list-style-type: none;
 }
 
+.grid-flow-row-dense {
+  grid-auto-flow: row dense;
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .place-content-center {
@@ -852,6 +867,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: currentColor;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -862,25 +885,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.pl-20 {
-  padding-left: 5rem;
-}
-
 .pt-2 {
   padding-top: 0.5rem;
 }
 
-.pr-\[2px\] {
-  padding-right: 2px;
-}
-
-.pl-\[2px\] {
-  padding-left: 2px;
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -915,6 +925,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[36px\] {
   font-size: 36px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-8xl {
@@ -1166,6 +1181,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-shadow: 0.23rem 0.2rem 0.15rem black;
 }
 
+.text-shadow-drop-lg {
+  text-shadow: 0.23rem 0.2rem 0.20rem black, 0.3rem 0.3rem 0.3rem black;
+}
+
 .text-shadow-neon-2xl {
   text-shadow: 0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012, 0 0 151px #d94012;
 }
@@ -1206,6 +1225,7 @@ body:before {
 }
 
 .videostyle {
+  margin: 0.25rem;
   overflow: hidden;
   border-radius: 50px;
   --tw-shadow-color: #005a66;
@@ -1485,6 +1505,12 @@ html.is-animating .swup-transition-fade {
   background-image: url(./images/onlyfans.jpg);
 }
 
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: var(--tw-transform);
+}
+
 .hover\:bg-\[rgba\(221\2c 51\2c 255\2c 0\.733\)\]:hover {
   background-color: rgba(221,51,255,0.733);
 }
@@ -1657,39 +1683,10 @@ html.is-animating .swup-transition-fade {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.hover\:ring-transparent:hover {
-  --tw-ring-color: transparent;
-}
-
-@media (min-width: 768px) {
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:pl-0 {
-    padding-left: 0px;
-  }
-}
-
 @media (min-width: 1024px) {
-  .lg\:scale-100 {
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    transform: var(--tw-transform);
-  }
-
   .lg\:scale-75 {
     --tw-scale-x: .75;
     --tw-scale-y: .75;
     transform: var(--tw-transform);
-  }
-
-  .lg\:pl-0 {
-    padding-left: 0px;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }

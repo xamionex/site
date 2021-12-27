@@ -12,7 +12,7 @@ body:before {
 }
 
 .videostyle {
-    @apply shadow-[#005a66] ring-4 rounded-[50px] overflow-hidden
+    @apply shadow-[#005a66] m-1 ring-4 rounded-[50px] overflow-hidden
 }
 
 .minibtn1 {
