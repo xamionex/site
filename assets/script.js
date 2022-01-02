@@ -22,7 +22,20 @@ function init() {
       pauseFor: 2000,
     });
   }
-  if (document.querySelector('#age', '#ago')) {
+  if (document.querySelector('#age')) {
+    function getAge(dateString) {
+      var today = new Date();
+      var birthDate = new Date(dateString);
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      return age;
+    }
+    document.getElementById("age").innerHTML = getAge("2005/11/22");
+  }
+  if (document.querySelector('#ago')) {
     (function () {
       const second = 1000,
         minute = second * 60,
@@ -34,7 +47,6 @@ function init() {
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
-        age = yyyy - 2005
       nextYear = yyyy + 1,
         dayMonth = "11/22/",
         birthday = dayMonth + yyyy;
@@ -47,7 +59,6 @@ function init() {
         x = setInterval(function () {
           const now = new Date().getTime(),
             distance = countDown - now;
-          document.getElementById("age").innerHTML = age,
             document.getElementById("ago").innerText = 365 - Math.floor(distance / (day)),
             document.getElementById("days").innerText = Math.floor(distance / (day)),
             document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
