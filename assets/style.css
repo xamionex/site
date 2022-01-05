@@ -508,6 +508,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-aspect-h: 9;
 }
 
+.c-link {
+  font-weight: 700;
+  color: #60a5fa;
+}
+
+.c-link:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
 .visible {
   visibility: visible;
 }
@@ -528,10 +538,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
-.top-1\/4 {
-  top: 25%;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -546,6 +552,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .col-span-1 {
   grid-column: span 1 / span 1;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-4 {
+  grid-row: span 4 / span 4;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-5 {
+  grid-row: span 5 / span 5;
+}
+
+.row-span-6 {
+  grid-row: span 6 / span 6;
 }
 
 .m-auto {
@@ -649,11 +679,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: var(--tw-transform);
-}
-
 .scale-50 {
   --tw-scale-x: .5;
   --tw-scale-y: .5;
@@ -675,6 +700,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-6 {
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .place-content-center {
@@ -962,14 +1019,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 36px;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-semibold {
@@ -1045,20 +1102,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 50px;
 }
 
-.leading-3 {
-  line-height: .75rem;
-}
-
 .leading-5 {
   line-height: 1.25rem;
-}
-
-.leading-6 {
-  line-height: 1.5rem;
-}
-
-.leading-4 {
-  line-height: 1rem;
 }
 
 .tracking-widest {
@@ -1287,6 +1332,12 @@ body:before {
   overflow: hidden;
   --tw-shadow-color: #005a66;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.c-link {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
 }
 
 .minibtn1 {
@@ -1833,6 +1884,10 @@ html.is-animating .swup-transition-fade {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:grid {
+    display: grid;
   }
 
   .md\:grid-cols-3 {
