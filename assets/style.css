@@ -528,6 +528,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.top-1\/4 {
+  top: 25%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -642,6 +646,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-translate-y-1\/4 {
   --tw-translate-y: -25%;
+  transform: var(--tw-transform);
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
   transform: var(--tw-transform);
 }
 
@@ -958,6 +967,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -1031,8 +1045,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 50px;
 }
 
-.leading-7 {
-  line-height: 1.75rem;
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .tracking-widest {
