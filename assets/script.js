@@ -69,19 +69,40 @@ function init() {
         x = setInterval(function () {
           const now = new Date().getTime(),
             distance = countDown - now;
-            document.getElementById("ago").innerText = 365 - Math.floor(distance / (day)),
-            document.getElementById("days").innerText = Math.floor(distance / (day)),
-            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            if (document.querySelector('#ago')) {
+              document.getElementById("ago").innerText = 365 - Math.floor(distance / (day))
+            };
+            if (document.querySelector('#days')) {
+              document.getElementById("days").innerText = Math.floor(distance / (day))
+            };
+            if (document.querySelector('#hours')) {
+              document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour))
+            };
+            if (document.querySelector('#minutes')) {
+              document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute))
+            };
+            if (document.querySelector('#seconds')) {
+              document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second)
+            };
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("text09").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
-            document.getElementById("content").style.display = "block";
-            document.getElementById("text10").style.display = "none";
+            if (document.querySelector('#announcer')) {
+              document.getElementById("announcer").innerText = "It's my birthday!"
+            };
+            if (document.querySelector('#announcer')) {
+              document.getElementById("announcer").classList.add("text-6xl")
+            };
+            if (document.querySelector('#countdown')) {
+              document.getElementById("countdown").style.display = "none"
+            };
+            if (document.querySelector('#content')) {
+              document.getElementById("content").style.display = "block"
+            };
+            if (document.querySelector('#announcer2')) {
+              document.getElementById("announcer2").style.display = "none"
+            };
             const script = document.createElement('script');
-            script.src = '/confetti.js';
+            script.src = '/assets/confetti.js';
             document.head.appendChild(script);
             clearInterval(x);
           }
