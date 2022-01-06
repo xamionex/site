@@ -54,7 +54,7 @@ function init() {
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "1/6/",
+      dayMonth = "11/22/",
       birthday = dayMonth + yyyy;
       today = mm + "/" + dd + "/" + yyyy;
       if (today > birthday) {
