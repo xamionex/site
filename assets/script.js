@@ -51,8 +51,6 @@ function init() {
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
-      //I'm adding this section so I don't have to keep updating this pen every year :-)
-      //remove this if you don't need it
       let today = new Date(),
         dd = String(today.getDate()).padStart(2, "0"),
         mm = String(today.getMonth() + 1).padStart(2, "0"),
@@ -64,41 +62,24 @@ function init() {
       if (today > birthday) {
         birthday = dayMonth + nextYear;
       }
-      //end
       const countDown = new Date(birthday).getTime(),
         x = setInterval(function () {
           const now = new Date().getTime(),
             distance = countDown - now;
-            if (document.querySelector('#ago')) {
+            if (document.querySelector('#countdown')) {
               document.getElementById("ago").innerText = 365 - Math.floor(distance / (day))
-            };
-            if (document.querySelector('#days')) {
-              document.getElementById("days").innerText = Math.floor(distance / (day))
-            };
-            if (document.querySelector('#hours')) {
-              document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour))
-            };
-            if (document.querySelector('#minutes')) {
-              document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute))
-            };
-            if (document.querySelector('#seconds')) {
+              document.getElementById("days").innerText = Math.floor(distance / (day)),
+              document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+              document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
               document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second)
             };
           //do something later when date is reached
           if (distance < 0) {
-            if (document.querySelector('#announcer')) {
-              document.getElementById("announcer").innerText = "It's my birthday!"
-            };
-            if (document.querySelector('#announcer')) {
-              document.getElementById("announcer").classList.add("text-6xl")
-            };
             if (document.querySelector('#countdown')) {
+              document.getElementById("announcer").innerText = "It's my birthday!"
+              document.getElementById("announcer").classList.add("text-6xl")
               document.getElementById("countdown").style.display = "none"
-            };
-            if (document.querySelector('#content')) {
               document.getElementById("content").style.display = "block"
-            };
-            if (document.querySelector('#announcer2')) {
               document.getElementById("announcer2").style.display = "none"
             };
             const script = document.createElement('script');
