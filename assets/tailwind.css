@@ -98,7 +98,7 @@ body:before {
 }
 
 .bdaytxt {
-    @apply text-transparent bg-gradient-to-br from-blue-500 to-blue-900 bg-clip-text font-josefinsans
+    @apply text-transparent text-rainbow font-josefinsans
 }
 
 .bdaynum {
@@ -153,16 +153,6 @@ body:before {
     @apply origin-top
 }
 
-.emoji {
-  display: none;
-  padding: 1rem;
-}
-
-.emoji span {
-  font-size: 3rem;
-  padding: 0 0.5rem;
-}
-
 @keyframes glitch{
     0%{
       text-shadow: 
@@ -195,3 +185,17 @@ body:before {
       0.021em -0.01em blue;
     }
   }
+
+.text-rainbow {
+    @apply bg-gradient-to-r from-blue-500 via-green-500 to-red-500 animate-[rainbow_6s_ease-in-out_infinite] text-transparent bg-clip-text bg-[length:400%_100%]
+}
+
+@keyframes rainbow {
+    0%,100% {
+        @apply bg-[position:0_0]
+    }
+
+    50% {
+        @apply bg-[position:100%_0]
+    }
+}

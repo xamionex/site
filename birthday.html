@@ -33,8 +33,8 @@
 
 <body class="main before:bg-bday">
    <main id="swup" class="flex swup-transition-fade h-screen">
-      <div class="m-auto text-center text-white text-[36px] leading-[50px] space-y-2">
-         <p id="announcer1" class="bdaytxt">My birthday is in:</p>
+      <div class="m-auto text-center text-white text-transparent text-4xl space-y-2">
+         <p id="announcer" class="bdaytxt">My birthday is in:</p>
          <div id="countdown" class="bdaytxt rounded-3xl tracking-widest">
             <ul>
                <li class="bdayintxt"><span class="bdaynum w-[12rem]" id="days">365</span>Days</li>
@@ -43,7 +43,7 @@
                <li class="bdayintxt"><span class="bdaynum w-[8rem]" id="seconds">60</span>Secs</li>
             </ul>
          </div>
-         <div id="content" class="emoji">
+         <div id="content" class="hidden text-white space-y-2 space-x-5 text-8xl">
             <span>🥳</span>
             <span>🎉</span>
             <span>🎂</span>
@@ -51,13 +51,12 @@
          <p id="announcer2" class="bdaytxt">My birthday was <span id="ago" class="text-shadow-blueneon"></span>
             days ago</p>
          <div>
-            <a href="/index.html" type="button" class='shadow-md backbutton bg-[#005a66] btn'>
+            <a href="/index.html" type="button" class='mt-4 backbutton bg-[#005a66] btn'>
                <svg xmlns="http://www.w3.org/2000/svg" class="svgstyle" fill="currentColor" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <use xlink:href="/assets/icons.svg#backbutton"></use>
                </svg> <span>Go Back</span></a>
          </div>
-         <p hidden id="age"></p>
       </div>
    </main>
 </body>
