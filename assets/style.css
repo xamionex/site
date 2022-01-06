@@ -1382,10 +1382,15 @@ body:before {
   --tw-ring-color: currentColor;
 }
 
+.svgstyle {
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.75rem;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;

@@ -49,8 +49,12 @@ body:before {
     @apply transition-all duration-300 ring-2 ring-transparent hover:ring-current rounded-full
 }
 
+.svgstyle {
+    @apply h-11 w-11
+}
+
 .btn {
-    @apply p-2 text-2xl hover:scale-125 font-bold btnring text-shadow-drop-lg shadow-md inline-flex items-center
+    @apply p-3 text-2xl hover:scale-125 font-bold btnring text-shadow-drop-lg shadow-md inline-flex items-center
 }
 
 .glitch {
