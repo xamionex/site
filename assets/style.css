@@ -1766,6 +1766,61 @@ html.is-animating .swup-transition-fade {
   background-repeat: repeat;
 }
 
+.before\:content-\[\'Spec\'\]::before {
+  --tw-content: 'Spec';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'Name\/ID\'\]::before {
+  --tw-content: 'Name/ID';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'MOBO\'\]::before {
+  --tw-content: 'MOBO';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'CPU\'\]::before {
+  --tw-content: 'CPU';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'GPU\'\]::before {
+  --tw-content: 'GPU';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'RAM\'\]::before {
+  --tw-content: 'RAM';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'PSU\'\]::before {
+  --tw-content: 'PSU';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'NVMe\AE\'\]::before {
+  --tw-content: 'NVMe®';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'SSD\'\]::before {
+  --tw-content: 'SSD';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'HDD\B9\'\]::before {
+  --tw-content: 'HDD¹';
+  content: var(--tw-content);
+}
+
+.before\:content-\[\'HDD\B2\'\]::before {
+  --tw-content: 'HDD²';
+  content: var(--tw-content);
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1976,6 +2031,116 @@ html.is-animating .swup-transition-fade {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:before\:content-\[\'Specification\'\]::before {
+    --tw-content: 'Specification';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Product_Name\/ID\'\]::before {
+    --tw-content: 'Product Name/ID';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Motherboard\'\]::before {
+    --tw-content: 'Motherboard';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Processor\'\]::before {
+    --tw-content: 'Processor';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Memory\'\]::before {
+    --tw-content: 'Memory';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'NVMe\AE\'\]::before {
+    --tw-content: 'NVMe®';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'SSD\'\]::before {
+    --tw-content: 'SSD';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'HDD\B9\'\]::before {
+    --tw-content: 'HDD¹';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'HDD\B2\'\]::before {
+    --tw-content: 'HDD²';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Graphics_Card\'\]::before {
+    --tw-content: 'Graphics Card';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Power_Supply\'\]::before {
+    --tw-content: 'Power Supply';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Solid_State_Drive\'\]::before {
+    --tw-content: 'Solid State Drive';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Hard_DriveD\B9\'\]::before {
+    --tw-content: 'Hard DriveD¹';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Hard_DriveD\B2\'\]::before {
+    --tw-content: 'Hard DriveD²';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Hard_Drive_Disk\B9\'\]::before {
+    --tw-content: 'Hard Drive Disk¹';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Hard_Drive_Disk\B2\'\]::before {
+    --tw-content: 'Hard Drive Disk²';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Non-VMe\AE\'\]::before {
+    --tw-content: 'Non-VMe®';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Non-Volatile_Me\AE\'\]::before {
+    --tw-content: 'Non-Volatile Me®';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Non-Volatile_Memory_\AE\'\]::before {
+    --tw-content: 'Non-Volatile Memory ®';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Non-Volatile_Memory_Express\AE\'\]::before {
+    --tw-content: 'Non-Volatile Memory Express®';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'Non-VM_Express\AE\'\]::before {
+    --tw-content: 'Non-VM Express®';
+    content: var(--tw-content);
+  }
+
+  .md\:before\:content-\[\'NVM_Express\AE\'\]::before {
+    --tw-content: 'NVM Express®';
+    content: var(--tw-content);
   }
 }
 
