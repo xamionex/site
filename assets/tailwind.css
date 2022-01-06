@@ -50,11 +50,15 @@ body:before {
 }
 
 .btn {
-    @apply p-2 hover:scale-125 text-2xl font-bold btnring text-shadow-drop-lg shadow-md rounded inline-flex items-center
+    @apply p-3 text-3xl hover:scale-125 font-bold btnring text-shadow-drop-lg shadow-md inline-flex items-center
 }
 
-.mbtn {
-    @apply mx-10 px-4 py-3 hover:scale-125 text-3xl font-bold btnring text-shadow-drop-lg shadow-md inline-flex rounded items-center
+.glitch {
+    @apply animate-[glitch_2.5s_infinite]
+}
+
+.nametext {
+    @apply font-[sacramento] text-8xl glitch
 }
 
 .backbutton {
