@@ -654,11 +654,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
-.animate-\[glitch_2\.5s_infinite\] {
-  -webkit-animation: glitch 2.5s infinite;
-          animation: glitch 2.5s infinite;
-}
-
 .list-none {
   list-style-type: none;
 }
@@ -968,11 +963,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .text-2xl {
@@ -1395,9 +1385,9 @@ body:before {
 .btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.75rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1828,7 +1818,7 @@ html.is-animating .swup-transition-fade {
   color: rgb(244 114 182 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#ffffff\]:hover {
+.hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1836,11 +1826,6 @@ html.is-animating .swup-transition-fade {
 .hover\:text-cyan-400:hover {
   --tw-text-opacity: 1;
   color: rgb(34 211 238 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-green-300:hover {
@@ -1940,11 +1925,6 @@ html.is-animating .swup-transition-fade {
 
 .hover\:shadow-\[\#9300ab\]:hover {
   --tw-shadow-color: #9300ab;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-\[\#ffffff\]:hover {
-  --tw-shadow-color: #ffffff;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
