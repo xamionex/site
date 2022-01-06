@@ -78,7 +78,7 @@ body:before {
 }
 
 .tablering {
-    @apply ring-gray-400 ring-1 p-2
+    @apply ring-gray-400 ring-1 p-2 text-3xl
 }
 
 .td1 {

@@ -548,16 +548,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-row: span 2 / span 2;
 }
 
-.row-span-3 {
-  grid-row: span 3 / span 3;
-}
-
 .row-span-1 {
   grid-row: span 1 / span 1;
-}
-
-.row-span-4 {
-  grid-row: span 4 / span 4;
 }
 
 .m-auto {
@@ -606,30 +598,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-7 {
   height: 1.75rem;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-12 {
   height: 3rem;
 }
 
-.h-max {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
 .max-h-full {
   max-height: 100%;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .w-7 {
@@ -642,6 +624,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[8rem\] {
   width: 8rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-12 {
@@ -678,10 +664,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-6 {
-  grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
 .grid-rows-4 {
@@ -1497,6 +1479,8 @@ body:before {
 
 .tablering {
   padding: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
@@ -1507,6 +1491,8 @@ body:before {
 .td1 {
   text-align: left;
   padding: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
@@ -1517,6 +1503,8 @@ body:before {
 .td2 {
   text-align: right;
   padding: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
