@@ -14,7 +14,17 @@ swup.on('contentReplaced', init);
 function init() {
   if (document.querySelector('#myname')) {
     new Typewriter('#myname', {
-      strings: ['Hello, I\'m <strong>Petar</strong>', 'I\'m a <strong>Serbian Programmer</strong>', 'I hope you like my site'],
+      strings: ['Hello, I\'m <strong>Petar</strong>', 'I\'m a <strong>Serbian Programmer</strong>', 'I hope you like my site.'],
+      autoStart: true,
+      loop: true,
+      deleteSpeed: 70,
+      delay: 100,
+      pauseFor: 2000,
+    });
+  }
+  if (document.querySelector('#specs')) {
+    new Typewriter('#specs', {
+      strings: ['<strong>Stormbringer</strong>', '<strong>Petar\'s Personal Computer</strong>'],
       autoStart: true,
       loop: true,
       deleteSpeed: 70,

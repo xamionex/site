@@ -37,11 +37,27 @@ body:before {
 }
 
 .btn {
-    @apply p-2 hover:scale-125 text-2xl font-bold btnring text-shadow-drop-lg
+    @apply p-2 hover:scale-125 text-2xl font-bold btnring text-shadow-drop-lg shadow-md rounded inline-flex items-center
 }
 
 .mbtn {
-    @apply px-4 py-3 hover:scale-125 text-3xl font-bold btnring text-shadow-drop-lg
+    @apply mx-10 px-4 py-3 hover:scale-125 text-3xl font-bold btnring text-shadow-drop-lg shadow-md inline-flex rounded items-center
+}
+
+.backbutton {
+    @apply text-[#6bffe4] shadow-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400
+}
+
+.backbuttonpink {
+    @apply shadow-[rgba(221,119,255,0.333)]  text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)]
+}
+
+.td1 {
+    @apply border border-gray-400 p-2 text-left
+}
+
+.td2 {
+    @apply border border-gray-400 p-2 text-right
 }
 
 .icob {

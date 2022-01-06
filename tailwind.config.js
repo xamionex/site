@@ -22,6 +22,7 @@ module.exports = {
           'gallerytxt': 'linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,56,9,1) 29%, rgba(84,104,101,1) 51%, rgba(214,0,255,1) 100%);',
           'back': 'linear-gradient(125deg,rgba(255,0,119,0.533) 20%,transparent 100%)',
           'unused': 'linear-gradient(125deg,rgba(94,0,44,0.78) 20%,transparent 100%)',
+          'intspecs': 'linear-gradient(90deg, rgba(36,0,0,1) 0%, transparent 100%);',
         },
         fontFamily: {
           londrinashadow: ['Londrina Shadow'],
