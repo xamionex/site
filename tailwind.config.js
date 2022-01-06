@@ -50,7 +50,11 @@ module.exports = {
         'neon-lg': '0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012',
         'neon-xl': '0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012',
         'neon-2xl': '0 0 7px #ff9a9a, 0 0 10px #d94012, 0 0 21px #d94012, 0 0 42px #d94012, 0 0 82px #d94012, 0 0 92px #d94012, 0 0 102px #d94012, 0 0 151px #d94012',
-        'blueneon': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue',
+        'neon-blue-sm': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue',
+        'neon-blue-md': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue, 0 0 42px blue, 0 0 82px blue',
+        'neon-blue-lg': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue, 0 0 42px blue, 0 0 82px blue, 0 0 92px blue',
+        'neon-blue-xl': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue, 0 0 42px blue, 0 0 82px blue, 0 0 92px blue, 0 0 102px blue',
+        'neon-blue-2xl': '0 0 7px cyan, 0 0 10px blue, 0 0 21px blue, 0 0 42px blue, 0 0 82px blue, 0 0 92px blue, 0 0 102px blue, 0 0 151px blue',
       },
       textDecorationStyle: { // defaults to these values
         'solid': 'solid',
