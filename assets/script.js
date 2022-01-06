@@ -24,12 +24,12 @@ function init() {
   }
   if (document.querySelector('#specs')) {
     new Typewriter('#specs', {
-      strings: ['<strong>Stormbringer</strong>', '<strong>Petar\'s Personal Computer</strong>'],
+      strings: ['Stormbringer', 'Stormbreaker\'s Twin', 'Petar\'s PC'],
       autoStart: true,
       loop: true,
-      deleteSpeed: 70,
-      delay: 100,
-      pauseFor: 2000,
+      deleteSpeed: 50,
+      delay: 70,
+      pauseFor: 2500,
     });
   }
   if (document.querySelector('#age')) {

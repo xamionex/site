@@ -65,6 +65,10 @@ body:before {
     @apply font-[sacramento] text-8xl glitch
 }
 
+.nametext2 {
+    @apply font-[sacramento] text-7xl glitch font-bold
+}
+
 .backbutton {
     @apply text-[#6bffe4] shadow-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400
 }
