@@ -39,7 +39,7 @@ body:before {
     @apply bg-[#ce3266] hover:border-[#ce3266] hover:text-[#ce3266]
 }
 .minibtn3 {
-    @apply bg-[black] hover:border-[black] hover:text-[black]
+    @apply bg-black hover:border-[black] hover:text-[black]
 }
 .minibtn4 {
     @apply bg-[#b30003] hover:border-[#b30003] hover:text-[#b30003]
@@ -94,7 +94,7 @@ body:before {
 }
 
 .icob {
-    @apply p-2 font-semibold inline-flex items-center space-x-2 hover:bg-transparent btnring
+    @apply p-2 font-semibold inline-flex items-center space-x-2 hover:bg-white btnring
 }
 
 .bdaytxt {
