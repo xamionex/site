@@ -554,6 +554,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .table {
   display: table;
 }
@@ -570,10 +574,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -582,12 +582,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
-.max-h-full {
-  max-height: 100%;
+.h-7 {
+  height: 1.75rem;
 }
 
-.w-7 {
-  width: 1.75rem;
+.max-h-full {
+  max-height: 100%;
 }
 
 .w-\[12rem\] {
@@ -604,6 +604,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-12 {
   width: 3rem;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .max-w-full {
@@ -650,6 +654,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-content: center;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -684,6 +692,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-\[50px\] {
   border-radius: 50px;
+}
+
+.rounded-l-full {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 .rounded-br-\[50px\] {
@@ -1047,11 +1065,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-indigo-500 {
-  --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
-}
-
 .text-transparent {
   color: transparent;
 }
@@ -1188,9 +1201,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .ring-red-900 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(127 29 29 / var(--tw-ring-opacity));
+}
+
+.ring-transparent {
+  --tw-ring-color: transparent;
 }
 
 .invert {
@@ -1369,6 +1392,20 @@ body:before {
   --tw-ring-color: currentColor;
 }
 
+.btnringn {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.btnringn:hover {
+  --tw-ring-color: currentColor;
+}
+
 .svgstyle {
   height: 2.75rem;
   width: 2.75rem;
@@ -1504,6 +1541,35 @@ body:before {
   --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
 }
 
+.icobn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icobn > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.icobn {
+  padding: 0.5rem;
+  font-weight: 600;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  --tw-ring-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.icobn:hover {
+  --tw-ring-color: currentColor;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .icob {
   display: inline-flex;
   align-items: center;
@@ -1633,35 +1699,35 @@ html.is-animating .swup-transition-fade {
 
 @-webkit-keyframes glitch{
   0%{
-    text-shadow: 
+    text-shadow:
       0.02em 0.01em red,
       -0.031em -0.04em green,
       0.04em 0.01em blue;
   }
 
   10%{
-    text-shadow: 
+    text-shadow:
       0.01em 0.02em red,
       0.011em -0.03em green,
       -0.03em 0.03em blue;
   }
 
   50%{
-    text-shadow: 
+    text-shadow:
       -0.03em -0.01em red,
       0.021em 0.03em green,
       0.02em -0.03em blue;
   }
 
   90%{
-    text-shadow: 
+    text-shadow:
       -0.021em -0.01em red,
       -0.021em -0.033em green,
       0.04em 0.01em blue;
   }
 
   100%{
-    text-shadow: 
+    text-shadow:
       0.04em -0.05em red,
       -0.031em 0em green,
       0.021em -0.01em blue;
@@ -1670,35 +1736,35 @@ html.is-animating .swup-transition-fade {
 
 @keyframes glitch{
   0%{
-    text-shadow: 
+    text-shadow:
       0.02em 0.01em red,
       -0.031em -0.04em green,
       0.04em 0.01em blue;
   }
 
   10%{
-    text-shadow: 
+    text-shadow:
       0.01em 0.02em red,
       0.011em -0.03em green,
       -0.03em 0.03em blue;
   }
 
   50%{
-    text-shadow: 
+    text-shadow:
       -0.03em -0.01em red,
       0.021em 0.03em green,
       0.02em -0.03em blue;
   }
 
   90%{
-    text-shadow: 
+    text-shadow:
       -0.021em -0.01em red,
       -0.021em -0.033em green,
       0.04em 0.01em blue;
   }
 
   100%{
-    text-shadow: 
+    text-shadow:
       0.04em -0.05em red,
       -0.031em 0em green,
       0.021em -0.01em blue;
@@ -1867,6 +1933,11 @@ html.is-animating .swup-transition-fade {
   background-color: transparent;
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-green-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(22 101 52 / var(--tw-bg-opacity));
@@ -1877,19 +1948,9 @@ html.is-animating .swup-transition-fade {
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .hover\:text-blue-300:hover {
   --tw-text-opacity: 1;
   color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-
-.hover\:text-indigo-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(165 180 252 / var(--tw-text-opacity));
 }
 
 .hover\:text-yellow-400:hover {
@@ -2030,6 +2091,10 @@ html.is-animating .swup-transition-fade {
 .hover\:shadow-yellow-300:hover {
   --tw-shadow-color: #fde047;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:ring-current:hover {
+  --tw-ring-color: currentColor;
 }
 
 @media (min-width: 768px) {

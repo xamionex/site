@@ -49,6 +49,10 @@ body:before {
     @apply transition-all duration-300 ring-2 ring-transparent hover:ring-current rounded-full
 }
 
+.btnringn {
+    @apply transition-all duration-300 ring-2 ring-transparent hover:ring-current
+}
+
 .svgstyle {
     @apply h-11 w-11
 }
@@ -91,6 +95,10 @@ body:before {
 
 .td2 {
     @apply text-right tablering
+}
+
+.icobn {
+    @apply p-2 font-semibold inline-flex items-center space-x-2 hover:bg-white btnringn
 }
 
 .icob {
