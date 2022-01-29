@@ -36,9 +36,21 @@ function includeHTML() {
     }
   }
 };
+
+function Multiply(node, count, deep) {
+  for (var i = 0, copy; i < count - 1; i++) {
+      copy = node.cloneNode(deep);
+      node.parentNode.insertBefore(copy, node);
+  }
+}
+
 function init() {
   if (document.querySelector('#socials')) {
     includeHTML()
+  }
+  if (document.querySelector('.banan')) {
+    Multiply(document.querySelector('#banan'), 100, true);
+    Multiply(document.querySelector('.banan'), 100, true);
   }
   if (document.querySelector('#myname')) {
     new Typewriter('#myname', {
