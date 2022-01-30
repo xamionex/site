@@ -58,7 +58,7 @@ body:before {
 }
 
 .btn {
-    @apply p-3 text-2xl hover:scale-125 font-bold btnring text-shadow-drop-lg shadow-md inline-flex items-center
+    @apply p-3 hover:scale-125 font-bold btnring text-shadow-drop-lg shadow-md inline-flex items-center
 }
 
 .glitch {

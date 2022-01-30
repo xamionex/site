@@ -550,10 +550,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: block;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .inline {
   display: inline;
 }
@@ -576,10 +572,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hidden {
   display: none;
-}
-
-.aspect-5 {
-  aspect-ratio: 5;
 }
 
 .h-screen {
@@ -622,10 +614,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.75rem;
 }
 
-.w-3 {
-  width: 0.75rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -666,16 +654,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-10 {
-  grid-template-columns: repeat(10, minmax(0, 1fr));
-}
-
 .grid-rows-4 {
   grid-template-rows: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .place-content-center {
@@ -968,6 +948,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: sacramento;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -986,11 +971,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-\[36px\] {
@@ -1429,8 +1409,6 @@ body:before {
   display: inline-flex;
   align-items: center;
   padding: 0.75rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
   font-weight: 700;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1816,27 +1794,6 @@ html.is-animating .swup-transition-fade {
   50% {
     background-position: 100% 0;
   }
-}
-
-.before\:scale-50::before {
-  content: var(--tw-content);
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: var(--tw-transform);
-}
-
-.before\:scale-90::before {
-  content: var(--tw-content);
-  --tw-scale-x: .9;
-  --tw-scale-y: .9;
-  transform: var(--tw-transform);
-}
-
-.before\:scale-100::before {
-  content: var(--tw-content);
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  transform: var(--tw-transform);
 }
 
 .before\:bg-\[url\(\.\/images\/trees\.jpg\)\]::before {
