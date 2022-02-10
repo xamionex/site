@@ -652,11 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
-.animate-\[\'fadein_0\.6s_forwards\'\] {
-  -webkit-animation: 'fadein 0.6s forwards';
-          animation: 'fadein 0.6s forwards';
-}
-
 .list-none {
   list-style-type: none;
 }
@@ -767,11 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#543d00\] {
   --tw-bg-opacity: 1;
   background-color: rgb(84 61 0 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-info {
@@ -1008,6 +998,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1249,16 +1249,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.delay-150 {
-  transition-delay: 150ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1471,6 +1461,16 @@ body:before {
 .glitch {
   -webkit-animation: glitch 2.5s infinite;
           animation: glitch 2.5s infinite;
+}
+
+.femboys {
+  -webkit-animation: femboys 2.5s infinite;
+          animation: femboys 2.5s infinite;
+}
+
+.furries {
+  -webkit-animation: furries 2.5s infinite;
+          animation: furries 2.5s infinite;
 }
 
 .nametext {
@@ -1854,6 +1854,154 @@ html.is-animating .swup-transition-fade {
   }
 }
 
+@-webkit-keyframes femboys {
+  0%{
+    text-shadow:
+      0.02em 0.01em #5ecdfa,
+      -0.031em -0.04em white,
+      0.04em 0.01em #f4aab5;
+  }
+
+  10%{
+    text-shadow:
+      0.01em 0.02em #5ecdfa,
+      0.011em -0.03em white,
+      -0.03em 0.03em #f4aab5;
+  }
+
+  50%{
+    text-shadow:
+      -0.03em -0.01em #5ecdfa,
+      0.021em 0.03em white,
+      0.02em -0.03em #f4aab5;
+  }
+
+  90%{
+    text-shadow:
+      -0.021em -0.01em #5ecdfa,
+      -0.021em -0.033em white,
+      0.04em 0.01em #f4aab5;
+  }
+
+  100%{
+    text-shadow:
+      0.04em -0.05em #5ecdfa,
+      -0.031em 0em white,
+      0.021em -0.01em #f4aab5;
+  }
+}
+
+@keyframes femboys {
+  0%{
+    text-shadow:
+      0.02em 0.01em #5ecdfa,
+      -0.031em -0.04em white,
+      0.04em 0.01em #f4aab5;
+  }
+
+  10%{
+    text-shadow:
+      0.01em 0.02em #5ecdfa,
+      0.011em -0.03em white,
+      -0.03em 0.03em #f4aab5;
+  }
+
+  50%{
+    text-shadow:
+      -0.03em -0.01em #5ecdfa,
+      0.021em 0.03em white,
+      0.02em -0.03em #f4aab5;
+  }
+
+  90%{
+    text-shadow:
+      -0.021em -0.01em #5ecdfa,
+      -0.021em -0.033em white,
+      0.04em 0.01em #f4aab5;
+  }
+
+  100%{
+    text-shadow:
+      0.04em -0.05em #5ecdfa,
+      -0.031em 0em white,
+      0.021em -0.01em #f4aab5;
+  }
+}
+
+@-webkit-keyframes furries {
+  0%{
+    text-shadow:
+      0.02em 0.01em #002b52,
+      -0.031em -0.04em white,
+      0.04em 0.01em #efa82a;
+  }
+
+  10%{
+    text-shadow:
+      0.01em 0.02em #002b52,
+      0.011em -0.03em white,
+      -0.03em 0.03em #efa82a;
+  }
+
+  50%{
+    text-shadow:
+      -0.03em -0.01em #002b52,
+      0.021em 0.03em white,
+      0.02em -0.03em #efa82a;
+  }
+
+  90%{
+    text-shadow:
+      -0.021em -0.01em #002b52,
+      -0.021em -0.033em white,
+      0.04em 0.01em #efa82a;
+  }
+
+  100%{
+    text-shadow:
+      0.04em -0.05em #002b52,
+      -0.031em 0em white,
+      0.021em -0.01em #efa82a;
+  }
+}
+
+@keyframes furries {
+  0%{
+    text-shadow:
+      0.02em 0.01em #002b52,
+      -0.031em -0.04em white,
+      0.04em 0.01em #efa82a;
+  }
+
+  10%{
+    text-shadow:
+      0.01em 0.02em #002b52,
+      0.011em -0.03em white,
+      -0.03em 0.03em #efa82a;
+  }
+
+  50%{
+    text-shadow:
+      -0.03em -0.01em #002b52,
+      0.021em 0.03em white,
+      0.02em -0.03em #efa82a;
+  }
+
+  90%{
+    text-shadow:
+      -0.021em -0.01em #002b52,
+      -0.021em -0.033em white,
+      0.04em 0.01em #efa82a;
+  }
+
+  100%{
+    text-shadow:
+      0.04em -0.05em #002b52,
+      -0.031em 0em white,
+      0.021em -0.01em #efa82a;
+  }
+}
+
 .before\:bg-\[url\(\.\/images\/trees\.jpg\)\]::before {
   content: var(--tw-content);
   background-image: url(./images/trees.jpg);
@@ -1965,18 +2113,8 @@ html.is-animating .swup-transition-fade {
   transform: var(--tw-transform);
 }
 
-.hover\:animate-\[\'fadein_0\.6s_forwards\'\]:hover {
-  -webkit-animation: 'fadein 0.6s forwards';
-          animation: 'fadein 0.6s forwards';
-}
-
 .hover\:bg-\[rgba\(104\2c 25\2c 120\2c 0\.733\)\]:hover {
   background-color: rgba(104,25,120,0.733);
-}
-
-.hover\:bg-black:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#001bab\]:hover {
@@ -2013,11 +2151,6 @@ html.is-animating .swup-transition-fade {
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-slate-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .hover\:text-blue-300:hover {
   --tw-text-opacity: 1;
   color: rgb(147 197 253 / var(--tw-text-opacity));
@@ -2026,6 +2159,11 @@ html.is-animating .swup-transition-fade {
 .hover\:text-yellow-400:hover {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .hover\:text-green-700:hover {
@@ -2126,11 +2264,6 @@ html.is-animating .swup-transition-fade {
 .hover\:text-\[\#0f760f\]:hover {
   --tw-text-opacity: 1;
   color: rgb(15 118 15 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-\[rgba\(104\2c 25\2c 120\2c 0\.733\)\]:hover {
@@ -2249,3 +2382,4 @@ html.is-animating .swup-transition-fade {
     transform: var(--tw-transform);
   }
 }
+
