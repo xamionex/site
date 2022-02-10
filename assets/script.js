@@ -44,6 +44,13 @@ function Multiply(node, count, deep) {
   }
 }
 
+kofiWidgetOverlay.draw('amione', {
+  'type': 'floating-chat',
+  'floating-chat.donateButton.text': 'Donate 💖',
+  'floating-chat.donateButton.background-color': '#00b9fe',
+  'floating-chat.donateButton.text-color': '#fff'
+});
+
 function init() {
   if (document.querySelector('#socials')) {
     includeHTML()

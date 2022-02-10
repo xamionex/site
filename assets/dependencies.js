@@ -48,4 +48,4 @@ function addCss(fileName) {
     return load_script.scripts[ load_script.scripts.length - 1 ].promise;
 };
 
-['https://unpkg.com/typewriter-effect@latest/dist/core.js', 'https://unpkg.com/swup@latest/dist/swup.min.js', '/assets/SwupOverlayTheme.min.js', '/assets/SwupBodyClassPlugin.min.js', 'https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js', '/assets/script.js'].forEach(load_script);
+['https://unpkg.com/typewriter-effect@latest/dist/core.js', 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js', 'https://unpkg.com/swup@latest/dist/swup.min.js', '/assets/SwupOverlayTheme.min.js', '/assets/SwupBodyClassPlugin.min.js', 'https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js', '/assets/script.js'].forEach(load_script);
