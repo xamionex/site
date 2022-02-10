@@ -652,6 +652,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
+.animate-\[\'fadein_0\.6s_forwards\'\] {
+  -webkit-animation: 'fadein 0.6s forwards';
+          animation: 'fadein 0.6s forwards';
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -762,6 +767,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#543d00\] {
   --tw-bg-opacity: 1;
   background-color: rgb(84 61 0 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-info {
@@ -991,11 +1001,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-\[36px\] {
   font-size: 36px;
 }
@@ -1003,16 +1008,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-bold {
@@ -1254,27 +1249,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.delay-150 {
+  transition-delay: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.content-\[\'real\'\] {
-  --tw-content: 'real';
-  content: var(--tw-content);
-}
-
-.content-\[real\] {
-  --tw-content: real;
-  content: var(--tw-content);
-}
-
-.content-\[\'\(real\)\'\] {
-  --tw-content: '(real)';
-  content: var(--tw-content);
 }
 
 .text-shadow {
@@ -1844,6 +1834,26 @@ html.is-animating .swup-transition-fade {
   }
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .before\:bg-\[url\(\.\/images\/trees\.jpg\)\]::before {
   content: var(--tw-content);
   background-image: url(./images/trees.jpg);
@@ -1887,6 +1897,11 @@ html.is-animating .swup-transition-fade {
 .before\:bg-repeat::before {
   content: var(--tw-content);
   background-repeat: repeat;
+}
+
+.before\:content-\[\'\(real\)\'\]::before {
+  --tw-content: '(real)';
+  content: var(--tw-content);
 }
 
 .before\:content-\[\'Spec\'\]::before {
@@ -1944,32 +1959,24 @@ html.is-animating .swup-transition-fade {
   content: var(--tw-content);
 }
 
-.before\:content-\[\'real\'\]::before {
-  --tw-content: 'real';
-  content: var(--tw-content);
-}
-
-.before\:content-\[\'\(real\)\'\]::before {
-  --tw-content: '(real)';
-  content: var(--tw-content);
-}
-
-.hover\:inline:hover {
-  display: inline;
-}
-
-.hover\:hidden:hover {
-  display: none;
-}
-
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
   transform: var(--tw-transform);
 }
 
+.hover\:animate-\[\'fadein_0\.6s_forwards\'\]:hover {
+  -webkit-animation: 'fadein 0.6s forwards';
+          animation: 'fadein 0.6s forwards';
+}
+
 .hover\:bg-\[rgba\(104\2c 25\2c 120\2c 0\.733\)\]:hover {
   background-color: rgba(104,25,120,0.733);
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#001bab\]:hover {
@@ -2004,6 +2011,11 @@ html.is-animating .swup-transition-fade {
 .hover\:bg-yellow-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(133 77 14 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-slate-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .hover\:text-blue-300:hover {
@@ -2116,6 +2128,11 @@ html.is-animating .swup-transition-fade {
   color: rgb(15 118 15 / var(--tw-text-opacity));
 }
 
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .hover\:shadow-\[rgba\(104\2c 25\2c 120\2c 0\.733\)\]:hover {
   --tw-shadow-color: rgba(104,25,120,0.733);
   --tw-shadow: var(--tw-shadow-colored);
@@ -2151,18 +2168,8 @@ html.is-animating .swup-transition-fade {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.hover\:before\:content-\[\'\(real\)\'\]:hover::before {
-  --tw-content: '(real)';
-  content: var(--tw-content);
-}
-
-.hover\:before\:content-\[\'\(realrealreal\)\'\]:hover::before {
-  --tw-content: '(realrealreal)';
-  content: var(--tw-content);
-}
-
-.hover\:before\:content-\[\'\(actually_fake\)\'\]:hover::before {
-  --tw-content: '(actually fake)';
+.hover\:before\:content-\[\'\(based\)\'\]:hover::before {
+  --tw-content: '(based)';
   content: var(--tw-content);
 }
 

@@ -207,3 +207,12 @@ body:before {
         @apply bg-[position:100%_0]
     }
 }
+
+@keyframes fadein {
+    from {
+        @apply opacity-0
+    }
+    to {
+        @apply opacity-100
+    }
+}
