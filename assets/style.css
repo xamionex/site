@@ -642,12 +642,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
-.scale-50 {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: var(--tw-transform);
-}
-
 .transform {
   transform: var(--tw-transform);
 }
@@ -668,12 +662,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-4 {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
-.place-content-center {
-  place-content: center;
+.items-center {
+  align-items: center;
 }
 
 .gap-2 {
@@ -782,6 +780,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 37 37 / var(--tw-bg-opacity));
 }
 
+.bg-red-500\/30 {
+  background-color: rgb(239 68 68 / 0.3);
+}
+
 .bg-gray-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
@@ -872,6 +874,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(15 118 15 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-unused {
   background-image: linear-gradient(125deg,rgba(94,0,44,0.78) 20%,transparent 100%);
 }
@@ -932,6 +939,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .pt-3 {
@@ -998,16 +1009,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1431,6 +1432,27 @@ body:before {
 .svgstyle {
   height: 2.75rem;
   width: 2.75rem;
+}
+
+.nobordbtn {
+  display: inline-flex;
+  align-items: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.nobordbtn:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: var(--tw-transform);
 }
 
 .btn {
@@ -2137,6 +2159,16 @@ html.is-animating .swup-transition-fade {
   background-color: rgb(85 85 85 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -2179,11 +2211,6 @@ html.is-animating .swup-transition-fade {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-cyan-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(34 211 238 / var(--tw-text-opacity));
 }
 
 .hover\:text-green-300:hover {
@@ -2372,14 +2399,6 @@ html.is-animating .swup-transition-fade {
   .md\:before\:content-\[\'Hard_Drive_Disk\B2\'\]::before {
     --tw-content: 'Hard Drive Disk²';
     content: var(--tw-content);
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:scale-75 {
-    --tw-scale-x: .75;
-    --tw-scale-y: .75;
-    transform: var(--tw-transform);
   }
 }
 

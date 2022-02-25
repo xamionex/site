@@ -25,29 +25,33 @@
       rel="stylesheet">
 </head>
 
-<body class="main before:bg-[url(./images/love.jpg)] h-screen">
-   <div id="swup" class="container swup-transition-fade mx-auto pt-2">
-      <div class="videostyle rounded-[50px] ring ring-red-900"><iframe
-            src="https://www.youtube.com/embed/vddRIoCAwhw"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-      <li class="list-none flex place-content-center scale-50 lg:scale-75 pt-2">
-         <a href="/about" type="button"
-            class='shadow-md text-[#6bffe4] shadow-[#005a66] bg-[#005a66] bg-info hover:shadow-[#001bab] hover:bg-[#001bab] hover:text-cyan-400 invert btn text-2xl'>
-            <div class="flex gap-2">
-               <div>
-                  <svg class="h-12 w-12" fill="currentColor" viewBox="0 0 24 24"
-                     stroke="currentColor">
-                     <use xlink:href="/assets/icons.svg#backbutton">
-                     </use>
-                  </svg>
-               </div>
-               <div class="m-auto">
-                  <span>Go Back</span>
-               </div>
+<body class="main before:bg-[url(./images/love.jpg)]">
+   <div id="swup" class="flex swup-transition-fade h-screen">
+      <div class="m-auto container">
+         <div class="videostyle rounded-[50px] ring ring-red-900">
+            <iframe src="https://www.youtube.com/embed/vddRIoCAwhw"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+               allowfullscreen></iframe>
+         </div>
+         <div class="grid grid-cols-3">
+            <div class="text-left">
+               <a href="/about" type="button"
+                  class='bg-info invert hover:bg-blue-600 nobordbtn'>
+                  <span class="m-auto">Go Back</span>
+               </a>
             </div>
-         </a>
-      </li>
+            <div class="text-center">
+               <span class="nobordbtn bg-red-500">Are we here just to suffer?</span>
+            </div>
+            <div class="text-right">
+               <a href="https://discord.gg/GsGADB6vEh" type="button"
+                  class='text-transparent bg-clip-text bg-red-500/30 hover:bg-green-600 nobordbtn'>
+                  <span class="m-auto italic">auxilium mortalibus</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
    </div>
 </body>
 

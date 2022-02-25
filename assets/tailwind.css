@@ -57,6 +57,10 @@ body:before {
     @apply h-11 w-11
 }
 
+.nobordbtn {
+    @apply text-transparent bg-clip-text transition-all duration-500 p-3 hover:scale-125 font-bold inline-flex items-center text-2xl
+}
+
 .btn {
     @apply p-3 hover:scale-125 font-bold btnring text-shadow-drop-lg shadow-md inline-flex items-center
 }
