@@ -69,12 +69,12 @@ body:before {
     @apply animate-[glitch_2.5s_infinite]
 }
 
-.femboys {
-    @apply animate-[femboys_2.5s_infinite]
+.femboy {
+    @apply animate-[femboy_2.5s_infinite]
 }
 
-.furries {
-    @apply animate-[furries_2.5s_infinite]
+.furry {
+    @apply animate-[furry_2.5s_infinite]
 }
 
 .nametext {
@@ -229,7 +229,7 @@ body:before {
     }
 }
 
-@keyframes femboys {
+@keyframes femboy {
     0%{
       text-shadow:
       0.02em 0.01em #5ecdfa,
@@ -264,7 +264,7 @@ body:before {
 
 
 
-  @keyframes furries {
+  @keyframes furry {
     0%{
       text-shadow:
       0.02em 0.01em #002b52,

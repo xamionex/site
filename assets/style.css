@@ -945,6 +945,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1001,6 +1005,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -1168,6 +1192,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.decoration-dotted {
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
 }
 
 .shadow-md {
@@ -1477,14 +1506,14 @@ body:before {
           animation: glitch 2.5s infinite;
 }
 
-.femboys {
-  -webkit-animation: femboys 2.5s infinite;
-          animation: femboys 2.5s infinite;
+.femboy {
+  -webkit-animation: femboy 2.5s infinite;
+          animation: femboy 2.5s infinite;
 }
 
-.furries {
-  -webkit-animation: furries 2.5s infinite;
-          animation: furries 2.5s infinite;
+.furry {
+  -webkit-animation: furry 2.5s infinite;
+          animation: furry 2.5s infinite;
 }
 
 .nametext {
@@ -1868,7 +1897,7 @@ html.is-animating .swup-transition-fade {
   }
 }
 
-@-webkit-keyframes femboys {
+@-webkit-keyframes femboy {
   0%{
     text-shadow:
       0.02em 0.01em #5ecdfa,
@@ -1905,7 +1934,7 @@ html.is-animating .swup-transition-fade {
   }
 }
 
-@keyframes femboys {
+@keyframes femboy {
   0%{
     text-shadow:
       0.02em 0.01em #5ecdfa,
@@ -1942,7 +1971,7 @@ html.is-animating .swup-transition-fade {
   }
 }
 
-@-webkit-keyframes furries {
+@-webkit-keyframes furry {
   0%{
     text-shadow:
       0.02em 0.01em #002b52,
@@ -1979,7 +2008,7 @@ html.is-animating .swup-transition-fade {
   }
 }
 
-@keyframes furries {
+@keyframes furry {
   0%{
     text-shadow:
       0.02em 0.01em #002b52,
