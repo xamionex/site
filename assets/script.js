@@ -6,8 +6,8 @@ const swup = new Swup({
     direction: 'to-right',
   }), new SwupBodyClassPlugin()]
 });
-const jsConfetti = new JSConfetti()
 init();
+const jsConfetti = new JSConfetti()
 swup.on('contentReplaced', init);
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
