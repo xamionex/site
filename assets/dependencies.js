@@ -2,20 +2,22 @@ addCss('/assets/style.css');
 intrand = Math.floor(Math.random() * 5);
 chooseCursor(intrand)
 function addCss(fileName) {
+    // adds css to head
     var head = document.head;
     var link = document.createElement("link");
     link.type = "text/css";
     link.rel = "stylesheet";
     link.href = fileName;
     head.appendChild(link);
-} // adds css to head
+}
 function chooseCursor(intrand) {
+    // yandere dev style choosing of cursor :trol:
     if (intrand == 0){addCss('/assets/cursor/FlameSword.css')}
     else if (intrand == 1){addCss('/assets/cursor/FlamingArrowGlitterPurple.css')}
     else if (intrand == 2){addCss('/assets/cursor/LightningElectricity.css')}
     else if (intrand == 3){addCss('/assets/cursor/LightsOfHeaven.css')}
     else if (intrand == 4){addCss('/assets/cursor/TurqouiseElectricityLightning.css')}
-} // yandere dev style choosing of cursor :trol:
+}
 load_script = function (src) {
     // Initialize scripts queue
     if (load_script.scripts === undefined) {
