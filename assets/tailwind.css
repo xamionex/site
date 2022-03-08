@@ -20,27 +20,30 @@ body:before {
 }
 
 .cu-link {
-    background-image: linear-gradient(transparent, transparent), linear-gradient(currentColor, currentColor);
+    background-image: linear-gradient(transparent,transparent),linear-gradient(currentColor,currentColor);
     background-size: 0 3px;
-    background-position: 50% 100%;
+    background-position:50% 100%;
     background-repeat: no-repeat;
     transition: .5s ease-in-out;
 }
 
 .cu-link:hover {
     background-size: 100% 3px;
-    background-position: 50% 100%;
+    background-position:50% 100%;
 }
 
 .minibtn1 {
     @apply bg-[#7b8bde] hover:border-[#7b8bde] hover:text-[#7b8bde]
 }
+
 .minibtn2 {
     @apply bg-[#ce3266] hover:border-[#ce3266] hover:text-[#ce3266]
 }
+
 .minibtn3 {
     @apply bg-black hover:border-[black] hover:text-[black]
 }
+
 .minibtn4 {
     @apply bg-[#b30003] hover:border-[#b30003] hover:text-[#b30003]
 }
@@ -90,7 +93,7 @@ body:before {
 }
 
 .backbuttonpink {
-    @apply shadow-[rgba(221,119,255,0.333)]  text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)]
+    @apply shadow-[rgba(221,119,255,0.333)] text-white bg-back hover:shadow-[rgba(221,51,255,0.733)] hover:bg-[rgba(221,51,255,0.733)]
 }
 
 .tbl {
@@ -132,10 +135,11 @@ body:before {
 .swup-transition-fade {
     transition: 0.00001s;
     opacity: 1;
-  }
-  html.is-animating .swup-transition-fade {
+}
+
+html.is-animating .swup-transition-fade {
     opacity: 0;
-  }
+}
 
 .pfp {
     @apply m-auto w-52 h-52 relative mb-2
@@ -146,72 +150,83 @@ body:before {
 }
 
 .pfp:hover * {
-    transform: translate(0, 0);
+    transform: translate(0,0);
 }
 
 .pfp img {
     @apply rounded-3xl absolute top-0 left-0 origin-left transformease
 }
+
 .image-1 {
-    clip-path: polygon(0 0, 0 32%, 28% 0);
+    clip-path: polygon(0 0,0 32%,28% 0);
     @apply -translate-x-2 -translate-y-2 origin-top
 }
+
 .pfp:hover .image-1 {
     @apply translate-x-0 translate-y-0
 }
+
 .image-2 {
-    clip-path: polygon(28% 0, 0 32%, 0 100%, 17% 100%, 90% 0);
-    transform: translate(-10px, 5px);
+    clip-path: polygon(28% 0,0 32%,0 100%,17% 100%,90% 0);
+    transform: translate(-10px,5px);
 }
+
 .image-3 {
-    clip-path: polygon(100% 0, 100% 65%, 74% 100%, 17% 100%, 90% 0);
-    transform: translate(9px, -10px);
+    clip-path: polygon(100% 0,100% 65%,74% 100%,17% 100%,90% 0);
+    transform: translate(9px,-10px);
 }
+
 .image-4 {
-    clip-path: polygon(100% 65%, 74% 100%, 100% 100%);
-    transform: translate(10px, 5px);
+    clip-path: polygon(100% 65%,74% 100%,100% 100%);
+    transform: translate(10px,5px);
     @apply origin-top
 }
 
-@keyframes glitch{
-    0%{
-      text-shadow:
-      0.02em 0.01em red,
-      -0.031em -0.04em green,
-      0.04em 0.01em blue;
+@keyframes glitch {
+    0% {
+        text-shadow:
+            0.02em 0.01em red,
+            -0.031em -0.04em green,
+            0.04em 0.01em blue;
     }
-    10%{
-      text-shadow:
-      0.01em 0.02em red,
-      0.011em -0.03em green,
-      -0.03em 0.03em blue;
+
+    10% {
+        text-shadow:
+            0.01em 0.02em red,
+            0.011em -0.03em green,
+            -0.03em 0.03em blue;
     }
-    50%{
-      text-shadow:
-      -0.03em -0.01em red,
-      0.021em 0.03em green,
-      0.02em -0.03em blue;
+
+    50% {
+        text-shadow:
+            -0.03em -0.01em red,
+            0.021em 0.03em green,
+            0.02em -0.03em blue;
     }
-    90%{
-      text-shadow:
-      -0.021em -0.01em red,
-      -0.021em -0.033em green,
-      0.04em 0.01em blue;
+
+    90% {
+        text-shadow:
+            -0.021em -0.01em red,
+            -0.021em -0.033em green,
+            0.04em 0.01em blue;
     }
-    100%{
-      text-shadow:
-      0.04em -0.05em red,
-      -0.031em 0em green,
-      0.021em -0.01em blue;
+
+    100% {
+        text-shadow:
+            0.04em -0.05em red,
+            -0.031em 0em green,
+            0.021em -0.01em blue;
     }
-  }
+}
 
 .text-rainbow {
     @apply bg-gradient-to-r from-blue-500 via-green-500 to-red-500 animate-[rainbow_6s_ease-in-out_infinite] text-transparent bg-clip-text bg-[length:400%_100%]
 }
 
 @keyframes rainbow {
-    0%,100% {
+
+    0%,
+    100% {
         @apply bg-[position:0_0]
     }
 
@@ -224,76 +239,84 @@ body:before {
     from {
         @apply opacity-0
     }
+
     to {
         @apply opacity-100
     }
 }
 
 @keyframes femboy {
-    0%{
-      text-shadow:
-      0.02em 0.01em #5ecdfa,
-      -0.031em -0.04em white,
-      0.04em 0.01em #f4aab5;
+    0% {
+        text-shadow:
+            0.02em 0.01em #5ecdfa,
+            -0.031em -0.04em white,
+            0.04em 0.01em #f4aab5;
     }
-    10%{
-      text-shadow:
-      0.01em 0.02em #5ecdfa,
-      0.011em -0.03em white,
-      -0.03em 0.03em #f4aab5;
+
+    10% {
+        text-shadow:
+            0.01em 0.02em #5ecdfa,
+            0.011em -0.03em white,
+            -0.03em 0.03em #f4aab5;
     }
-    50%{
-      text-shadow:
-      -0.03em -0.01em #5ecdfa,
-      0.021em 0.03em white,
-      0.02em -0.03em #f4aab5;
+
+    50% {
+        text-shadow:
+            -0.03em -0.01em #5ecdfa,
+            0.021em 0.03em white,
+            0.02em -0.03em #f4aab5;
     }
-    90%{
-      text-shadow:
-      -0.021em -0.01em #5ecdfa,
-      -0.021em -0.033em white,
-      0.04em 0.01em #f4aab5;
+
+    90% {
+        text-shadow:
+            -0.021em -0.01em #5ecdfa,
+            -0.021em -0.033em white,
+            0.04em 0.01em #f4aab5;
     }
-    100%{
-      text-shadow:
-      0.04em -0.05em #5ecdfa,
-      -0.031em 0em white,
-      0.021em -0.01em #f4aab5;
+
+    100% {
+        text-shadow:
+            0.04em -0.05em #5ecdfa,
+            -0.031em 0em white,
+            0.021em -0.01em #f4aab5;
     }
-  }
+}
 
 
 
-  @keyframes furry {
-    0%{
-      text-shadow:
-      0.02em 0.01em #002b52,
-      -0.031em -0.04em white,
-      0.04em 0.01em #efa82a;
+@keyframes furry {
+    0% {
+        text-shadow:
+            0.02em 0.01em #002b52,
+            -0.031em -0.04em white,
+            0.04em 0.01em #efa82a;
     }
-    10%{
-      text-shadow:
-      0.01em 0.02em #002b52,
-      0.011em -0.03em white,
-      -0.03em 0.03em #efa82a;
-    }
-    50%{
-      text-shadow:
-      -0.03em -0.01em #002b52,
-      0.021em 0.03em white,
-      0.02em -0.03em #efa82a;
-    }
-    90%{
-      text-shadow:
-      -0.021em -0.01em #002b52,
-      -0.021em -0.033em white,
-      0.04em 0.01em #efa82a;
-    }
-    100%{
-      text-shadow:
-      0.04em -0.05em #002b52,
-      -0.031em 0em white,
-      0.021em -0.01em #efa82a;
-    }
-  }
 
+    10% {
+        text-shadow:
+            0.01em 0.02em #002b52,
+            0.011em -0.03em white,
+            -0.03em 0.03em #efa82a;
+    }
+
+    50% {
+        text-shadow:
+            -0.03em -0.01em #002b52,
+            0.021em 0.03em white,
+            0.02em -0.03em #efa82a;
+    }
+
+    90% {
+        text-shadow:
+            -0.021em -0.01em #002b52,
+            -0.021em -0.033em white,
+            0.04em 0.01em #efa82a;
+    }
+
+    100% {
+        text-shadow:
+            0.04em -0.05em #002b52,
+            -0.031em 0em white,
+            0.021em -0.01em #efa82a;
+    }
+}
