@@ -5,10 +5,11 @@
 }
 
 @keyframes cursor {
-    0% {cursor: url(./FlameSword/FlameSword_0000000001.png), auto;}
-    20% {cursor: url(./FlameSword/FlameSword_0000000002.png), auto;}
-    40% {cursor: url(./FlameSword/FlameSword_0000000003.png), auto;}
-    60% {cursor: url(./FlameSword/FlameSword_0000000004.png), auto;}
-    80% {cursor: url(./FlameSword/FlameSword_0000000005.png), auto;}
-    100% {cursor: url(./FlameSword/FlameSword_0000000006.png), auto;}
+    0% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000001.png), auto;}
+    20% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000002.png), auto;}
+    30% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000003.png), auto;}
+    50% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000004.png), auto;}
+    70% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000005.png), auto;}
+    90% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000006.png), auto;}
+    100% {cursor: url(./FlamingArrowGlitterPurple/FlamingArrowGlitterPurple_0000000007.png), auto;}
 }
