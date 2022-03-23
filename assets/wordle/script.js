@@ -15457,7 +15457,7 @@ function shakeTiles(tiles) {
 
 function checkWinLose(guess, tiles) {
   if (guess === targetWord) {
-    showAlert("You Win", 5000)
+    showAlert("You Win, Play again tomorrow!", 5000)
     danceTiles(tiles)
     stopInteraction()
     return
