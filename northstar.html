@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a id="join_button"></a>
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById("join_button").href = "northstar://server@" + params.get('id');
+document.getElementById("join_button").innerHTML = "Click to join " + params.get('name');
+</script>
+
+</body>
+</html>
